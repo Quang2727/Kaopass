@@ -55,7 +55,7 @@ class AppController extends Controller {
     }
 
     private function checkAccessToken() {
-      //   $this->request->data['api_token'] = "017d6a18596ec81a472d234457534a8c9e693532";
+//        $this->request->data['api_token'] = "f2fd43f8b274ab14033aff5b39bf053a211f6584";
         if (@$this->request->data['api_token']) {
             $this->user_id = $this->User->
                     getUserIdByAPIToken($this->request->data['api_token']);

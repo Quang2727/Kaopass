@@ -1,0 +1,151 @@
+/*
+
+Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-license.org/
+
+*/
+
+.boxItemContentDetail .hljs,.question-preview .hljs {
+  display: block;
+  padding: 20px;
+  background: #23241f;
+  font-size:12px;
+}
+
+.boxItemContentDetail .hljs,.question-preview .hljs,
+.boxItemContentDetail .hljs-tag,.question-preview .hljs-tag,
+.boxItemContentDetail .css .hljs-rules,.question-preview .css .hljs-rules,
+.boxItemContentDetail .css .hljs-value,.question-preview .css .hljs-value,
+.boxItemContentDetail .css .hljs-function.boxItemContentDetail .css .hljs-function
+.boxItemContentDetail .hljs-preprocessor,.question-preview .hljs-preprocessor,
+.boxItemContentDetail .hljs-pragma,.question-preview .hljs-pragma {
+  color: #f8f8f2;
+}
+
+.boxItemContentDetail .hljs-strongemphasis,.question-preview .hljs-strongemphasis,
+.boxItemContentDetail .hljs-strong,.question-preview .hljs-strong,
+.boxItemContentDetail .hljs-emphasis,.question-preview .hljs-emphasis {
+  color: #a8a8a2;
+}
+
+.boxItemContentDetail .hljs-bullet,.question-preview .hljs-bullet,
+.boxItemContentDetail .hljs-blockquote,.question-preview .hljs-blockquote,
+.boxItemContentDetail .hljs-horizontal_rule,.question-preview .hljs-horizontal_rule,
+.boxItemContentDetail .hljs-number,.question-preview .hljs-number,
+.boxItemContentDetail .hljs-regexp,.question-preview .hljs-regexp,
+.boxItemContentDetail .alias .hljs-keyword,.question-preview .alias .hljs-keyword,
+.boxItemContentDetail .hljs-literal,.question-preview .hljs-literal,
+.boxItemContentDetail .hljs-hexcolor,.question-preview .hljs-hexcolor {
+  color: #ae81ff;
+}
+
+.boxItemContentDetail .hljs-tag .hljs-value,.question-preview .hljs-tag .hljs-value,
+.boxItemContentDetail .hljs-code,.question-preview .hljs-code,
+.boxItemContentDetail .hljs-title,.question-preview .hljs-title,
+.boxItemContentDetail .css .hljs-class,.question-preview .css .hljs-class,
+.boxItemContentDetail .hljs-class .hljs-title:last-child,.question-preview .hljs-class .hljs-title:last-child {
+  color: #a6e22e;
+}
+
+.boxItemContentDetail .hljs-link_url,.question-preview .hljs-link_url {
+  font-size: 80%;
+}
+
+.boxItemContentDetail .hljs-strong,.question-preview .hljs-strong,
+.boxItemContentDetail .hljs-strongemphasis,.question-preview .hljs-strongemphasis {
+  font-weight: bold;
+}
+
+.boxItemContentDetail .hljs-emphasis,.question-preview .hljs-emphasis,
+.boxItemContentDetail .hljs-strongemphasis,.question-preview .hljs-strongemphasis,
+.boxItemContentDetail .hljs-class .hljs-title:last-child,.question-preview .hljs-class .hljs-title:last-child {
+  font-style: italic;
+}
+
+.boxItemContentDetail .hljs-keyword,.question-preview .hljs-keyword,
+.boxItemContentDetail .hljs-function,.question-preview .hljs-function,
+.boxItemContentDetail .hljs-change,.question-preview .hljs-change,
+.boxItemContentDetail .hljs-winutils,.question-preview .hljs-winutils,
+.boxItemContentDetail .hljs-flow,.question-preview .hljs-flow,
+.boxItemContentDetail .lisp .hljs-title,.question-preview .lisp .hljs-title,
+.boxItemContentDetail .clojure .hljs-built_in,.question-preview .clojure .hljs-built_in,
+.boxItemContentDetail .nginx .hljs-title,.question-preview .nginx .hljs-title,
+.boxItemContentDetail .tex .hljs-special,.question-preview .tex .hljs-special,
+.boxItemContentDetail .hljs-header,.question-preview .hljs-header,
+.boxItemContentDetail .hljs-attribute,.question-preview .hljs-attribute,
+.boxItemContentDetail .hljs-symbol,.question-preview .hljs-symbol,
+.boxItemContentDetail .hljs-symbol .hljs-string,.question-preview .hljs-symbol .hljs-string,
+.boxItemContentDetail .hljs-tag .hljs-title,.question-preview .hljs-tag .hljs-title,
+.boxItemContentDetail .hljs-value,.question-preview .hljs-value,
+.boxItemContentDetail .alias .hljs-keyword:first-child,.question-preview .alias .hljs-keyword:first-child,
+.boxItemContentDetail .css .hljs-tag,.question-preview .css .hljs-tag,
+.boxItemContentDetail .css .unit,.question-preview .css .unit,
+.boxItemContentDetail .css .hljs-important,.question-preview .css .hljs-important {
+  color: #F92672;
+}
+
+.boxItemContentDetail .hljs-function .hljs-keyword,.question-preview .hljs-function .hljs-keyword,
+.boxItemContentDetail .hljs-class .hljs-keyword:first-child,.question-preview .hljs-class .hljs-keyword:first-child,
+.boxItemContentDetail .hljs-constant,.question-preview .hljs-constant,
+.boxItemContentDetail .css .hljs-attribute,.question-preview .css .hljs-attribute {
+  color: #66d9ef;
+}
+
+.boxItemContentDetail .hljs-variable,.question-preview .hljs-variable,
+.boxItemContentDetail .hljs-params,.question-preview .hljs-params,
+.boxItemContentDetail .hljs-class .hljs-title,.question-preview .hljs-class .hljs-title {
+  color: #f8f8f2;
+}
+
+.boxItemContentDetail .hljs-string,.question-preview .hljs-string,
+.boxItemContentDetail .css .hljs-id,.question-preview .css .hljs-id,
+.boxItemContentDetail .hljs-subst,.question-preview .hljs-subst,
+.boxItemContentDetail .haskell .hljs-type,.question-preview .haskell .hljs-type,
+.boxItemContentDetail .ruby .hljs-class .hljs-parent,.question-preview .ruby .hljs-class .hljs-parent,
+.boxItemContentDetail .hljs-built_in,.question-preview .hljs-built_in,
+.boxItemContentDetail .sql .hljs-aggregate,.question-preview .sql .hljs-aggregate,
+.boxItemContentDetail .django .hljs-template_tag,.question-preview .django .hljs-template_tag,
+.boxItemContentDetail .django .hljs-variable,.question-preview .django .hljs-variable,
+.boxItemContentDetail .smalltalk .hljs-class,.question-preview .smalltalk .hljs-class,
+.boxItemContentDetail .django .hljs-filter .hljs-argument,.question-preview .django .hljs-filter .hljs-argument,
+.boxItemContentDetail .smalltalk .hljs-localvars,.question-preview .smalltalk .hljs-localvars,
+.boxItemContentDetail .smalltalk .hljs-array,.question-preview .smalltalk .hljs-array,
+.boxItemContentDetail .hljs-attr_selector,.question-preview .hljs-attr_selector,
+.boxItemContentDetail .hljs-pseudo,.question-preview .hljs-pseudo,
+.boxItemContentDetail .hljs-addition,.question-preview .hljs-addition,
+.boxItemContentDetail .hljs-stream,.question-preview .hljs-stream,
+.boxItemContentDetail .hljs-envvar,.question-preview .hljs-envvar,
+.boxItemContentDetail .apache .hljs-tag,.question-preview .apache .hljs-tag,
+.boxItemContentDetail .apache .hljs-cbracket,.question-preview .apache .hljs-cbracket,
+.boxItemContentDetail .tex .hljs-command,.question-preview .tex .hljs-command,
+.boxItemContentDetail .hljs-prompt,.question-preview .hljs-prompt,
+.boxItemContentDetail .hljs-link_label,.question-preview .hljs-link_label,
+.boxItemContentDetail .hljs-link_url,.question-preview .hljs-link_url {
+  color: #e6db74;
+}
+
+.boxItemContentDetail .hljs-comment,.question-preview .hljs-comment,
+.boxItemContentDetail .hljs-javadoc,.question-preview .hljs-javadoc,
+.boxItemContentDetail .java .hljs-annotation,.question-preview .java .hljs-annotation,
+.boxItemContentDetail .python .hljs-decorator,.question-preview .python .hljs-decorator,
+.boxItemContentDetail .hljs-template_comment,.question-preview .hljs-template_comment,
+.boxItemContentDetail .hljs-pi,.question-preview .hljs-pi,
+.boxItemContentDetail .hljs-doctype,.question-preview .hljs-doctype,
+.boxItemContentDetail .hljs-deletion,.question-preview .hljs-deletion,
+.boxItemContentDetail .hljs-shebang,.question-preview .hljs-shebang,
+.boxItemContentDetail .apache .hljs-sqbracket,.question-preview .apache .hljs-sqbracket,
+.boxItemContentDetail .tex .hljs-formula,.question-preview .tex .hljs-formula {
+  color: #75715e;
+}
+/*
+.boxItemContentDetail .coffeescript .javascript,.question-preview .coffeescript .javascript,
+.boxItemContentDetail .javascript .xml,.question-preview .javascript .xml,
+.boxItemContentDetail .tex .hljs-formula,.question-preview .tex .hljs-formula,
+.boxItemContentDetail .xml .javascript,.question-preview .xml .javascript,
+.boxItemContentDetail .xml .vbscript,.question-preview .xml .vbscript,
+.boxItemContentDetail .xml .css,.question-preview .xml .css,
+.boxItemContentDetail .xml .hljs-cdata,.question-preview .xml .hljs-cdata,
+.boxItemContentDetail .xml .php,.question-preview .xml .php,
+.boxItemContentDetail .php .xml,.question-preview .php .xml {
+  opacity: 0.5;
+}
+*/

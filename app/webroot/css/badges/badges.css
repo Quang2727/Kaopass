@@ -1,0 +1,57 @@
+@charset "utf-8";
+/*------------------------------------*\
+	    $COMMON
+	\*------------------------------------*/
+	/**
+	 * RESET...............デフォルトの設定
+	 * COMMON...........全ページ共通の設定　いまここ
+	 */
+
+/* ------------------------------------------------------------
+
+ * MAIN COL
+
+------------------------------------------------------------ */
+/*  コンテンツ・メイン　設定
+---------------------------------------------*/
+
+/* -------- タイトル -------- */
+.ttlMain {
+	background-image: url(/img/common/ttl/bgkTtlBadge.png);
+	padding: 0 0 0 35px;
+}
+.boxBadgeList li{
+	width: 140px;
+	height: 145px;
+	margin: 0 12px 0 11px;
+	float: left;
+	text-align: center;
+	position: relative;
+	cursor:pointer;
+}
+.boxBadgeList li:hover {
+	opacity: 0.8;
+}
+.boxBadgeList a:hover{
+	text-decoration: none;
+	}
+.boxBadgeList .txtBageName{
+	margin: 7px 0 0;
+	font-weight: bold;
+	display: block;
+	color: #333;
+}
+.boxBadgeList .icnBage {
+	width: 70px;
+	height: 70px;
+	display: block;
+	margin: 0 auto;
+}
+.boxBadgeList .icnBage img {
+	width: 70px;
+	height: 70px;
+}
+.boxBadgeList .txtDate{
+	font-size: 11px;
+	color: #999999;
+}

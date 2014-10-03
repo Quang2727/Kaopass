@@ -1,0 +1,104 @@
+html, body, body.sideopen .wrapper{
+    min-height: 100%;
+}
+
+body{
+    height: 100%;
+    min-width: 768px;
+    position: relative;
+}
+
+.navbar-fixed-top + div{
+    padding-top: 50px;
+}
+
+.wrapper{
+    position: relative;
+    transition: 300ms;
+    -ms-transition: 300ms;
+    -moz-transition: 300ms;
+    -webkit-transition: 300ms;
+}
+
+.container {
+    max-width: none !important;
+    width: auto;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.block{
+    display: block;
+}
+
+.label{
+    font-size: 100%;
+}
+
+.canwrap{
+    white-space: normal;
+}
+
+#side-toggle{
+    display: block;
+}
+
+#sidemenu{
+    display: none;
+    float: left;
+    width: 250px;
+    overflow: auto;
+    position: fixed;
+}
+
+body.sideopen #sidemenu{
+    display: block;
+}
+
+body.sideopen .wrapper{
+    margin-left: 250px;
+    box-shadow: 0 0 15px rgba(0,0,0,.2);
+}
+
+#sidemenu > *{
+    margin: 10px
+}
+
+#topsearch{
+    width: 100%;
+    display: block;
+    margin: 4px auto;
+    float: none!important
+}
+
+#topsearch .input-group{
+    padding-right: 10px;
+}
+
+#topsearch .input-group .btn-info{
+    color: #fff!;
+    font-weight: 500;
+}
+
+#topsearch .input-group .dropdown-toggle{
+    border-right: 0;
+    border-radius: 0;
+    border-color: #aed1cf;
+}
+
+#topsearch .input-group .form-control{
+    border-radius: 0 2px 2px 0;
+}
+
+.navbar-fixed-top .navbar-right{
+    margin-left: 10px;
+}
+
+.navbar-fixed-top .navbar-right .label{
+    font-size: 66%;
+    position: relative;
+    top: -10px;
+    right: 0px;
+    padding: 0 3px;
+}
+

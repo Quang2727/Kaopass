@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+.ttlMain--request{
+	text-align: center;
+	font-size: 13px;
+}
+.snsBlock{
+	width: 290px;
+	margin: 0 auto 16px;
+	}
+.snsBlock__list{
+	float: left;
+	margin: 0 4px;
+}
+.boxForm__snsBlockArea p{
+	text-align: center;
+	font-size: 12px;
+	margin-bottom: 16px;
+}

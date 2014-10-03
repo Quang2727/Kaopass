@@ -8,6 +8,7 @@ class FeedsController extends AppController {
      * find feed or notification real time
      */
     function find() {
+        
         $this->Notification->contain("User", "FolderUser", 'UserNotification', 'Shop');
         $data = $this->Notification->find("all", array(
             "conditions" => array("Notification.user_notifcation_id" => $this->user_id),
@@ -36,7 +37,6 @@ class FeedsController extends AppController {
                 $img = "";
             $type_message = @$type_Notification[$value["Notification"]["type_messages"]];
             if ($value["Notification"]["type_messages"] == ADD) {
-
                 $message = "{$value["User"]["name"]}さんが\n{$value["Shop"]["name"]}を新規追加しました。{$created}　";
             } else {
                 $message = "{$value["User"]["name"]}さんが\n{$created}に{$type_message}";

@@ -1,0 +1,190 @@
+@charset "utf-8";
+/*------------------------------------*\
+	    $COMMON
+	\*------------------------------------*/
+	/**
+	 * RESET...............デフォルトの設定
+	 * COMMON...........全ページ共通の設定　いまここ
+	 */
+
+/* ------------------------------------------------------------
+
+ * MAIN COL
+
+------------------------------------------------------------ */
+/*  コンテンツ・メイン　設定
+---------------------------------------------*/
+
+/* -------- タイトル -------- */
+#container .ttlMain {
+	background-image: url(/img/common/ttl/bgkTtlUser.png);
+	padding: 0 0 0 35px;
+}
+
+/* ---- ユーザー名を入力して検索 ---- */
+#boxContentSearch {
+	position: relative;
+	margin: 30px 0 15px 0;
+	width: 290px;
+	font-size:13px;
+	font-size:1.3rem;
+}
+#boxContentSearch .boxLabelInput {
+	position:relative;
+}
+#boxContentSearch .txtSearch {
+	background: #fcfcfc;
+	border:1px solid #ddd;
+	width: 250px;
+	padding: 3px 25px 3px 13px;
+	color: #333;
+	border-radius:5px;
+}
+#boxContentSearch .btnSearch {
+	position: absolute;
+	right: 10px;
+	top: 7px;
+    width: 12px;
+    height: 12px;
+    text-indent: -9999px;
+}
+#boxContentSearch .btnSearch:before {
+    top: 0;
+    left: 0;
+    width: 12px;
+    height: 12px;
+    background-position: 0 -219px !important;
+}
+.boxUser li{
+    width:320px;
+    position:relative;
+    float:left;
+    margin:0 10px 10px 0;
+}
+.boxUser li:nth-child(3n){
+    margin:0 0 10px 0;
+}
+.boxUser li .boxStat .boxStatThumb{
+    border:1px solid #e1dfd6;
+    padding:20px;
+    height:70px;
+}
+.boxUser li .boxStat .boxStatThumb--social {
+    height:80px;
+}
+.txtNotSignUp {
+    color:#ccc;
+}
+.boxUser li .boxStat .txtTwitterId  {
+    margin-bottom:5px;
+    width:120px;
+}
+.boxUser li .boxStat .txtTwitterId a {
+    color: #333;
+    font-weight: bold;
+}
+.boxUser li .boxStat .boxUserStatus {
+    border:1px solid #e1dfd6;
+    border-top:none;
+    background:#f7f6ee;
+    padding:20px;
+    height:60px;
+}
+.boxUserMyTag {
+    background:url(/img/users/imgUserMyTag.png) 0 3px no-repeat;
+    padding-left:20px;
+}
+.boxUser .icnCup{
+    position: absolute;
+    top: 10px;
+    left: 31px;
+}
+.boxUser .txtUserName{
+    font-size:12px;
+    margin-bottom:4px;
+}
+.boxUser .txtUserName a{
+    font-weight: bold;
+    color: #333;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.boxStat .boxStatThumb .txtUserName--social {
+    width:120px;
+    padding-left:14px;
+}
+.boxStat .boxStatThumb .txtUserName--social a{
+    color:#ccc;
+}
+.boxUser .boxStatThumb .icnUserThumb {
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+    margin-top:5px;
+    margin-right:20px;
+}
+/* -------- セレクトタブ -------- */
+
+#container .boxSelectTab {
+	position: relative;
+	clear: both;
+	padding: 0;
+	margin:20px 0;
+	line-height: 22px;
+}
+
+#container .boxSelectTab li {
+	position:relative;
+	display: inline-block;
+	width: 326px;
+	height:34px;
+	border-bottom:1px solid #ccc;
+	border-radius:3px 3px 0 0;
+	float: left;
+	margin: 0;
+	padding: 5px 0;
+	text-align: center;
+	cursor: pointer;
+	box-sizing:border-box;
+}
+
+#container .boxSelectTab li:hover {
+  background: #eeeeee;
+	text-decoration: underline;
+}
+#container .boxSelectTab li span{
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+}
+#container .boxSelectTab li.on:hover {
+	text-decoration:none;
+}
+
+/* ONの時 */
+
+#container .boxSelectTab .on {
+	border:1px solid #ccc;
+	border-bottom:1px solid #fff;
+	font-weight:bold;
+}
+
+
+/* フォローボタン */
+#pageID_userlist .btnAddFollow,#pageID_userlist .btnAddFollowNotLogin {
+	float:none;
+}
+#pageID_userlist .btnAddFollow--social {
+    position:absolute;
+    top:35px;
+    right:20px;
+}
+
+/* Twitter名 */
+.txtTwitterId {
+    background: url(/img/common/icnTwitter.png) 0 2px no-repeat;
+    padding-left: 14px;
+    text-align:left;
+}

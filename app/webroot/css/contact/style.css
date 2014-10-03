@@ -1,0 +1,9 @@
+@charset "utf-8";
+/*  CONTACT : お問い合わせ
+---------------------------------------------*/
+
+/* タイトル */
+#pageID_contact .ttlMain {
+	background-image: url(/img/common/ttl/bgkTtlKey.png);
+}
+

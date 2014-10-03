@@ -1,0 +1,432 @@
+@charset "utf-8";
+/*------------------------------------*\
+        $COMMON
+    \*------------------------------------*/
+    /**
+     * RESET...............デフォルトの設定
+     * COMMON...........全ページ共通の設定
+     * INDEX...........いまここ
+     */
+
+/* ------------------------------------------------------------
+
+ * INDEX
+
+------------------------------------------------------------ */
+
+#container {
+    width:100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+#boxContentWrap {
+    width:980px;
+    margin:0 auto;
+}
+
+/* -------- title -------- */
+/*#mainContainer .ttlMain {
+    margin:30px 0 0 0;
+}*/
+#mainContainer .ttlMain .txtSearchWord_smaill {
+    font-size:14px;
+}
+#mainContainer .txtTagDescription {
+    font-size:10px;
+    font-size:1rem;
+    color:#888;
+}
+
+#pageID_top #breadcrumb ul li {
+    margin: 20px 0 0 0;
+}
+
+/* -------- セレクトタブ -------- */
+
+#container .boxSelectTab {
+    position: relative;
+    clear: both;
+    padding: 0;
+    margin:20px 0 0 -5px;
+    border-bottom: 1px solid #ccc;
+    line-height: 22px;
+}
+
+#container .boxSelectTab li {
+    position:relative;
+    width: 115px;
+    border-radius:3px 3px 0 0;
+    float: left;
+    margin: 0 0 -1px 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#container .boxSelectTab_search li {
+    width: 139px;
+}
+
+#container .boxSelectTab li:hover {
+    background: #eeeeee;
+    text-decoration: underline;
+}
+#container .boxSelectTab li span {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding: 5px 0;
+}
+#container .boxSelectTab li.on:hover {
+    text-decoration:none;
+}
+
+/* ONの時 */
+#container .boxSelectTab .on {
+    background: #fff !important;
+    border: solid #ccc;
+    border-width: 1px 1px 0;
+    /*border-bottom: 1px solid #fff;*/
+    font-weight: bold;
+}
+#container .tabNotItem {
+    text-align:center;
+}
+#container .tabNotItem p {
+    text-align:center;
+    margin:20px 0;
+    font-size:16px;
+    font-size:1.6rem;
+}
+#container .tabNotLogin {
+    text-align:center;
+}
+#container .tabNotLogin p {
+    text-align:center;
+    margin:20px 0;
+    font-size:12px;
+    font-size:1.2rem;
+}
+#container .tabNotMytag {
+    text-align:center;
+}
+#container .tabNotMytag {
+    text-align:center;
+    font-size:12px;
+    font-size:1.2rem;
+    padding-top: 40px;
+}
+.ttlNotMyTag {
+    font-weight:bold;
+    margin:20px 0;
+    font-size:16px;
+    color:#aaa;
+}
+.txtNotMyTagNavi {
+    text-align:left;
+    width:600px;
+    margin:20px auto;
+}
+/* -------- 質問STS -------- */
+.txtResolution {
+    width:100%;
+}
+.txtAccepting {
+    width:100%;
+}
+
+
+/* -------- 検索結果0 -------- */
+.boxAskSearch0 {
+    margin-top:30px;
+}
+.boxAskSearch0 dt{
+    color:#333;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+.boxAskSearch0 dd{
+    text-align:center;
+}
+.boxAskSearch0 .txtAskSearch0{
+    margin:20px 0;
+}
+
+
+/* -------- Myタグ編集 -------- */
+.formMyTag .ttlMytagInput{
+    font-size:16px;
+}
+
+/*.formMyTag .tagForm {
+    width: 210px;
+    height: 28px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #fff;
+    padding: 4px 6px;
+    margin-top: 10px;
+    max-width: inherit;
+    line-height: 26px;
+}*/
+.formMyTag .ttlMytagInput {
+    font-size:16px;
+    margin-bottom:10px;
+}
+.formMyTag .txtLinkTagPage {
+    background:url(../img/common/bkgSitenavArrow.png) no-repeat 0 3px;
+    display:block;
+    padding-left:10px;
+    margin-top:5px;
+    font-size:11px;
+    color:#fff;
+    text-decoration:none;
+}
+.formMyTag .txtLinkTagPage:hover {
+    text-decoration:underline;
+}
+.dropdown-menu{
+    position: absolute;
+    display:none;
+    width: 166px;
+    background-color: #F5F5F5;
+    border: 1px solid #ccc;
+    font-size:12px;
+    /* box-shadow */
+    box-shadow:rgba(113, 135, 164, 0.29) 0px 0px 2px 2px;
+    -webkit-box-shadow:rgba(113, 135, 164, 0.29) 0px 0px 2px 2px;
+    -moz-box-shadow:rgba(113, 135, 164, 0.29) 0px 0px 2px 2px;
+    margin-top:5px;
+}
+
+.dropdown-menu li{
+    cursor:pointer;
+    border-bottom:1px solid #ccc;
+}
+.dropdown-menu li:hover,.dropdown-menu li.active{ background-color:#ddd;}
+.dropdown-menu li a{
+    font-size:11px;
+    font-size:1.1rem;
+    color: #195f8d;
+    padding: 5px 20px;
+    display: block;
+}
+#sideContainer .formMyTag .bootstrap-tagsinput {
+    background:#fff;
+}
+/*#sideContainer .formMyTag .bootstrap-tagsinput .tag {
+    display:block;
+    float:left;
+    margin: 0 5px 5px 0;
+    padding: 1px 10px 0px 10px;
+    color: #aca665;
+    line-height: 1.9;
+    background: #f9f6d6;
+    border-radius: 3px;
+    border: 1px solid #aca665;
+    font-size:11px;
+}*/
+
+#bkgNotMyTag {
+    display:none;
+    width:250px;
+}
+.txtNotMyTag {
+    text-align: center;
+    border: 3px dashed #ccc;
+    width: 170px;
+    margin: 0 auto;
+    padding: 30px 15px;
+    border-radius: 10px;
+    background: #f9f6d6;
+    font-weight:bold
+}
+
+.bkgSectionLogin {
+    width:100%;
+    background:url(/img/login/bkgLoginTop.png);
+    background-size:cover;
+    padding:30px 0;
+    margin-bottom:20px;
+}
+.boxSectionLogin {
+    width:980px;
+    margin:0 auto;
+    background:rgba(0,0,0,0.1);
+    padding:50px;
+    color:#fff;
+}
+
+.boxSectionLogin__inner {
+    width:720px;
+    margin:0 auto;
+}
+.boxSectionLogin__about {
+    width:350px;
+    margin-right:0px;
+    margin-right:60px;
+}
+.boxSectionLogin__about h2 {
+    font-size: 26px;
+    margin-top: 45px;
+}
+.boxSectionLogin__about__link a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    float: left;
+    padding-left: 25px;
+    margin-top:10px;
+    background: url(/img/common/bkgSitenavArrow.png) no-repeat left center;
+    padding: 2px 10px 0 10px;
+    text-align: left;
+}
+.boxSectionLogin__about__link a:hover {
+    text-decoration:underline;
+}
+.boxSectionLogin__input {
+    width:310px;
+}
+.boxForm {
+}
+#container .ttlMain--request {
+    font-size:14px;
+    border-bottom:2px solid #aaa;
+}
+.boxForm__snsBlockArea{
+}
+.snsBlock {
+    margin:10px 0 0 0;
+}
+.boxForm__snsBlockArea p {
+    text-align:center;
+    margin:20px 0 10px 0;
+}
+.snsBlock__list {
+    float:left;
+    margin-right:30px;
+}
+.snsBlock__list:last-child {
+    margin-right:0;
+}
+.boxForm__listBlock {
+}
+.boxForm__listBlock__list {
+}
+.btnRegistration input {
+    background: url(/img/common/login/bkgLogin.png) no-repeat 50px center;
+    cursor: pointer;
+    display: block;
+    font-weight: bold;
+    font-size: 14px;
+    font-size: 1.4rem;
+    text-align: right;
+    width: 200px;
+    border-radius: 3px;
+    color: #FFF;
+    background-color: #195f8d;
+    margin: 10px auto;
+    border: 0;
+    text-align:center;
+    padding:10px 0 10px 20px;
+}
+.btnRegistration input:hover {
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+}
+.txtInputArea {
+    width:286px;
+    padding:10px;
+    border-radius:3px;
+    border:1px solid #ddd;
+    margin-top:10px;
+}
+.txtLinkBlock__txtLink a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    float: left;
+    padding-left: 25px;
+    background: url(/img/common/bkgSitenavArrow.png) no-repeat left center;
+    padding: 2px 10px 0 10px;
+    text-align: left;
+}
+.txtLinkBlock__txtLink a:hover {
+    text-decoration:underline;
+}
+
+
+/* ------------------------------------------------------------
+
+ * Module
+
+------------------------------------------------------------ */
+
+/* 入力フィールド
+-------------------------- */
+.boxSectionLogin .mod-inputField {
+    padding: 10px;
+}
+
+.entry-stateLavel {
+    margin-bottom: 6px;
+    font-size: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 20px;
+}
+
+.entry-stateLavel.is-accepting {
+    background: #f5f5f5;
+}
+
+.entry-stateLavel.is-resolved {
+    background: #e9606d;
+    color: #fff;
+}
+
+.entry-res {
+    text-align: center;
+}
+
+.entry-res.is-resolved {
+    color: #e9606d;
+}
+
+.entry-res dt {
+    font-size: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.entry-res dd {
+    font-size: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.entry-dataList {
+    /*float: left;*/
+    position: absolute;
+    margin-left: -14px;
+}
+
+.entry-dataList li {
+    float: left;
+    margin-left: 14px;
+    font-weight: bold;
+}
+
+.entry-dataList li span {
+    margin-left: 3px;
+    font-size: 10px;
+    font-size: 1rem;
+}
+
+.entry-tags {
+    float: left;
+    margin-left: 150px;
+    margin-bottom: 0;
+}

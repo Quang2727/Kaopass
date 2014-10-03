@@ -1,0 +1,134 @@
+@charset "utf-8";
+/* CSS Document */
+
+.bkgAboutTitle {
+   position: relative;
+   width: 100%;
+   background: url(/img/sp/index/bkgLoginTop.png) no-repeat 0 0 #272822;
+   background-size: 320px;
+   height: 359px;
+}
+.bkgAboutTitle .boxAboutTitle {
+   float: right;
+   text-align: right;
+   margin: 20px;
+}
+.bkgAboutTitle .ttlAbout {
+   color: #fff;
+   font-size: 19px;
+   line-height: 26px;
+}
+.bkgAboutTitle .txtAbout {
+   margin-top: 80px;
+   color: #fff;
+   line-height: 19px;
+}
+.bkgAboutTitle .btnJoin {
+   display: inline-block;
+   float: right;
+   color: #fff;
+   border: 2px solid #fff;
+   padding: 10px 30px;
+   font-size: 12px;
+   background: #111;
+   border-radius: 3px;
+   text-align: center;
+   margin-top: 40px;
+}
+.bkgAboutTitle .btnJoin:hover {
+   opacity: 0.7;
+   text-decoration: none;
+}
+.bkgAboutTitle .imgDownward {
+    position: absolute;
+    bottom: 24px;
+    left: 0;
+    width: 100%;
+}
+.bkgAboutTitle .imgDownward img {
+    display: block;
+    width: 38px;
+    height: 14px;
+    margin: 0 auto;
+}
+
+
+.sectionAbout {
+   padding:35px 12px 20px;
+}
+.sectionAbout_01 {
+}
+.sectionAbout_02 {
+   background:#eee;
+}
+.sectionAbout_03 {
+   background:#eee;
+}
+.ttlSection {
+   font-size:18px;
+   line-height:24px;
+   margin-bottom:25px;
+}
+.txtSection,.txtFuture {
+   font-size:14px;
+   margin:20px 0;
+   line-height:19px;
+}
+.imgSection {
+   margin:20px 0;
+}
+
+.ttlFuture {
+   font-size:18px;
+   line-height:24px;
+}
+.ttlSubFuture {
+   font-size:14px;
+   margin:20px 0;
+}
+
+.txtWaiting {
+   text-align:center;
+}
+.sectionAbout .btnNewAccount {
+    cursor: pointer;
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+    color: #FFF;
+    margin: 24px auto;
+    height: 33px;
+    padding-top: 15px;
+    border: 0;
+    border-bottom: 4px solid #12486b ;
+    background: #195f8d ;
+    border-radius: 5px; 
+}
+.sectionAbout .btnNewAccount:hover {
+   text-decoration:none;
+   opacity:0.7;
+}
+
+
+#pageID_about .boxSnsArea {
+   width:320px;
+   overflow:hidden;
+   margin-top:20px;
+}
+#pageID_about .boxSnsArea .btnWrap:first-child {
+   width:87px;
+   float:left;
+   margin-left:25px;
+}
+#pageID_about .boxSnsArea .btnWrap:last-child {
+   width:66px;
+   float:left;
+   margin-left:10px;
+}
+#pageID_about .boxSnsArea .btnWrap {
+   width:100px;
+   float:left;
+   margin-left:10px;
+}

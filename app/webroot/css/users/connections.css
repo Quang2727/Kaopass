@@ -1,0 +1,37 @@
+@charset "utf-8";
+/*------------------------------------*\
+	    $COMMON
+	\*------------------------------------*/
+	/**
+	 * RESET...............デフォルトの設定
+	 * COMMON...........全ページ共通の設定　いまここ
+	 */
+
+/* ------------------------------------------------------------
+
+ * MAIN COL
+
+------------------------------------------------------------ */
+/*  コンテンツ・メイン　設定
+---------------------------------------------*/
+
+.boxUser li{
+	padding: 0;
+}
+.ttlMain .txtUserName{
+	font-weight: normal;
+	padding-right: 10px;
+}
+/* -------- セレクトタブ -------- */
+
+#container .boxSelectTab li {
+	width: 489px;
+}
+
+#pageID_connectlist .btnAddFollow, #pageID_connectlist .btnAddFollowNotLogin {
+	float: none;
+}
+
+#userConnectPager .now{
+	background-color: #666;
+}

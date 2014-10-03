@@ -45,16 +45,20 @@ class UserFriend extends AppModel {
             return false;
         }
         $data = array();
-
+        $list_id = array();
         foreach ($friends as $value) {
             if (!$this->checkExistFriend($user_id, $value)) {
                 $data[] = array('UserFriend' => array(
                         'user_id_a' => $user_id,
                         'user_id_b' => $value,
                 ));
+                $list_id[] = $value;
             }
         }
         if (count($data) > 0) {
+            APP::import("Model", array("User"));
+            $this->User = new User();
+            $this->User->push_notification($list_id, "友達が追加されました");
             return $this->saveAll($data);
         }
         return true;

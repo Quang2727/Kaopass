@@ -1,0 +1,88 @@
+#awfeaijwo
+@charset "utf-8";
+
+/*  TOP,TAGS,QUESTIONS SEARCH : トップページ、タグ一覧、質問検索
+---------------------------------------------*/
+
+.boxContentWrap {
+	margin-top: 10px;
+}
+
+#container {
+/*	padding: 10px 0 0;*/ /* 140129 */
+}
+
+/* メインタイトル */ 
+#pageID_top #mainContainer .ttlMain, #pageID_questions #mainContainer .ttlMain {
+	float: left;
+	margin: 0 0 20px;
+    padding: 0;
+
+}
+
+
+/* -------- セレクトタブ -------- */
+
+#container #mainContainer .boxSelectTab {
+	padding: 0 0 12px;
+}
+
+#container #mainContainer .boxSelectTab li {
+	/*width: 175px;*/
+	width: 140px;
+}
+
+#pageID_tags #container #mainContainer .boxSelectTab li,
+#pageID_questions #container #mainContainer .boxSelectTab li {
+	width: 175px;
+}
+
+#container #mainContainer .boxSelectTab li {
+	padding: 9px 0 0;
+}
+
+#container #mainContainer .boxSelectTab li p {
+	width: 60px;
+}
+
+#container .boxSelectTab .on span img {
+	margin-top: -12px;
+}
+
+#pageID_mypage #container .boxSelectTab .on span img {
+    margin-top: -13px;
+}
+
+/* 新着 
+#container #mainContainer .boxSelectTab .btnNew p {
+}*/
+
+/* 注目 */
+#container #mainContainer .boxSelectTab .btnAttention p span img {
+	margin-left: -60px;
+}
+
+/* 高評価 */
+#container #mainContainer .boxSelectTab .btnTopRated p span img {
+	margin-left: -120px;
+}
+
+/* 未解決 */
+#container #mainContainer .boxSelectTab .btnUnresolved p span img {
+	margin-left: -180px;
+}
+
+
+/* 解決済み */
+#container #mainContainer .boxSelectTab .btnResolved p span img {
+	margin-left: -240px;
+}
+
+/* -------- 最下部ページング -------- */
+
+#container #mainContainer .boxPager {
+	padding: 20px 0 60px;
+}
+#container #mainContainer .boxSelectTab .btnMytag p span img {
+    margin-left: -300px;
+}

@@ -1,0 +1,126 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+#pageID_about #container {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.bkgAboutTitle {
+    width: 100%;
+    background: url(/img/login/bkgLoginTop.png);
+    background-size: cover;
+}
+.bkgAboutTitle .boxAboutTitle {
+    width: 900px;
+    padding: 150px 0;
+    margin: 0 auto;
+}
+.boxAboutTitleInner {
+    float: right;
+}
+.boxAboutTitleInner a {
+    color: #fff;
+}
+.ttlAbout {} .btnJoin {
+    display: inline-block;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    font-size: 20px;
+    background: #111;
+    border-radius: 3px;
+    float: right;
+    margin: 50px 170px 0 0;
+}
+.btnJoin:hover {
+    opacity: 0.7;
+    text-decoration: none;
+}
+.sectionAbout {
+    padding: 100px 0;
+}
+.sectionAbout_01 {} .sectionAbout_02 {
+    background: #eee;
+}
+.sectionAbout_03 {} .sectionInner {
+    width: 900px;
+    margin: 0 auto;
+}
+.ttlSection {
+    font-size: 32px;
+    margin-bottom: 70px;
+}
+.txtSection {
+    line-height: 30px;
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+.sectionInnerLeft {
+    width: 450px;
+}
+.sectionInnerRight {
+    width: 450px;
+    text-align: right;
+}
+.sectionFuture01 {
+    width: 430px;
+    margin-right: 20px;
+}
+.sectionFuture02 {
+    width: 430px;
+    margin-left: 20px;
+}
+.boxFuture {
+    background: #fff;
+    padding: 30px;
+    text-align: left;
+}
+.ttlFuture {
+    font-size: 24px;
+    margin: 100px 0 30px 0;
+}
+.ttlSubFuture {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.txtFuture {
+    font-size: 14px;
+}
+.boxJoin {
+    width: 900px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    padding: 20px 0;
+}
+#content .ttlJoin {
+    font-size: 32px;
+    margin: 0 0 20px 0;
+}
+#content .boxPrivacy .txtInput {
+    /*width: 610px;*/
+    float: none;
+    /*margin-left: 80px;*/
+}
+.boxJoin #content {
+    width: 700px;
+    padding: 0;
+}
+.boxJoin .boxSNSJoin {} .boxJoin .boxSNSJoin .btnLogin {
+    margin-bottom: 20px;
+}
+.boxJoin .boxPrivacy {
+    margin-left: 0px;
+}
+#pageID_about .boxSnsArea {
+    width: 600px;
+    margin: 30px auto 50px;
+}
+#pageID_about .boxSnsArea .btnWrap:first-child {
+    width: 115px;
+    margin-left: 150px;
+}
+#pageID_about .boxSnsArea .btnWrap {
+    width: 130px;
+}

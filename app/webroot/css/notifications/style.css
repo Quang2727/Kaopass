@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+#pageID_notification .boxContentWrap {
+    margin-top: 20px;
+}
+
+#pageID_notification .notification_boxItem a {
+    color: #117ec6;
+}
+
+#pageID_notification .notification_boxItem a:hover {
+    text-decoration: underline;
+}
+
+#pageID_notification .notification_boxItem {
+    padding: 16px 20px;
+    border-top: 1px solid #ccc;
+    font-size: 14px;
+}
+
+#pageID_notification .notification_boxItem:last-child {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 30px;
+}
+
+#pageID_notification .notification_boxItem .notificationDate {
+    display: block;
+    color: #ccc;
+    font-size: 11px;
+}

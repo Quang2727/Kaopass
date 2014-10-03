@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+.boxFile .icnThumb {
+  float: left;
+  margin-right: 10px;
+}
+
+.boxFile .icnUserThumb {
+    width: 45px;
+    height: 45px;
+}
+
+.boxFile #btnFile {
+    display: inline-block;
+    width: 75%;
+    padding: 7px;
+    background-color: #195f8d;
+    border-radius: 3px;
+    border: none;
+    border-bottom: 1px solid #12486b;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.boxFile #txtFake_input_file {
+    padding-left: 0;
+    padding-right: 0;
+    border: none;
+    color: #333;
+    font-size: 12px;
+}
+
+.bkgNewAccount {
+    text-align: center;
+}
+
+.boxSettings {
+    margin: 24px 0;
+}
+
+.boxSettings .boxSettingSelect {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+.boxSettings .boxSettingSelect li {
+   display: table-cell;
+}
+
+.boxSettings .boxSettingSelect li:first-child {
+    border-right: 1px solid #333;
+}
+
+.boxSettings .boxSettingSelect a {
+    display: block;
+    color: #333;
+    font-size: 12px;
+    text-align: center;
+    line-height: 32px;
+}
+
+.boxSettings .boxSettingSelect a:hover {
+    text-decoration: none;
+}
+
+.social_form .socialLabel {
+    position: absolute;
+    font-weight: bold;
+    line-height: 33px;
+}
+
+.social_form .socialBtn {
+    margin-bottom: 20px;
+    margin-left: 160px;
+}
+
+.social_form .socialBtn a {
+  margin: 0;
+  background-color: #195f8d;
+  border-radius: 3px;
+  border: none;
+  border-bottom: 1px solid #12486b;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 5px 30px;
+  width: auto;
+  color: #FFFFFF;
+  line-height: 1.6;
+}

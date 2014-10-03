@@ -1,0 +1,863 @@
+@charset "UTF-8";
+
+/*------------------------------------------------------------
+    デフォルトスタイル
+------------------------------------------------------------*/
+html, body, div, span, figure, img, fieldset,
+a, h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, small, strong, dl, dt, dd, ol, ul, li,
+table, caption, tbody, tfoot, thead, tr, th, td{
+    margin:0;
+    padding:0;
+    border:none;
+    outline:none;
+    line-height: 1.25;
+}
+
+header,hgroup,nav,article,
+section,aside,figure,footer{
+    display:block;
+}
+
+ol, ul{
+    list-style: none;
+}
+
+html{
+    font:14px/1.3 "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,"メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS P Gothic",Verdana,sans-serif;
+}
+
+body {
+    width: 100%;
+    background: #fff;
+    color: #333;
+    text-align: center;
+    -webkit-text-size-adjust: 100%;
+}
+
+
+/* リンク 共通設定
+-------------------------- */
+a {
+    outline: none;
+}
+a:link {
+    color:#195f8d;
+    text-decoration:none;
+}
+a:hover {
+    text-decoration:underline;
+}
+a img:hover {
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+}
+
+/*------------------------------------------------------------
+    レイアウト
+------------------------------------------------------------*/
+.l-header{
+    overflow: hidden;
+    width: 100%;
+    height: 45px;
+    text-align: center;
+    background: #333333;
+    border-bottom: 3px solid #f4c51f;
+}
+.l-header img{
+    margin: 0 auto;
+}
+
+.l-header .l-header__onBtnLayout{
+    text-align: left;
+    margin: 0 auto;
+}
+.l-header .l-header__onBtnLayout p{
+    float: left;
+}
+
+.l-header .l-header__onBtnLayout a.btn{
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-size:10px;
+    text-align:center;
+    width: 75px;
+    color: #FFF;
+    margin: 8px 5px;
+    height: 25px;
+    line-height: 25px;
+    border: 1px solid #ffffff;
+    background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#000000));
+    -webkit-appearance: none;
+    -webkit-border-radius:5px;
+}
+.l-header .l-header__onBtnLayout a.btn:hover {
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    text-decoration: none;
+}
+
+.l-header__logo--floatL {
+    float: left;
+}
+.l-header__logo img {
+    width: 120px;
+    height: 45px;
+}
+.l-header__hNav {
+    float: right;
+}
+.l-header__hNav li {
+    float: left;
+    background: no-repeat left top;
+    background-size: 66px;
+    text-align: center;
+    font-size: 9px;
+}
+.l-header__hNav li a {
+    display: block;
+    width: 66px;
+    height: 45px;
+    padding-top: 28px;
+    color: #fff;
+}
+
+.l-header__hNav--loginBtn {
+    background-image: url("/img/sp/common/navBgLogin.png") !important;
+}
+.l-header__hNav--registBtn {
+    background-image: url("/img/sp/common/navBgEntry.png") !important;
+}
+.l-header__hNav--queryBtn {
+    background-image: url("/img/sp/common/navBgQuery.png") !important;
+}
+
+
+.l-container {
+    margin: 0 auto;
+    text-align: left;
+    overflow: hidden;
+}
+.content {
+    padding: 0 12px;
+}
+.l-footer {
+    border-top: 2px solid #ccc;
+}
+.l-footer .footerInner {
+    width: 93.75%;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 12px;
+    padding-top: 16px;
+}
+.footNav li {
+    float: left;
+    margin: 0 2px 8px 0;
+}
+.footNav a {
+    color: #333;
+}
+.txtCopyright {
+    padding: 8px 0;
+    font-size: 10px;
+    clear: both;
+}
+
+
+/*    リンクタグ    */
+a,
+a:hover{
+    color: #333333;
+}
+
+.txtLinkBlock {
+    margin: 10px 0 20px;
+}
+.txtLinkBlock__txtLink{
+    margin: 10px 0;
+}
+.txtLinkBlock__txtLink a {
+    background-image:url("/img/sp/common/icn__txtLink.png");
+    background-size:7px 10px;
+    background-repeat:no-repeat;
+    background-position: 0 4px;
+    padding-left: 10px;
+    margin: 5px 0;
+    font-size: 12px;
+    color:#333;
+}
+
+
+
+/*.boxForm .boxForm__listBlock__list input{
+    padding: 10px;
+    font-size: 14px;
+    width: 274px;
+    background-color: #fcfcfc;
+    border: 1px solid #ddd;
+    -webkit-border-radius: 3px;
+    -webkit-appearance:none;
+}*/
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------
+
+ * タグ共通
+
+------------------------------------------------------------ */
+
+
+/*ホバー表示用*/
+.boxCate {
+    width: 300px;
+    padding: 15px;
+    background: #f5f5f5;
+    position: absolute;
+    top: 28px;
+    left: 0;
+    z-index: 10000;
+    border-radius: 3px;
+    display: none;
+    /* box-shadow */
+    box-shadow:rgba(113, 135, 164, 0.29) 0px 0px 2px 2px;
+    -webkit-box-shadow:rgba(113, 135, 164, 0.29) 0px 0px 2px 2px;
+    -moz-box-shadow:rgba(113, 135, 164, 0.29) 0px 0px 2px 2px;
+}
+.boxCateR {
+    width: 300px;
+    padding: 15px;
+    background: #f5f5f5;
+    position: absolute;
+    top: 28px;
+    left:-200px;
+    z-index: 10000;
+    border-radius: 3px;
+    display: none;
+    /* box-shadow */
+    box-shadow:rgba(113, 135, 164, 0.29) 0px 0px 2px 2px;
+    -webkit-box-shadow:rgba(113, 135, 164, 0.29) 0px 0px 2px 2px;
+    -moz-box-shadow:rgba(113, 135, 164, 0.29) 0px 0px 2px 2px;
+}
+.boxCate:after,
+.boxCate:before,
+.boxCateR:after,
+.boxCateR:before {
+    bottom: 100%;
+    left: 20px;
+    content: " ";
+    border: solid transparent;
+    border-color: rgba(85, 85, 85, 0);
+    border-bottom-color: #f5f5f5;
+    border-width: 5px;
+    margin-left: -5px;
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+.boxCateR:after,
+.boxCateR:before {
+    left:auto;
+    right: 20px;
+    border-bottom-color: #f5f5f5;
+}
+.boxCate:before,
+.boxCateR:before {
+    border-width: 6px;
+    margin-left: -6px;
+    border-bottom-color: #ccc;
+}
+
+.boxCate .ttlCate,.boxCateR .ttlCate {
+    margin-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+    font-size: 11px;
+    padding-bottom: 10px;
+}
+
+.boxCate .ttlCate .txtQuestion,.boxCateR .ttlCate .txtQuestion {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* もっと見る
+-------------------------- */
+.boxShowMore {
+    padding: 0;
+    text-decoration: none;
+    text-align: center;
+}
+
+.boxShowMore .btnShowMore {
+    /*background-image:url("/img/sp/common/icn_boxShowMore.png");
+    background-size:10px 10px;
+    background-repeat:no-repeat;
+    background-position: 115px center;*/
+    display: block;
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
+    border: 0;
+    background: #ccc;
+    font-size: 14px;
+    text-align: center;
+    outline: none;
+    -webkit-appearance: none;
+}
+
+.boxShowMore .btnShowMore:hover,
+.boxShowMore .btnShowMore.touch {
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+}
+
+.btnSubmitForget .a_submit,
+.btnSubmit button {
+    display: block;
+    font-weight: bold;
+    font-size:16px;
+    text-align:center;
+    width:100%;
+    color: #FFF;
+    margin:24px auto;
+    height: 48px;
+    line-height: 48px;
+    padding-top: 1px;
+    border:0;
+    border-bottom:4px solid #12486b;
+    background: -webkit-gradient(linear, left top, left bottom, from(#195f8d), to(#195f8d));
+    -webkit-appearance: none;
+    -webkit-border-radius:5px;
+}
+.btnSubmitForget .a_submit:hover,
+.btnSubmit button:hover {
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+}
+
+/* ------------------------------------------------------------
+
+ * ログインモーダル
+
+------------------------------------------------------------ */
+#bkgModalLogin {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    background: #000;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    width: 100%;
+    padding: 70px 0 30px;
+    text-align: center;
+    height: 100%;
+    display: none;
+}
+#boxModalLogin {
+    width: 270px;
+    background-color: #fff;
+    padding: 10px;
+    position: fixed;
+    z-index: 100;
+    display: none;
+}
+#boxModalLogin .ttlMain--request {
+    margin:24px 0 12px;
+    padding: 0;
+    color: #333;
+    font-size:14px;
+}
+#boxModalLogin .boxForm__snsBlockArea p {
+    color: #333;
+    font-size: 14px;
+}
+#boxModalLogin .snsBlock {
+    margin-bottom:20px;
+}
+#boxModalLogin .snsBlock__list {
+    float:left;
+    margin:0 2px;
+}
+#boxModalLogin .boxForm__listBlock {
+    margin-top:20px;
+}
+/*#boxModalLogin .boxForm__listBlock__list input {
+    width:247px;
+}*/
+#boxModalLogin .btnClose {
+    width: auto;
+    padding: 0;
+    margin: 0;
+    background: none;
+    border: 0;
+    font-size: 0;
+    line-height: 0;
+    overflow: visible;
+    cursor: pointer;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+}
+#boxModalLogin .txtLinkBlock__txtLink a {
+    background-image:url("/img/sp/common/icn__txtLink.png");
+    color: #333;
+}
+#boxModalLogin .boxForm__listBlock__list {
+    margin: 0;
+}
+
+/* clearfix 設定
+-------------------------- */
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    font-size:0;
+    clear: both;
+    visibility:hidden;
+}
+
+
+.clearfix {
+    min-height: 1px;
+    clear: both;
+    display:block;
+}
+
+* html .clearfix {
+    height: 1px;
+    /*¥*//*/
+    height: auto;
+    overflow: hidden;
+    /**/
+}
+
+.clearFix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    font-size:0;
+    clear: both;
+    visibility:hidden;
+}
+
+
+.clearFix {
+    min-height: 1px;
+    clear: both;
+    display:block;
+}
+
+* html .clearFix {
+    height: 1px;
+    /*¥*//*/
+    height: auto;
+    overflow: hidden;
+    /**/
+}
+.hide {
+    display: none !important;
+}
+.disnon {
+    display: none !important;
+}
+
+
+/* エラー
+-------------------------- */
+.boxError {
+    margin: 10px 0;
+}
+.boxError .txtError {
+    color: #EB6233;
+    font-weight: bold;
+    margin-top: 2px;
+    text-align: left;
+}
+
+
+/* タブ切り替えナビゲーション
+-------------------------- */
+.navTabs-up {
+    margin: 24px 0 16px;
+}
+
+.navTabs {
+    overflow: hidden;
+    display: table;
+    table-layout: fixed;
+    margin: 0 auto;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+.navTabs-full {
+    width: 100%;
+}
+
+.navTabs-short {
+    width: 93.75%;
+}
+
+.navTabs > li {
+    display: table-cell;
+    border-left: 1px solid #333;
+    font-size: 12px;
+    text-align: center;
+    line-height: 33px;
+    cursor: pointer;
+}
+
+.navTabs > li:first-child {
+    border: none;
+}
+
+.navTabs > li.on {
+    background: #333;
+    color: #fff;
+    cursor: default;
+}
+
+
+/* ボタン
+-------------------------- */
+.submitBtn-up {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.submitBtn,
+.mod-btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    border: 0;
+    border-bottom: 4px solid #12486b;
+    border-radius: 5px;
+    background-color: #195f8d;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,"メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS P Gothic",Verdana,sans-serif;
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+a.submitBtn {
+    color: #ffffff;
+}
+
+.submitBtn:hover {
+    color: #ffffff;
+    text-decoration: none;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+}
+
+.submitBtn-large {
+    width: 100%;
+    height: 48px;
+    font-size: 16px;
+    line-height: 44px;
+}
+
+.mod-btn:hover {
+    opacity: 0.7;
+    filter: alpha(opacity=70)
+}
+
+.mod-btnClip {
+    width: 214px;
+    height: 44px;
+    /*background-color: #ccc; */
+    font-size: 16px;
+}
+
+.mod-btnClip.is-btnClip-disabled {
+    border-color: #a0a0a0 !important;
+    background-color: #ccc !important;
+}
+
+.mod-btnNotLogin {
+    width: 94%;
+    padding: 16px;
+    font-size: 1.6rem;
+}
+
+
+/* フォーム
+-------------------------- */
+input,
+select,
+textarea {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+}
+
+/*input[type="submit"] {
+    cursor: pointer;
+    display: block;
+    font-weight: bold;
+    font-size:16px;
+    text-align:center;
+    width:100%;
+    color: #FFF;
+    margin:24px auto;
+    height: 48px;
+    padding-top: 1px;
+    border:0;
+    border-bottom:4px solid #12486b;
+    background: -webkit-gradient(linear, left top, left bottom, from(#195f8d), to(#195f8d));
+    -webkit-appearance: none;
+    -webkit-border-radius:5px;
+}
+
+input[type="submit"]:hover {
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+}*/
+
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background: #fcfcfc;
+    font-size: 14px;
+}
+
+.inputSize-small {
+    width: 53.125%; /* 150/319x100 */
+}
+
+.inputSize-medium {
+    width: 66.875%; /* 214/320x100 */
+}
+
+.inputSize-large {
+    width: 85.625%; /* 274/320x100 */
+}
+
+.inputSize-xlarge {
+    width: 100%;
+}
+
+
+/* アイコン
+-------------------------- */
+.icoArrow {
+    padding-left: 9px;
+    background: no-repeat 0 4px;
+    background-size: 7px 10px;
+}
+
+.icoArrow.icoImg-white {
+    background-image: url("/img/sp/common/icn__txtLink_white.png"); 
+}
+
+.icoArrow.icoImg-blue {
+    background-image: url("/img/sp/common/icn__txtLink.png");
+}
+
+.icoArrow.icoImg-gray {
+    background-image: url("/img/sp/common/icn_footer__txtLink.png");
+}
+
+
+/* テキストリンク
+-------------------------- */
+.txtLink-white:link,
+.txtLink-white:visited,
+.txtLink-white:hover,
+.txtLink-white:active {
+    color: #fff;
+}
+
+.txtLink-black:link,
+.txtLink-black:visited,
+.txtLink-black:hover,
+.txtLink-black:active {
+    color: #000;
+}
+
+
+/* リスト
+-------------------------- */
+.txtLink-group {
+    margin-bottom: 20px;
+}
+
+.txtLink-group li {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+
+/* 見出し
+-------------------------- */
+.ttlMain {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 24px 0 16px;
+}
+
+.ttlSub {
+    margin-top: 24px;
+    margin-bottom: 0;
+    padding: 15px 12px;
+    border-top: 3px solid;
+    border-bottom: none;
+    background: #f5f5f5;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.ttlSub.ttlBestAnswer {
+    border-color: #b14a5c;
+    color: #b14a5c;
+}
+
+.ttlSub.ttlOtherAnswer {
+    border-color: #195f8d;
+    color: #195f8d;
+}
+
+.ttlSub.ttlYourAnswer {
+    border-color: #333;
+    color: #333;
+}
+
+
+/* 見出し下のリードテキスト
+-------------------------- */
+.txtDetail {
+    margin-bottom: 24px;
+    font-size: 12px;
+}
+
+
+/* エントリーステート （ 解答｜クリップ｜PV ）
+-------------------------- */
+.boxItemData.is-pt20 {
+    padding-top: 20px;
+}
+
+.boxItemData-list {
+    float: left;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.boxItemData-list.txtAnswer {
+    width: 60px;
+    color: #b14a5c;
+}
+
+.boxItemData-list.txtClip {
+    width: 80px;
+    color: #444;
+}
+
+.boxItemData-list.txtView {
+    width: 60px;
+    color: #444;
+}
+
+.boxItemData-list.txt0Number {
+    color: #ccc !important;
+    font-weight: normal !important;
+}
+
+.boxItemData-num {
+    margin-right: 5px;
+    font-size: 13px;
+}
+
+
+/* エントリーのタグ
+-------------------------- */
+.boxTag-wrap {
+    margin: 8px 0;
+}
+
+.boxTag-list {
+    float: left;
+    margin-right: 5px;
+    margin-bottom: 5px;    
+}
+
+.boxTag-list a:hover {
+    opacity:0.7;
+    filter: alpha(opacity=70);
+}
+
+.boxTag-block {
+    display: block;
+    padding: 3px 8px;
+    color: #aca665;
+    border-radius: 3px;
+    border: 1px solid #aca665;
+    background: #f9f6d6;
+    font-weight: normal;
+    font-size: 10px;
+}
+
+a.boxTag-block {
+    color: #aca665;
+}
+
+.boxTag .bkgCate_b {
+    position: relative;
+}
+
+.boxTag .bkgCate_s {
+    position: relative;
+}
+
+.boxTag li .btnClose {
+    margin: 0 -5px 0 20px;
+    padding: 0;
+}
+
+.boxTag li .btnClose img {
+    vertical-align: -4px;
+    margin: 0;
+}
+
+
+/* エントリーのタイトル
+-------------------------- */
+.ttlItem-entry {
+    font-size: 17px;
+}
+
+
+
+
+
+

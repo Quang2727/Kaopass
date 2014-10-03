@@ -1,0 +1,108 @@
+.popbox {
+  position:relative;
+}
+
+  .collapse { position:relative; }
+
+  .open {
+/*    background:#DDD;
+    border:solid 1px #FFF;
+    border-radius:5px;
+    box-shadow: 0px 0px 5px #CCC;
+    background:-webkit-gradient(linear,left top,left bottom,from(#f4f4f4),to(#e8e8e8));
+    background:-moz-linear-gradient(top,#f4f4f4,#e8e8e8);
+    background:linear-gradient(top,#f4f4f4,#e8e8e8);
+    padding:8px;*/
+  }
+
+    .box {
+	display: block;
+/*	display:none;*/
+	background: #FFF;
+	border: solid 1px #BBBBBB;
+	border-radius: 8px;
+	/*	box-shadow: 0px 0px 15px #999;*/
+	position: absolute;
+	left: -100px;
+	top: 40px;
+	width: 200px;
+	max-height:250px;
+    }
+
+      .box a.close {
+       color:red;
+       font-size:12px;
+       font-family:arial;
+       text-decoration:underline;
+      }
+
+      .arrow {
+	width: 0;
+	height: 0;
+	border-left: 11px solid transparent;
+	border-right: 11px solid transparent;
+	border-bottom: 11px solid #FFF;
+	position: absolute;
+	left: 95px;
+	top: -10px;
+	z-index: 1001;
+      }
+
+      .arrow-border {
+	width: 0;
+	height: 0;
+	border-left: 11px solid transparent;
+	border-right: 11px solid transparent;
+	border-bottom: 11px solid #BBBBBB;
+	position: absolute;
+	top: -11px;
+	z-index: 1000;
+	left: 95px;
+      }
+
+.box .inBox{
+	padding: 10px 0;
+}
+
+.box .inBox p{
+	text-align: center;
+	font-weight: bold;
+	padding-bottom: 5px;
+}
+
+.box .inBox #jscroll2{
+	max-height: 200px;
+	overflow: hidden;
+	position: relative;
+	width: 200px;
+}
+
+.box .inBox li{
+	font-size: 11px;
+
+}
+
+.box .inBox li a{
+	border-bottom: 1px solid #ccc;
+	display: block;
+	padding: 5px 10px;
+	}
+
+.box .inBox li a.bkgNew{
+	background-color: #eee;
+}
+
+.box .inBox li a img{
+	margin-right: 10px;
+	width: 22px;
+	float: left;
+	border-radius: 50%;
+}
+
+.box .inBox li a span{
+	float:left;
+	display:block;
+	width:140px;
+	line-height:normal;
+	
+}

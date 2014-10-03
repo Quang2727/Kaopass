@@ -1,0 +1,392 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2013-10-04 12:57+0900\n"
+"PO-Revision-Date: 2013-10-04 10:58+0700\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Poedit 1.5.7\n"
+
+#: Controller/AppController.php:176
+msgid "A01000_INFO_MSG001"
+msgstr "Xin chào bạn %s"
+
+#: Controller/LoginController.php:62
+msgid "A00000_ERR_MSG001"
+msgstr "Địa chỉ mail hoặc mật khẩu bị sai"
+
+#: Controller/LoginController.php:98;425
+msgid "L10000_INFO_MSG001"
+msgstr "Bạn đã đăng xuất khỏi hệ thống"
+
+#: Controller/LoginController.php:172;429;502
+#: Controller/QuestionsController.php:98;107;141;198;533;548;551
+msgid "COMMON_ERR_MSG002"
+msgstr "Bạn nhập không đúng. Vui lòng xem lại"
+
+msgid "COMMON_ERR_MSG004"
+msgstr "Mail thiết lập không đúng"
+
+msgid "COMMON_WARNING_MSG001"
+msgstr "Bạn thực sự muốn xóa %s?"
+
+msgid "COMMON_WARNING_MSG002"
+msgstr "Bạn thực sự muốn khóa %s?"
+
+msgid "COMMON_WARNING_MSG003"
+msgstr "Bạn thực sự muốn mở khóa %s?"
+
+#: Controller/LoginController.php:176
+msgid "A00000_ERR_MSG009"
+msgstr "Hãy xác nhận lại thiết lập đăng nhập bằng mạng xã hội"
+
+#: Controller/LoginController.php:180
+msgid "A00000_ERR_MSG002"
+msgstr "Hãy xác nhận lại %s"
+
+#: Controller/LoginController.php:184
+msgid "A00000_ERR_MSG003"
+msgstr "Không thể đăng nhập bằng mạng xã hội đã chọn"
+
+#: Controller/LoginController.php:188
+msgid "A00000_ERR_MSG004"
+msgstr "Đăng nhập bằng mạng xã hội %s thất bại"
+
+#: Controller/LoginController.php:192
+msgid "A00000_ERR_MSG005"
+msgstr "Không chứng thực được %s"
+
+#: Controller/LoginController.php:196
+msgid "A00000_ERR_MSG006"
+msgstr "Không lấy được thông tin thành viên"
+
+#: Controller/LoginController.php:201
+msgid "A00000_ERR_MSG007"
+msgstr "Không thể kết nối được đến mạng xã hội"
+
+#: Controller/LoginController.php:235
+msgid "A01000_INFO_MSG002"
+msgstr "Tài khoản %s đã kết nối thành công"
+
+#: Controller/LoginController.php:283
+msgid "A00000_INFO_MSG001"
+msgstr "Tài khoản này đã bị quản trị viên khóa"
+
+#: Controller/LoginController.php:411 Controller/QuestionsController.php:874
+msgid "COMMON_ERR_MSG001"
+msgstr "Hiện tại bạn không có quyền thực hiện thao tác này"
+
+#: Controller/LoginController.php:462
+msgid "A02000_ERR_MSG001"
+msgstr "Không thể tìm thành viên phù hợp với %s"
+
+#: Controller/LoginController.php:494
+msgid "A02000_INFO_MSG001"
+msgstr "Đã gửi mật khẩu đến địa chỉ mail %s"
+
+#: Controller/LoginController.php:498
+msgid "A02000_ERR_MSG002"
+msgstr "Gửi mail thất bại. Xin vui lòng thử lại."
+
+#: Controller/NotificationsController.php:41
+msgid "Invalid user ID."
+msgstr "Thông tin thành viên không tồn tại"
+
+#: Controller/NotificationsController.php:50
+msgid "This user is not found."
+msgstr "Không tìm thấy thành viên này"
+
+#: Controller/QuestionsController.php:103;138;188;349;537;888;930
+msgid "COMMON_INFO_MSG001"
+msgstr "Đã đăng thành công"
+
+msgid "QUESTION_MSG001"
+msgstr "Đã đặt câu hỏi thành công"
+
+msgid "REPLY_MSG001"
+msgstr "Đã gửi trả lời thành công"
+
+msgid "QUESTION_COMMENT_MSG001"
+msgstr "Đã bổ sung vào câu hỏi"
+
+
+msgid "QUESTION_EDIT_MSG001"
+msgstr "Đã thay đổi câu hỏi"
+
+msgid "REPLY_COMMENT_MSG001"
+msgstr "Đã gửi bình luận đến câu trả lời"
+
+msgid "BEST_ANSWER_MSG001"
+msgstr "Đã chọn câu trả lời đúng nhất"
+
+msgid "CLIP_QUESTION_MSG001"
+msgstr "Đã theo dõi câu hỏi"
+
+#: Controller/QuestionsController.php:169;463;480;859;868;1007
+msgid "A01110_ERR_MSG001"
+msgstr "Không tìm thấy câu hỏi"
+
+#: Controller/QuestionsController.php:351;361
+msgid "A01100_ERR_MSG002"
+msgstr "Xin vui lòng thử lại"
+
+#: Controller/QuestionsController.php:703;714
+#: Controller/TagsController.php:106 Controller/UsersController.php:130
+msgid "COMMON_INFO_MSG002"
+msgstr "Đã đăng ký thành công"
+
+msgid "COMMON_INFO_MSG004"
+msgstr "đã thành công"
+
+msgid "PROF_UPDATE_MSG001"
+msgstr "Đã thay đổi thông tin"
+
+msgid "COMMON_INFO_MSG005"
+msgstr "Bạn không có quyền thực hiện thao tác, vui long liên hệ quản trị hệ thống"
+
+#: Controller/QuestionsController.php:705;716
+msgid "A01100_ERR_MSG001"
+msgstr "Đã phát sinh lỗi trong quá trình đăng ký clip. Vui lòng thực hiện lại."
+
+#: Controller/QuestionsController.php:884;925
+msgid "COMMON_ERR_MSG003"
+msgstr "đã thất bại. Vui lòng thực hiện lại."
+
+#: Controller/QuestionsController.php:886
+msgid "A01110_ERR_MSG002"
+msgstr "Thay đổi thất bại. Vui lòng thực hiện lại."
+
+#: Controller/QuestionsController.php:927
+msgid "A01120_ERR_MSG001"
+msgstr "Đăng thất bại. Vui lòng thực hiện lại."
+
+#: Controller/QuestionsController.php:961
+msgid "A01120_INFO_MSG001"
+msgstr "Bạn đang đọc nháp được lưu tự động của %s"
+
+#: Controller/TagsController.php:74
+msgid "A01300_ERR_MSG001"
+msgstr "Tag được chọn không tồn tại"
+
+#: Controller/TagsController.php:109 View/Elements/Frontend/tag_page.ctp:16
+msgid "A01300_ERR_MSG002"
+msgstr "Đăng ký Tag thất bại. Vui lòng thực hiện lại"
+
+#: Controller/TagsController.php:280
+msgid "A01120_ERR_MSG007"
+msgstr "Tag không tồn tại"
+
+#: Controller/UsersController.php:128
+msgid "A03000_ERR_MSG001"
+msgstr "Không thể đăng ký %s"
+
+#: Controller/UsersController.php:181;195
+msgid "A00000_ERR_MSG010"
+msgstr "Thành viên này đã tồn tại"
+
+#: Model/Question.php:32
+msgid "A01120_ERR_MSG002"
+msgstr "Hãy nhập tiêu đề"
+
+#: Model/Question.php:36;51
+msgid "A01120_ERR_MSG003"
+msgstr "Hãy nhập tiêu đề trong %d ký tự"
+
+#: Model/Question.php:42
+msgid "A01120_ERR_MSG004"
+msgstr "Hãy nhập nội dung"
+
+#: Model/Question.php:47
+msgid "A01120_ERR_MSG005"
+msgstr "Hãy nhập trên %d chữ số"
+
+#: Model/Question.php:318
+msgid "A01120_ERR_MSG006"
+msgstr "Tag %s không tồn tại"
+
+#: Model/Question.php:36;51
+msgid "A01120_ERR_MSG008"
+msgstr "Hãy nhập nội dung từ %d ~ %d ký tự"
+
+msgid "A01120_ERR_MSG009"
+msgstr "Hãy nhập tag"
+
+msgid "A01120_ERR_MSG010"
+msgstr "Bạn chỉ được nhập không quá 5 tag"
+
+#: Model/QuestionComment.php:26 Model/Reply.php:19 Model/ReplyComment.php:23
+msgid "A01110_ERR_MSG003"
+msgstr "Bạn chưa nhập nôi dung bình luận"
+
+#: Model/QuestionComment.php:30 Model/Reply.php:23 Model/ReplyComment.php:27
+msgid "A01110_ERR_MSG004"
+msgstr "Hãy nhập trong vòng %d ký tự"
+
+#: Model/User.php:41
+msgid "A03000_ERR_MSG002"
+msgstr "Hãy nhập tên đăng nhập"
+
+#: Model/User.php:51
+msgid "A03000_ERR_MSG003"
+msgstr "Hãy nhập địa chỉ mail"
+
+#: Model/User.php:45
+msgid "A03000_ERR_MSG004"
+msgstr "Bạn chỉ có thể sử dụng chữ hoặc số hoặc các ký tự "-" "_" "." và dưới %s ký tự cho tên đăng nhập"
+
+#: Model/User.php:55
+msgid "A03000_ERR_MSG005"
+msgstr "Địa chỉ mail không đúng"
+
+#: Model/User.php:59
+msgid "A03000_ERR_MSG006"
+msgstr "Địa chỉ mail này đã được đăng ký"
+
+#: Model/User.php:65
+msgid "A03000_ERR_MSG007"
+msgstr "Hãy nhập mật khẩu"
+
+#: Model/User.php:69
+msgid "A03000_ERR_MSG008"
+msgstr "Hãy nhập trên %s chữ số"
+
+#: Model/User.php:73;79
+msgid "A03000_ERR_MSG009"
+msgstr "Mật khẩu và mật khẩu xác nhận không đồng nhất"
+
+#: Model/User.php:85
+msgid "A03000_ERR_MSG010"
+msgstr "Mật khẩu sai. Vui lòng kiểm tra lại."
+
+#: Model/User.php:85
+msgid "A03000_ERR_MSG011"
+msgstr "Vui lòng kiểm tra lại định dạng của URL"
+
+#: Model/User.php:85
+msgid "A03000_ERR_MSG012"
+msgstr "Hay sử dụng ảnh không quá 500kb và có định dạng jpg, png, gif."
+
+msgid "A03000_ERR_MSG013"
+msgstr "Địa chỉ không đúng"
+
+#: Model/User.php:85
+msgid "A03000_ERR_MSG014"
+msgstr "Hãy nhập mật khẩu trong vòng %d ~ %d ký tự"
+
+msgid "A03000_ERR_MSG015"
+msgstr "Hãy nhập mật khẩu xác nhận"
+
+msgid "A03000_ERR_MSG016"
+msgstr "Hãy nhập địa chỉ mail không quá %d ký tự"
+
+msgid "A03000_ERR_MSG017"
+msgstr "Hãy nhập Site - Blog không quá %d ký tự"
+
+msgid "A03000_ERR_MSG018"
+msgstr "Hãy nhập nơi công tác không quá %d ký tự"
+
+msgid "A03000_ERR_MSG019"
+msgstr "Hãy nhập "Giới thiệu bản thân" không quá %d ký tự"
+
+msgid "A03000_ERR_MSG020"
+msgstr "Hãy nhập mật khẩu hiện tại"
+
+msgid "A03000_ERR_MSG021"
+msgstr "Mật khẩu hiện tại không đúng"
+
+msgid "A03000_ERR_MSG022"
+msgstr "Hãy nhập mật khẩu mới"
+
+msgid "A03000_ERR_MSG023"
+msgstr "Hãy nhập mật khẩu mới trong vòng %d ~ %d ký tự"
+
+msgid "A03000_ERR_MSG024"
+msgstr "Hãy xác nhận mật khẩu mới"
+
+msgid "A03000_ERR_MSG025"
+msgstr "[Mật khẩu mới] và [Xác nhận mật khẩu mới] không đồng nhất"
+
+#: Model/User.php:52
+msgid "A03000_ERR_MSG026"
+msgstr "Tên đăng nhập này đã được đăng ký"
+
+msgid "A03000_ERR_MSG027"
+msgstr "Mật khẩu không đồng nhất"
+
+msgid "A03000_ERR_MSG028"
+msgstr "Hãy nhập chữ hoặc số hoặc ký hiệu "-" "_" "." và trong vòng %d ~ %d ký tự"
+
+msgid "A03000_ERR_MSG029"
+msgstr "Tên đăng nhập của thành viên này có bao gồm những từ ngữ cấm của hệ thống"
+
+msgid "A03000_ERR_MSG030"
+msgstr "Tên đăng nhập của thành viên này đã được sử dụng"
+
+msgid "A03000_ERR_MSG031"
+msgstr "Không đúng định dạng của địa chỉ mail"
+
+msgid "A03000_ERR_MSG032"
+msgstr "Địa chỉ mail đã được sử dụng"
+
+msgid "A03000_ERR_MSG033"
+msgstr "Địa chỉ mail đã vượt quá độ dài cho phép. (giới hạn %d ký tự)"
+
+msgid "A03000_ERR_MSG034"
+msgstr "Hãy nhập trong vòng %d ~ %d ký tự. (không sử dụng ký hiệu)"
+
+#: Model/Contact.php
+msgid "A30000_ERR_MSG001"
+msgstr "Hãy nhập địa chỉ mail"
+
+#: Model/Contact.php
+msgid "A30000_ERR_MSG002"
+msgstr "Địa chỉ mail không đúng"
+
+#: Model/Contact.php
+msgid "A30000_ERR_MSG003"
+msgstr "Hãy chọn chủ đề của nội dung liên hệ"
+
+#: Model/Contact.php
+msgid "A30000_ERR_MSG004"
+msgstr "Hãy nhập tiêu đề"
+
+#: Model/Contact.php
+msgid "A30000_ERR_MSG005"
+msgstr "Hãy nhập chi tiết"
+
+#: Model/Contact.php
+msgid "A30000_ERR_MSG006"
+msgstr "Hãy đính kèm 1 trong các định dạng sau pdf, doc, docx, xls, xlsx, txt. rar, zip, jpg, gif, png"
+
+#: Model/Contact.php
+msgid "A30000_ERR_MSG007"
+msgstr "Hãy đính kèm file có dung lượng không quá 2MB"
+
+msgid "A30000_ERR_MSG008"
+msgstr "Hãy nhập nội dung chi tiết không quá %d ký tự"
+
+#: Model/User.php:96
+msgid "You have to agree with out terms and conditions to being a member."
+msgstr ""
+
+#: View/Elements/noscript.ctp:6
+msgid "COMMON_INFO_MSG003"
+msgstr "Hãy bật JavaScript cho trình duyệt"
+
+#: View/Layouts/default.ctp:20
+msgid "CakePHP: the rapid development php framework"
+msgstr ""
+
+#: webroot/test.php:95
+msgid "Debug setting does not allow access to this url."
+msgstr ""
+
+msgid "SOCIAL_SETTING_MSG001"
+msgstr "Hoàn tất thiết lập liên kết mạng xã hội"

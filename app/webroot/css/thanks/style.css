@@ -1,0 +1,127 @@
+body {
+	background-image: url(/img/comingsoon/bg06.jpg);
+	background-size:cover;
+}
+#wrapThank{
+}
+#boxThank {
+	width: 980px;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+}
+#boxThank p {
+	font-size: 16px;
+}
+.ttlThank {
+	margin: 70px 0;
+	font-size: 40px;
+	font-weight: bold;
+}
+.txtThank01 {
+	margin-bottom: 20px;
+}
+.txtErr {
+	color: #fff;
+	text-align: center;
+}
+.bkgInviteMail {
+	width: 240px;
+	height: 32px;
+	padding: 0 0 0 30px;
+	background: url(/img/comingsoon/bkgInviteMail.png) no-repeat 0 0;
+	border: none;
+	margin: 10px 5px;
+	color: #666;
+}
+.btnSubmit {
+    border: none;
+	border-radius: 100%;
+	width: 20px;
+	padding: 20px 0 0 0;
+	background: url(/img/comingsoon/bkgSubmit.png) no-repeat;
+	background-position: -20px 0;
+	margin: 16px 0 0 -30px;
+	-webkit-transition:0.5s;
+	-moz-transition:0.5s;
+	-ms-transition:0.5s;
+	transition:0.5s;
+	cursor: pointer;
+	position: absolute;
+	top: 0;
+	right: 360px;
+}
+.btnSubmit:hover {
+	background-position: 0 0;
+	opacity: 0.7;
+}
+.bkgErr {
+	position: absolute;
+	background: #333333;
+	width: 300px;
+	left: 352px;
+	padding: 5px;
+	border-radius: 3px;
+}
+.bkgErr:after {
+	bottom: 100%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.bkgErr:after {
+	border-color: rgba(51, 51, 51, 0);
+	border-bottom-color: #333333;
+	border-width: 10px;
+	left: 20px;
+	margin-left: -10px;
+}
+/*.bkgErr {
+    height: 28px;
+    left: 355px;
+    padding: 18px 0 0 20px;
+    position: absolute;
+    top: 210px;
+    width: 270px;
+}*/
+.txtBack {
+	margin-top: 40px;
+}
+.boxLogoThank {
+	margin: 30px 0;
+}
+.boxSocialThank {
+	margin: 0px auto 50px auto;
+	width: 1050px;
+}
+.boxFbThank {
+	width: 600px;
+	text-align: left;
+	margin-right: 25px;
+}
+.boxTwThank {
+	width: 400px;
+	text-align: left;
+	margin-left: 25px;
+}
+.boxFooterThank {
+	position: fixed;
+	bottom: 0;
+	padding: 10px 0 3px 0;
+	width: 100%;
+	background: #333;
+}
+.imgLogoFooter {
+	margin: 0 50px 0 0;
+}
+.btnFacebookThank,.btnTwitterThank {
+	margin: 10px 0 0 0;
+}
+.twitter-timeline {
+	width: 400px;
+	height: 400px;
+}

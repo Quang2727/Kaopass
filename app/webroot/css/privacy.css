@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+
+body {
+  padding: 0;
+  margin: 0;
+
+  }
+#wrap{
+
+}
+  
+#content{
+  width: 980px;
+  margin: 0 auto 30px;
+  border: 1px solid #ddd;
+}
+
+#policy_textarea{
+  width: 880px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 30px 0;
+}
+
+#policy_textarea h1{
+  font-size:20px;
+  font-weight:bold;
+  margin-bottom:20px;
+}
+#policy_textarea h2{
+  font-size:16px;
+  margin:40px 0 10px 0;
+}
+#policy_textarea h3{
+  font-weight:bold;
+  margin:10px 0;
+}
+#policy_textarea .ttlBold {
+  font-weight: bold;
+}
+#policy_textarea .txtFirst{
+  margin-bottom:20px;
+}
+#policy_textarea ol{
+  margin:20px 0 20px 50px;
+  font-size:12px;
+}
+#policy_textarea ol li{
+  list-style-type: lower-alpha;
+}
+#policy_textarea ol li li {
+  list-style-type: disc;
+}
+#policy_textarea .boxIndent{
+  margin-left:40px;
+}
+#policy_textarea .txtLast {
+  margin-left:40px;
+}
+#policy_textarea .txtLast li {
+  list-style:disc;
+}
+#policy_textarea .vaTop {
+  vertical-align: top;
+}
+#policy_textarea .listType-count > li {
+  list-style-type: none;
+  text-indent: -2.7em;
+  counter-increment: question;
+}
+#policy_textarea .listType-count > li:before {
+  content: "（" counter(question) "）";
+}
+#policy_textarea .listType-count > li li {
+  text-indent: 0;
+}
+#policy_textarea .listType-alp > li {
+  list-style-type: lower-alpha;
+}

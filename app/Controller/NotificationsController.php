@@ -8,7 +8,7 @@ class NotificationsController extends AppController {
     public $uses = array('User', 'Notification');
 
     function index() {
-        
+       
     }
 
 }

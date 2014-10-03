@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+.boxForm__txtInput{
+	font-size: 11px;
+	position: relative;
+	padding-left: 50px;
+	margin-top: 16px;
+}
+.boxForm__txtInput img{
+	position: absolute;
+	top: 0;
+	left: 3px;
+}
+
+.boxForm .boxForm__listBlock__list {
+    margin: 10px 0 20px;
+}
+
+/*.boxForm .boxForm__listBlock__list input,
+.boxForm .boxForm__listBlock__list textarea,
+.boxForm .boxForm__listBlock__list select {
+    padding: 7px 10px;
+    background-color: #fcfcfc;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-size: 14px;
+    width: 274px;
+    -webkit-appearance: none;
+}*/
+
+/*.boxForm .boxForm__listBlock__list select {
+    width: 170px;
+}*/
+
+.boxForm__listBlock__list{
+	margin: 5px 0;
+}
+
+.ttlInput {
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.ttlInputCap {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.boxPost .ttlRule {
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+
+.privacyAttention .privacyImg {
+    float: right;
+}
+
+.privacyAttention .txtAttention {
+    font-size: 12px;
+}

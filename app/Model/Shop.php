@@ -98,9 +98,9 @@ class Shop extends AppModel {
             );
             if (empty($search_info['keyword'])) {
                 //  unset($request_parameters['keyword']);
-                $request_parameters['query'] = 'food|cafe|bar|restaurant';
+                $request_parameters['query'] = 'food|cafe|bar|restaurant|establishment';
             } else {
-                $request_parameters['query'] = 'food|cafe|bar|restaurant in ' . $search_info['keyword'];
+                $request_parameters['query'] = $search_info['keyword'];
                 //  unset($request_parameters['radius']);
                 $request_parameters['radius'] = "500000";
             }
@@ -116,7 +116,7 @@ class Shop extends AppModel {
             $request_parameters = array(
                 'location' => $search_info['lat'] . ',' . $search_info['lng'],
                 'keyword' => $search_info['keyword'],
-                'types' => 'food|cafe|bar|restaurant',
+                'types' => 'food|cafe|bar|restaurant|establishment',
                 //  'name' => 'cruise',
                 'radius' => '10000',
                 'sensor' => 'true',

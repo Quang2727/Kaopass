@@ -1,0 +1,505 @@
+@charset "UTF-8";
+
+.l-container{
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+.content{
+    text-align: left;
+    padding: 0;
+}
+
+.questionHeadWrap{
+    background: #f7f6ee;
+}
+.questionHead {
+    word-wrap: break-word;
+    padding: 12px;
+    text-align: left;
+}
+.questionHead .ttlItem{
+    font-size: 20px;
+    font-weight: bold;
+    width: 296px;
+}
+.questionHead .boxItemData {
+    padding: 0;
+    float: none;
+}
+.boxStat .boxStatThumb{
+    float: left;
+    margin-right: 10px;
+}
+
+.boxStat .boxUserInfo{
+    float: left;
+    font-size: 10px;
+}
+.questionHead .boxQuestioner{
+    padding-top: 8px;
+}
+.boxStat .txtUserName{
+    margin: -1px 0 3px;
+    font-size: 10px;
+}
+.boxStat .txtUserName a{
+    color: #333;
+    font-weight: bold;
+}
+.boxUserPoint {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 10px;
+}
+.boxUserPoint img {
+    vertical-align: -1px;
+    margin: -1px 4px 0 8px;
+}
+.boxUserPoint img:first-child{
+    margin: -1px 4px 0 0;
+}
+.txtPostTime{
+    font-size: 10px;
+    clear: both;
+    padding-top: 8px;
+}
+.questionHead .txtPostTime{
+    float: right;
+    text-align: right;
+    margin-top: -15px;
+    clear: none;
+}
+
+
+.boxQuestionDetail{
+    word-wrap: break-word;
+    padding: 0 12px;
+    margin: 24px 0 16px;
+}
+
+.boxCommentContent{
+    padding: 8px;
+    border: 1px solid #ccc;
+    margin-top: 24px;
+}
+
+.boxCommentContent .ttlPostScript{
+    font-weight: bold;
+    float: left;
+    padding-bottom: 8px;
+}
+.boxCommentContent .updateComment{
+    font-size: 10px;
+    float: right;
+    padding-bottom: 8px;
+}
+.boxCommentContent .txtComment{
+    clear: both;
+}
+.boxItem{
+    font-size: 14px;
+}
+.boxItemDetailHeader{
+    float: left;
+    margin-left: 16px;
+}
+.boxUnderstand{
+    float: left;
+}
+.boxUnderstandWant .btnUnderstandWant{
+    cursor: pointer;
+    display: block;
+    font-weight: bold;
+    font-size:16px;
+    text-align:center;
+    width: 214px;
+    color: #FFF;
+    height: 48px;
+    padding-top: 1px;
+    border:0;
+    border-bottom:4px solid #12486b;
+    background: #195f8d;
+    -webkit-appearance: none;
+    border-radius:5px;
+}
+.boxUnderstandWant .btnUnderstandWant_on{
+    height: 44px;
+    border-bottom:none;
+    background: #aaa;
+    margin-top:4px;
+    cursor: pointer;
+    display: block;
+    font-weight: bold;
+    font-size:16px;
+    text-align:center;
+    width: 214px;
+    color: #FFF;
+    padding-top: 1px;
+    border:0;
+    -webkit-appearance: none;
+    border-radius:5px;
+}
+.boxUnderstandWant .btnUnderstandWant:hover {
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+}
+.boxUnderstandWant {
+    margin:24px auto;
+}
+.boxUnderstandWant p{
+    float: left;
+}
+.boxUnderstandWant .understandCount span {
+    position: relative;
+    display: block;
+    border: 1px solid #195f8d;
+    border-radius: 3px;
+    padding: 5px;
+    margin: 0 0 0 10px;
+    color: #195f8d;
+    font-size: 18px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 36px;
+    width: 60px;
+    text-align: center;
+}
+.boxUnderstandWant .understandCount span:after, .boxUnderstandWant .understandCount span:before {
+    top: 50%;
+    right: 100%;
+    content: " ";
+    border: solid transparent;
+    border-color: rgba(85, 85, 85, 0);
+    border-right-color: #ffffff;
+    border-width: 5px;
+    margin-top: -5px;
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+.boxUnderstandWant .understandCount span:before {
+    border-width: 6px;
+    margin-top: -6px;
+    border-right-color: #195f8d;
+}
+.boxUnderstandWant .understandCount .txtUnderstandWant{
+    color:#195f8d;
+}
+
+
+
+/* ------------------------------------------------------------
+
+ * ベストアンサー
+
+------------------------------------------------------------ */
+#boxBestAnswer {
+    padding: 20px 12px 0;
+}
+.boxItemContentDetail{
+    margin-bottom: 18px;
+}
+.boxItemContentDetail pre code span{
+    color: #FFF;
+}
+/* -------- BAへのコメント -------- */
+.boxItemDetailFooter {
+    clear: both;
+    overflow: hidden;
+    padding-top: 10px;
+}
+.boxItemDetailFooter .btnComment {
+    background: none;
+    background: url(/img/common/icnMyTagEdit.png) 0 50% no-repeat;
+    border: none;
+    padding: 0 0 0 10px;
+    margin: 0;
+    color: #333;
+    font-size: 14px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+    outline:none;
+}
+.boxItemDetailFooter .btnComment:hover {
+    text-decoration: none;
+}
+.boxItemDetailFooter .btnComment.open {
+    background: url(/img/common/icnMyTagEditEnd.png) 0 50% no-repeat;
+}
+.boxItemDetailFooter .boxEditComment {
+    display: none;
+}
+.boxAnswerComment{
+    font-size: 12px;
+}
+.boxAnswerCommentList {
+    overflow: hidden;
+    background-color: #f5f5f5;
+    padding: 12px;
+    margin: 10px 0;
+}
+#boxOtherAnswer .boxAnswerCommentList {
+    margin: 10px 12px;
+}
+.boxAnswerCommentList .ttlAnswerComment {
+    font-weight: bold;
+    font-size: 10px;
+}
+.boxAnswerCommentList .ttlAnswerComment a {
+    color: #333;
+    text-decoration: underline;
+}
+.boxAnswerCommentList .ttlAnswerComment a:hover {
+    text-decoration: none;
+}
+.boxAnswerCommentList .boxCommentContent {
+    clear: both;
+    border: none;
+    border-top: 1px solid #ddd;
+    padding: 16px 0;
+    margin-top: 10px;
+}
+.boxAnswerCommentList .boxCommentContent p {
+}
+.boxAnswerCommentList .boxStat {
+    margin-bottom: 8px;
+}
+.boxAnswerCommentList .boxStat .boxStatThumb {
+    float: left;
+    line-height: 16px;
+    font-size: 10px;
+    font-weight: normal;
+}
+.boxStatThumb img {
+    border-radius:50%;
+    overflow:hidden;
+}
+.boxAnswerCommentList .boxStat .boxStatThumb p {
+    display: inline-block;
+}
+.boxAnswerCommentList .boxStat .boxUser {
+    float: right;
+    font-weight: bold;
+}
+.boxAnswerCommentList .boxStat .boxUser a {
+    display: block;
+    text-align: left;
+}
+.boxAnswerCommentList .boxStat .boxUser a p {
+    display: inline-block;
+    vertical-align: 1px;
+}
+.boxAnswerCommentList .boxStat .boxUser a img {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin: 0 7px 0 10px;
+}
+.boxAnswerCommentList .boxStat .boxUser a:hover {
+    text-decoration: none;
+}
+.boxAnswerCommentList .boxStat .boxUser a:hover img {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+.boxAnswerCommentList .boxStat .boxUser a:hover p {
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+}
+/* 投稿フォーム */
+.boxAnswerCommentList .commentTextArea textarea {
+    width: 630px;
+    height: 70px;
+    min-height: 0;
+    border: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 15px;
+}
+.boxAnswerCommentList .btnSubmit {
+    text-align: center;
+}
+.boxAnswerCommentList .btnSubmit a {
+    display: inline-block;
+    background-color: #195f8d;
+    border-radius: 3px;
+    padding: 5px 40px;
+    color: #fff;
+    font-weight: bold;
+}
+.boxAnswerCommentList .btnSubmit a:hover {
+    text-decoration: none;
+    opacity: 0.7;
+    filter: alpha(opacity=70)
+}
+.btnUnderstand{
+    border-bottom:4px solid #12486b;
+    background: #195f8d;
+    -webkit-appearance: none;
+    border-radius:5px;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0;
+    width: 46px;
+    text-align: center;
+    color: #fff;
+    display: block;
+    float: left;
+    height:48px;
+    border:none;
+    line-height: 48px;
+}
+.btnUnderstand_on{
+    border-bottom:none;
+    background: #aaa;
+    height:44px;
+    margin-top:4px;
+    -webkit-appearance: none;
+    border-radius:5px;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0;
+    width: 46px;
+    text-align: center;
+    color: #fff;
+    display: block;
+    float: left;
+    border:none;
+}
+.btnUnderstandCount{
+    background-image:url("/img/sp/common/bgUnderstandCount.png");
+    background-size:53px 48px;
+    background-repeat:no-repeat;
+    background-position: left top;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 48px;
+    width: 48px;
+    padding-left: 5px;
+    text-align: center;
+    color:#195f8d;
+    display: block;
+    float: left;
+    margin-left: 4px;
+}
+
+/* ------------------------------------------------------------
+
+ * その他の解答
+
+------------------------------------------------------------ */
+#boxOtherAnswer {
+    padding: 20px 0 0;
+}
+#boxOtherAnswer .boxItemContentDetail{
+    margin-bottom: 18px;
+    padding: 0 12px;
+}
+#boxOtherAnswer .boxUnderstand{
+    margin-left: 12px;
+}
+#boxOtherAnswer .boxAnswerComment .boxItemContentDetail{
+    margin-bottom: 0;
+}
+#boxOtherAnswer .boxItem {
+    border-bottom: 3px solid #ccc;
+    overflow: hidden;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+}
+#boxOtherAnswer .boxItem:last-child{
+    border: none;
+}
+
+
+/* -------- あなたの解答 -------- */
+.boxYourAnswer {
+    padding:20px 20px 0;
+}
+
+/* -------- 非ログイン時解答ボタン -------- */
+.boxAnswerNotLogin {
+    width:100%;
+    padding: 0 12px;
+}
+.boxAnswerNotLogin .btnAnswerNotLogin {
+    width:100%;
+    padding:16px 0;
+    border: none;
+    background: #195f8d;
+    border-bottom: 4px solid #12486b;
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.boxAnswerNotLogin .btnAnswerNotLogin:hover {
+    opacity: 0.7;
+    filter: alpha(opacity=70)
+}
+
+.btnBestAnswer a{
+    cursor: pointer;
+    display: block;
+    font-weight: bold;
+    font-size:16px;
+    text-align:center;
+    width:100%;
+    color: #FFF;
+    margin:16px auto 8px;
+    height: 48px;
+    line-height: 47px;
+    padding-top: 1px;
+    border:0;
+    border-bottom:4px solid #7f303e;
+    background: -webkit-gradient(linear, left top, left bottom, from(#B14A5C), to(#B14A5C));
+    -webkit-appearance: none;
+    -webkit-border-radius:5px;
+}
+#boxOtherAnswer .btnBestAnswer a{
+    width: 296px;
+    margin: 16px 12px 8px;
+}
+
+.btnBestAnswer a:hover {
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+}
+
+.boxGoToTop {
+    margin-top: 24px;
+    padding: 8px 0 32px;
+    text-align: center;
+}
+.boxGoToTop a {
+    margin: 0 auto;
+    display: inline-block;
+    color: #333;
+    font-weight: bold;
+    padding-left: 16px;
+}
+
+.content-comment {
+    font-size: 16px;
+}
+
+.content .btnSubmit .submit-comment {
+    padding: 16px 0;
+    margin-top: 16px;
+    color: #fff;
+}
+.content .btnSubmit .submit-comment:hover {
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    text-decoration: none;
+}
+

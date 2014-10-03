@@ -1,0 +1,144 @@
+body {
+  min-width: 700px;
+}
+
+.brand sup {
+  top: -1.1em;
+  font-weight: normal;
+  font-size: 50%;
+}
+
+.close {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.table td[align=center],
+.table td.text-center,
+.table th {
+  text-align: center;
+}
+
+.table td {
+  white-space: normal;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+.table thead th {
+  vertical-align: middle;
+}
+
+.table th a {
+  color: #444;
+}
+
+.table th a.asc {
+  padding-right: 15px;
+  background: url(../img/sort-asc.png) 100% 50% no-repeat;
+}
+
+.table th a.desc {
+  padding-right: 15px;
+  background: url(../img/sort-desc.png) 100% 50% no-repeat;
+}
+
+/*========== Debugger ==========*/
+
+#debugger {
+  overflow: auto;
+  padding: 10px;
+  background: #222;
+  color: #bbb;
+  font-size: 90%;
+  font-family: Consolas, 'Courier';
+}
+
+#debugger table {
+  width: 100%;
+}
+
+#debugger table caption {
+  margin-bottom: 10px;
+  color: #f90;
+  text-align: left;
+}
+
+#debugger table thead {
+  color: #eee;
+}
+
+#debugger table th {
+  background: #555;
+}
+
+#debugger table td,
+#debugger table th {
+  border: 1px solid #333;
+  border-collapse: collapse;
+}
+
+/*========== Stack trace ==========*/
+
+.error-container h3 {
+  margin-top: 30px;
+  text-align: left;
+  font-size: 16px;
+}
+
+.cake-stack-trace {
+  text-align: left;
+  font: 13px/150% Consolas, "Courier";
+}
+
+/*========== Paginator fix ==========*/
+
+.pagination li.current,
+.pagination li.inactive {
+  float: left;
+  margin-right: .5em;
+  padding: 0 10px;
+  border: 1px solid #dddddd;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  color: #444444;
+  text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.25);
+}
+
+.pagination li.current {
+  border-color: #cc7a00 #cc7a00 #804d00;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  background: #35a865;
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzM1YTg2NSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDZlMmUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #35a865), color-stop(100%, #006e2e));
+  background: -webkit-linear-gradient(top, #35a865 0%, #006e2e 100%);
+  background: -o-linear-gradient(top, #35a865 0%, #006e2e 100%);
+  background: -webkit-linear-gradient(top, #35a865 0%, #006e2e 100%);
+  background: -o-linear-gradient(top, #35a865 0%, #006e2e 100%);
+  background: linear-gradient(to bottom, #35a865 0%, #006e2e 100%);
+  color: #fff;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#35a865', endColorstr='#006e2e', GradientType=0);
+}
+
+/*========== Widget fix ==========*/
+
+.widget .widget-header label {
+  margin: 11px;
+}
+
+.datepicker {
+  background: #fff !important;
+  cursor: pointer !important;
+}
+
+input.datepicker.short {
+  width: 120px;
+}
+
+strong.title {
+  display: block;
+  margin-bottom: 10px;
+  padding: 5px 0 10px;
+  border-bottom: 1px #eee solid;
+}

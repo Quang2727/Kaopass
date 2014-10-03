@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #ffff;
+  }
+#wrap{
+  background-color: #fff;}
+  
+#content{
+  width: 980px;
+  margin: 0 auto 30px;
+  background-color: #fff;
+  border:1px solid #ddd;
+}
+
+#code_textarea{
+  width: 880px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 30px 0;
+}
+
+#code_textarea h1{
+  font-size:20px;
+  font-weight:bold;
+  margin-bottom:20px;
+}
+#code_textarea h2{
+  font-size:16px;
+  margin:40px 0 10px 0;
+}
+#code_textarea h3{
+  font-weight:bold;
+  margin:10px 0;
+}
+#code_textarea .txtFirst{
+  margin-bottom:20px;
+}
+#code_textarea ol{
+  margin:20px 0 20px 50px;
+  font-size:12px;
+}
+#code_textarea ol li{
+  list-style-type : lower-alpha;
+}
+#code_textarea .boxIndent{
+  margin-left:40px;
+}
+#code_textarea .txtLast {
+  margin-left:40px;
+}
+#code_textarea .txtLast li {
+  list-style:disc;
+}
+#code_textarea .listType-count > li {
+  list-style-type: none;
+  text-indent: -2.7em;
+  counter-increment: question;
+}
+#code_textarea .listType-count > li:before {
+  content: "（" counter(question) "）";
+}
+#code_textarea .listType-count > li li {
+  padding-left: 2.7em;
+}
+#code_textarea .listType-dec > li {
+  list-style-type: decimal;
+}
+#code_textarea .listType-disc > li {
+  list-style-type: disc;
+}

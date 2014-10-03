@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+
+body {
+	padding: 0;
+	margin: 0;
+	background-color: #ffff;
+	}
+#wrap{
+	background-color: #fff;}
+	
+#content{
+	width: 980px;
+	margin: 30px auto;
+	background-color: #fff;
+  border:1px solid #ddd;
+}
+
+#code_textarea{
+	width: 880px;
+	margin: 0 auto;
+	text-align: left;
+	padding: 30px 0;
+}
+
+#code_textarea h1{
+	font-size:20px;
+	font-weight:bold;
+	margin-bottom:20px;
+}
+#code_textarea h2{
+	font-size:16px;
+	margin:40px 0 10px 0;
+}
+#code_textarea h3{
+	font-weight:bold;
+	margin:10px 0;
+}
+#code_textarea .txtFirst{
+	margin-bottom:20px;
+}
+#code_textarea ol{
+	margin:20px 0 20px 50px;
+	font-size:12px;
+}
+#code_textarea ol li{
+	list-style-type : lower-alpha;
+}
+#code_textarea .boxIndent{
+	margin-left:40px;
+}
+#code_textarea .txtLast {
+	margin-left:40px;
+}
+#code_textarea .txtLast li {
+	list-style:disc;
+}
+
+

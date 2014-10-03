@@ -1,0 +1,48 @@
+@charset "utf-8";
+/*------------------------------------*\
+	    $COMMON
+	\*------------------------------------*/
+	/**
+	 * RESET...............デフォルトの設定
+	 * COMMON...........全ページ共通の設定　いまここ
+	 */
+
+/* ------------------------------------------------------------
+
+ * MAIN COL
+
+------------------------------------------------------------ */
+/*  コンテンツ・メイン　設定
+---------------------------------------------*/
+
+/* -------- タイトル -------- */
+#container .ttlMain {
+	background-image: url(/img/common/ttl/bgkTtlComp.png);
+	padding: 0 0 0 35px;
+	margin: 40px 0 0;
+}
+#pageID_contact .ttlMain{
+	margin: 0;
+}
+.boxPost{
+	border: 1px solid #ddd;
+	margin: 20px auto 0;
+	padding: 20px 45px;
+	width: 775px;
+}
+#pageID_contact .boxPostComp{
+	border: 1px solid #ddd;
+	margin: 20px auto 0;
+	padding: 30px 45px;
+	width: 775px;
+}
+.boxPost .txtForget,.boxPostComp .txtForget{
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.txtListForget li{
+	margin: 25px 0;
+	text-align:center;
+}

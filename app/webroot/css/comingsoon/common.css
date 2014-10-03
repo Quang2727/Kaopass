@@ -1,0 +1,176 @@
+@charset "UTF-8";
+/*@import url(layout.css);
+/*@import url(page.css);
+
+/* CSS Document */
+
+/* --------------------
+ * 初期設定
+-------------------- */
+
+html, body{
+	height:100%;
+}
+html,body,div,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,pre,form,p,blockquote,fieldset,input {
+	margin:0;
+	padding:0;
+}
+
+h1,h2,h3,h4,h5,h6,pre,code,address,caption,cite,code,em,strong,th {
+	font-size:1em;
+	font-weight:normal;
+	font-style:normal;
+}
+
+ul,ol {
+	list-style: none;
+}
+
+fieldset,img {
+	border: none;
+}
+caption,th {
+	text-align:left;
+}
+
+body {
+	line-height:1.1em;
+	font-family:"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,"メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS P Gothic",Verdana,sans-serif;
+	font-size:12px;
+	line-height:1.4em;
+	color:#333;
+	background-color:#fff;
+}
+
+a,
+a:link,
+a:visited {
+	color:#1787bb;
+	text-decoration:underline;
+}
+a:hover {
+	color:#f16f14;
+	text-decoration:underline;
+}
+
+.white a,
+.white a:link,
+.white a:visited,
+.white a:active,
+a.white,
+a.white:link,
+a.white:visited,
+a.white:active{
+	color:#fff !important;
+}
+
+.white a:hover,
+a.white:hover{
+	color:#fbd365 !important;
+}
+
+strong {
+	font-weight:bold;
+}
+
+br{
+	letter-spacing:0;
+}
+
+
+
+/* --------------------
+ * 汎用設定
+-------------------- */
+
+.clearBoth {
+	clear:both;
+	overflow:hidden;
+	width:1px;
+	height:1px;
+	margin:0 -1px -1px 0;
+	border:0;
+	padding:0;
+	font-size:0;
+	line-height:0;
+}
+
+.clearFix:after{
+    content: ".";
+    display: block;
+    height: 0;
+    font-size:0;
+    clear: both;
+    visibility:hidden;
+    }
+
+.clearFix{display: inline-block;}
+/* Hides from IE Mac */
+* html .clearFix{height:1%;}
+.clearFix{display:block;}
+/* End Hack */
+
+
+.disBlock{
+	display:block;
+}
+
+.floatL{
+	float:left;
+}
+
+.floatR{
+	float:right;
+}
+
+a.hilight:hover img {
+/*モダンブラウザ用*/
+opacity:0.7;
+/*IE7以下用*/
+filter:alpha(opacity=70);
+/*IE8用*/
+-ms-filter:"alpha(opacity=70)";
+}
+
+.bkgSprite{
+	overflow:hidden;
+	height:0;
+	display:block;
+}
+/* --------------------
+ * エラー表示
+-------------------- */
+span.ethna-error {
+ color: #ff0000;
+ font-weight:bold;
+}
+#rewrite_msg {
+color: #ff0000;
+font-size:16px;
+text-align:center;
+padding-top:20px;
+}
+
+/*p.error {
+ color: #ff0000;
+ font-weight:bold;
+}
+*/
+
+/* --------------------
+ * 印刷用設定
+-------------------- */
+
+@media print {
+body {
+	background-color:#fff !important;
+	color:#000 !important;
+	}
+
+a, a:link,a:visited,a:hover {
+	color:#000 !important;
+	text-decoration:none !important;
+	}
+}
+
+

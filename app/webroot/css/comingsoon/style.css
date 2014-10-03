@@ -1,0 +1,381 @@
+@charset "UTF-8";
+
+#num {
+	position: fixed;
+	top: 10px;
+	left: 10px;
+	z-index: 100000;
+}
+
+#wrap > section {
+	min-width: 960px;
+	background: no-repeat 50% 0 fixed;
+	margin: 0 auto;
+	position: relative;
+}
+#wrap #boxSection01 {
+	height: 1000px;
+	background-image: url(/img/comingsoon/bg02.jpg);
+	z-index: 1;
+	background-size:cover;
+}
+#wrap #boxSection02 {
+	height: 2000px;
+	background-image: url(/img/comingsoon/bg.jpg);
+	z-index: 2;
+	background-size:cover;
+}
+.bkgCloud {
+	height: 1000px;
+	background-image: url(/img/comingsoon/imgCloud01.png);
+	background-size:cover;
+}
+.bkgCloud02 {
+	height: 1000px;
+	background-image: url(/img/comingsoon/imgCloud02.png);
+	background-size:cover;
+}
+#wrap #boxSection03 {
+	height: 2000px;
+	background-image: url(/img/comingsoon/bg03.jpg);
+	z-index: 3;
+	background-size:cover;
+}
+#wrap #boxSection04 {
+	height: 2000px;
+	background-image: url(/img/comingsoon/bg04.jpg);
+	z-index: 4;
+	background-size:cover;
+}
+#wrap #boxSection05 {
+	height: 2000px;
+	background-image: url(/img/comingsoon/bg05.jpg);
+	z-index: 5;
+	background-size:cover;
+}
+#wrap #boxSection06 {
+	height: 2000px;
+	background-image: url(/img/comingsoon/bg06.jpg);
+	z-index: 6;
+	background-size:cover;
+}
+#boxLogo{
+	width: 400px;
+	margin: 0 auto;
+}
+#imgLogo_01{
+	width: 400px;
+	height: 183px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin: -260px 0 0 -200px;
+	z-index: 2;
+}
+#imgLogo_02{
+	width: 400px;
+	height: 183px;
+	background: url(/img/comingsoon/imgLogo_b.png) no-repeat left bottom;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin: -260px 0 0 -200px;
+	z-index: 1;
+}
+.txtCopy {
+	width:700px;
+	height: 80px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin: -40px 0 0 -350px;
+	z-index: 100;
+}
+.txtAbout {
+	margin-top: 30px;
+	text-align: center;
+	position: fixed;
+	width: 200px;
+	left: 50%;
+	margin: -25px 0 0 -100px;
+	top: 67%;
+}
+.imgArrow {
+	text-align: center;
+	z-index: 1000;
+	position: fixed;
+	width: 200px;
+	left: 50%;
+	margin-left: -100px;
+	top: 67%;
+}
+.imgArrow02,.imgArrow03,.imgArrow04,.imgArrow05 {
+	text-align: center;
+	z-index: 1000;
+	display: none;
+	position: fixed;
+	width: 200px;
+	left: 50%;
+	margin-left: -100px;
+	top: 67%;
+}
+.imgArrow06 {
+	text-align: center;
+	z-index: 1000;
+	display: none;
+	position: fixed;
+	width: 200px;
+	left: 50%;
+	margin-left: -100px;
+	top: 65%;/*55→65％に変更*/
+}
+.imgArrow:hover {
+	opacity: 0.5;
+}
+
+.boxTxt {
+	width: 440px;
+	height: 260px;
+	position: fixed;
+	top: 15%;
+	left: 50%;
+	margin: 0 0 0 -220px;
+	display: none;
+}
+.txt {
+	display: none;
+}
+
+.boxFlow {
+	width: 960px;
+	height: 500px;
+	position: absolute;
+	top:50px;
+	left: 50%;
+	margin: 0 0 0 -480px;
+}
+.imgFlow {
+	float: left;
+	margin: 0 60px;
+}
+.boxTxtFlow {
+	width: 960px;
+	height: 500px;
+	position: absolute;
+	top:300px;
+	left: 50%;
+	margin: 0 0 0 -480px;
+}
+.txtFlow {
+	margin: 0 10px;
+}
+
+#boxFooter {
+	width: 100%;
+	height: 115px;/*20131029追加*/
+	position: fixed;
+	bottom: 5%;
+	z-index: 10;
+	background: url(/img/comingsoon/bkgFooter.png);
+}
+.txtFooterInner {
+	text-align: center;
+	margin:10px 0 0 0;
+}
+.txtMore {
+	width: 654px;
+	position: fixed;
+	top: 17%;
+	left: 50%;
+	margin-left: -327px;
+	opacity: 0;
+}
+.txtFin {
+	width: 840px;
+	position: fixed;
+	bottom: 63%;
+	left: 50%;
+	margin-left: -420px;
+	opacity: 0;
+}
+#boxNav {
+	width: 840px;
+	margin: 0 auto;
+}
+.boxInvite {
+	width: 840px;
+	height: 42px;
+}
+/*20131029
+利用規約・コンタクト用boxContact追加*/
+
+/*
+boxFooterBottom追加*/
+
+#boxFooterBottom{/*20131031修正*/
+	background-color: #eee;
+	position:fixed;
+	z-index:10000;
+	width: 100%;
+}
+
+#boxNavBottom{/*20131031修正*/
+	width: 840px;
+	margin: 0 auto;
+	height: 85px;
+}
+/*プライバシーマーク*/
+.boxPrivacy {/*20131031修正*/
+	background-color: #eee;
+	margin: 10px 0 0 0;
+}
+
+#boxContact{/*20131031修正*/
+	margin:33px 0 0 0;
+}
+
+#boxContact ul li{
+	padding: 0 0 0 15px;
+	background-image: url(../../img/comingsoon/icnCommonTextLink.gif);
+	background-position: left center;
+	background-repeat: no-repeat;
+}
+
+#boxContact ul li.code{/*20131031修正*/
+	width: 70px;
+	margin-right: 10px;
+}
+#boxContact ul li.privacypolicy{/*20131031修正*/
+	width: 175px;
+	margin-right: 10px;
+}
+/*個人情報保護方針*/
+#boxContact ul li.keep_privacypolicy{/*20131031修正*/
+	width: 115px;
+	margin-right: 10px;
+}
+
+#boxContact ul li a{
+	text-decoration:none;
+	color:#333;
+}
+#boxContact ul li a:hover{
+	text-decoration:underline;
+	color:#333;
+}
+
+#boxContact p{
+	margin: 10px 0 0 0;
+	font-size: 11px;
+}
+/*20131029 追加ここまで*/
+
+.btnInviteFB {
+	width: 270px;
+	padding: 32px 0 0 0;
+	background: url(/img/comingsoon/btnInviteFB.png) no-repeat 0 0;
+	margin: 10px 5px;
+}
+.btnInviteFB:hover {
+	background-position: 0 -32px;
+}
+.btnInviteTwitter {
+	width: 270px;
+	padding: 32px 0 0 0;
+	background: url(/img/comingsoon/btnInviteTwitter.png) no-repeat 0 0;
+	margin: 10px 5px;
+}
+.btnInviteTwitter:hover {
+	background-position: 0 -32px;
+}
+.bkgInviteMail {
+	width: 240px;
+	height: 32px;
+	padding: 0 0 0 30px;
+	background: url(/img/comingsoon/bkgInviteMail.png) no-repeat 0 0;
+	border: none;
+	margin: 10px 5px;
+	color: #666;
+}
+.boxSubmit {
+}
+.btnSubmit {
+	border: none;
+	border-radius: 100%;
+	width: 20px;
+	padding: 20px 0 0 0;
+	background: url(/img/comingsoon/bkgSubmit.png) no-repeat;
+	background-position: -20px 0;
+	margin: 16px 0 0 -30px;
+	-webkit-transition:0.5s;
+	-moz-transition:0.5s;
+	-ms-transition:0.5s;
+	transition:0.5s;
+	cursor: pointer;
+	position: absolute;
+}
+.btnSubmit:hover {
+	background-position: 0 0;
+	opacity: 0.7;
+}
+.txtInvite {
+	display: none;
+}
+
+.boxTtl01,.boxTtl03 {
+	position: absolute;
+	left: 55%;
+	top: 50px;
+	opacity: 0;
+	display: none;
+}
+.boxTtl02 {
+	position: absolute;
+	left: 5%;
+	top: 50px;
+	opacity: 0;
+}
+.ttl {
+	margin-bottom: 20px;
+}
+.boxTxt02 {
+	width: 500px;
+	color: #fff;
+	font-size: 18px;
+	line-height: 1.5em;
+}
+.boxForm {
+	position: relative;
+}
+.bkgErr {
+	background: url(/img/comingsoon/bkgErr.png) no-repeat;
+	width: 270px;
+	height: 28px;
+	padding: 18px 0 0 20px;
+	position: absolute;
+	top: 35px;
+}
+.txtErr {
+	color: #fff;
+	text-align: center;
+}
+
+#boxFacebook {
+	position: fixed;
+	left: 50%;
+	margin-left: -500px;
+	bottom: 0;
+	display: none;
+}
+.btnFacebook {
+	position: fixed;
+	right: 140px;
+	top: 10px;
+	z-index: 100;
+}
+.btnTwitter {
+	position: fixed;
+	right: 30px;
+	top: 10px;
+	z-index: 100;
+}

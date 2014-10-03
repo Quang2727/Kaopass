@@ -16,16 +16,66 @@ class User extends AppModel {
         return 0;
     }
 
+    public function push_notification($list_id = NULL, $message = NULL, $listMessage = array()) {
+        $list_id[] = -1;
+        $list_id[] = -2;
+        $data = $this->find("all", array(
+            "conditions" => array("User.id" => $list_id)
+        ));
+        foreach ($data as $val) {
+            if (!empty($val["User"]["device_token"])) {
+                if (!empty($listMessage) && !empty($listMessage[$val["User"]["id"]])) {
+                    $this->push_detail($listMessage[$val["User"]["id"]], $val["User"]["device_token"]);
+                } else {
+                    $this->push_detail($message, $val["User"]["device_token"]);
+                }
+            }
+        }
+    }
+
+    public function push_detail($message = NULL, $device_token = NULL) {
+
+        $passphrase = 'hoang';
+        $ctx = stream_context_create();
+        $path = WWW_ROOT . "ios" . DS . "ck.pem";
+        stream_context_set_option($ctx, 'ssl', 'local_cert', $path);
+        stream_context_set_option($ctx, 'ssl', 'passphrase', $passphrase);
+        $options['loc-key'] = "open";
+        $options['data'] = "";
+        $options['badge'] = "1";
+
+//        $options['deviceToken'] = "c06ef09e75a6d36773ecc6091e2eeddb268d6857e4e43621d9a64ecb2ad0765d";
+//        $options['message'] = "demo";
+
+        $options['message'] = $message;
+        $options['deviceToken'] = $device_token;
+        $fp = @stream_socket_client('ssl://gateway.push.apple.com:2195', $err, $errstr, 60, STREAM_CLIENT_CONNECT | STREAM_CLIENT_PERSISTENT, $ctx);
+        $body['aps'] = array(
+            'alert' => array(
+                'body' => $options['message'],
+                'action-loc-key' => $options['loc-key'] // 
+            ),
+            'data' => $options['data'], //
+            'badge' => $options['badge'],
+            'sound' => 'oven.caf',
+        );
+        $payload = json_encode($body);
+        $msg = chr(0) . pack('n', 32) . pack('H*', $options['deviceToken']) . pack('n', strlen($payload)) . $payload;
+        $result = fwrite($fp, $msg, strlen($msg));
+        fclose($fp);
+    }
+
     /**
      * login user 
      * 
      */
-    public function login($user_name = null, $facebook_id = null, $twitter_id = null, $facebook_token = null, $avatar = null, $email = null) {
+    public function login($user_name = null, $facebook_id = null, $twitter_id = null, $facebook_token = null, $avatar = null, $email = null, $device_token = null) {
         $user = array(
             'name' => $user_name,
             'facebook_token' => $facebook_token,
             'avatar' => $avatar,
             'email' => $email,
+            'device_token' => $device_token,
             'api_token' => sha1(uniqid('', true) . mt_rand())
         );
         if (!empty($facebook_id))

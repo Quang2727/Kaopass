@@ -8,7 +8,7 @@ class KaopassController extends AppController {
     public $uses = array('UserShare', 'User', 'FolderUser');
 
     const PREFIX = '-----';
-    const APP_STORE = 'https://itunes.apple.com/jp/app/doragonpoka/id572233872?mt=8';
+    const APP_STORE = 'https://itunes.apple.com/ca/app/kaopass/id824238225?mt=8';
     const APP_KAOPASS = 'iOSKaopass://';
 
     function safe_b64encode($string) {
@@ -99,7 +99,7 @@ class KaopassController extends AppController {
         }
         $my_user = $this->User->findById($this->user_id);
         $folder = $this->FolderUser->findById($folder_id);
-        $title = $my_user["User"]['name'] . "さんから" . $folder["FolderUser"]['name'] . "シークレットフォルダを共有しました";
+        $title = $my_user["User"]['name'] . "さんからシークレットフォルダを共有しました ";
         $user = $this->User->findById($user_id);
         $Email = new CakeEmail('kaopass');
         $Email->viewVars(array('data' => $data));

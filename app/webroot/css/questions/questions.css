@@ -1,0 +1,281 @@
+@charset "utf-8";
+/*------------------------------------*\
+      $COMMON
+  \*------------------------------------*/
+  /**
+   * RESET...............デフォルトの設定
+   * COMMON...........全ページ共通の設定　いまここ
+   */
+
+/* ------------------------------------------------------------
+
+ * MAIN COL
+
+------------------------------------------------------------ */
+/*  コンテンツ・メイン　設定
+---------------------------------------------*/
+
+/* -------- タイトル -------- */
+#mainContainer .ttlMain {
+  background-image: url(/img/common/ttl/bgkTtlPost.png);
+  padding: 0 0 0 35px;
+}
+
+.inputTitle{
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+}
+
+/* ------------------------------------------------------------
+
+ * 投稿用アイテム
+
+------------------------------------------------------------ */
+
+/* 編集エリア */
+.boxPost .txtEdit {
+  margin: 10px 0 11px;
+  padding: 5px 15px;
+  border:1px solid #ebe9d5;
+  background: #f7f6ee;
+}
+
+.md-editor {
+  padding-bottom: 4px;
+}
+
+.boxPost .txtEdit .btn-group .btnEdit {
+  width: 25px;
+  padding: 26px 0 0 0;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  border-style: none;
+  margin-right: 5px;
+  cursor:pointer;
+}
+.boxPost .txtEdit .btn-group .btnEdit:hover {
+  opacity: 0.5;
+}
+.boxPost .txtEdit .btn-group .btnBold {
+  background: url(/img/questions/imgEditBold.png);
+}
+.boxPost .txtEdit .btn-group .btnItalic {
+  background: url(/img/questions/imgEditItalic.png);
+}
+.boxPost .txtEdit .btn-group .btnHeading {
+  background: url(/img/questions/imgEditHeading.png);
+}
+.boxPost .txtEdit .btn-group .btnLink {
+  background: url(/img/questions/imgEditLink.png);
+  margin-left: 25px;
+}
+.boxPost .txtEdit .btn-group .btnImageLink {
+  background: url(/img/questions/imgEditImageLink.png);
+}
+.boxPost .txtEdit .btn-group .btnQuart {
+  background: url(/img/questions/imgEditQuart.png);
+}
+.boxPost .txtEdit .btn-group .btnTag {
+  background: url(/img/questions/imgEditTag.png);
+}
+.boxPost .txtEdit .btn-group .btnList {
+  background: url(/img/questions/imgEditList.png);
+  margin-left: 25px;
+}
+.boxPost .txtEdit .btn-group .btnNumList {
+  background: url(/img/questions/imgEditNumList.png);
+}
+.boxPost .txtEdit .btn-group .btnLine {
+  background: url(/img/questions/imgEditLine.png);
+}
+.boxPost .txtEdit .btn-group .btnClear {
+  background:none transparent;
+  overflow:auto;
+  width:40px;
+  height:26px;
+  margin:0 0 0 35px;
+  padding:0;
+  font-weight:bold;
+  text-decoration:underline;
+}
+.boxPost .txtEdit .btn-group .btnClear:hover {
+  text-decoration:none;
+}
+.boxPost .txtEdit .btn-group .btnCleanUp {
+  width: 125px;
+  padding: 26px 0 0 0;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  border-style: none;
+  margin-right: 5px;
+  background: url(/img/questions/imgEditCleanUp.png);
+  margin-left: 25px;
+}
+.boxPost .txtEdit .btn-group .btnCleanUp:hover {
+  opacity: 0.5;
+}
+.boxPost .txtEdit .btn-group .btnEdit:active{
+  background-position: 0 -26px;
+}
+.boxPost .txtEdit .btn-group .btnCleanUp:active{
+  background-position: 0 -26px;
+}
+
+/*2013/12/04　追加　タグ*/
+
+.boxPost .txtTag {
+  display: block;
+  color: #aca665;
+  background: #f9f6d6;
+  border-radius:3px;
+  border:1px solid #aca665;
+  font-size: 12px;
+  font-size: 1.2rem;
+  margin: 3px 5px 2px 0;
+  padding: 0 8px;
+  float: left;
+}
+
+.boxPost .txtTag .btnTagRemove {
+  display: inline-block;
+  font-size: 8px;
+}
+.boxPost .txtTag .btnTagRemove:hover {
+  opacity: 0.5;
+}
+
+/* テキストエリア */
+.boxPost textarea {
+  margin-bottom:10px;
+  min-height: 145px;
+  min-width:100%;
+  max-width:100%;
+  box-sizing:border-box;
+  padding:15px;
+  border:1px solid #ddd;
+  border-radius:3px;
+}
+
+/* プレビュー画面 */
+.question-editor-area .txtBodyPreview.mb0 {
+  margin-bottom: 0;
+}
+.controls .question-preview {
+  border: 1px dashed #a7a7a7;
+  min-height: 200px;
+  box-sizing:border-box;
+  padding:15px;
+  margin:15px 20px;
+}
+.controls .question-preview .slideShare {
+  width:100%;
+  display:block;
+  margin:0 auto;
+}
+
+/* 匿名で投稿 */
+.boxPost .txtName {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* 添付ファイル */
+.boxPost .boxFile {
+  padding: 5px 0;
+}
+
+.boxPost .boxFile #btnFile {
+  background: url(/img/contact/bkgArrow.png) no-repeat right #FFF;
+  border: none;
+  margin: 0 6px 0 -4px;
+  padding: 0 13px 0 0;
+  color: #0085b2;
+}
+
+.boxPost .boxFile #txtFake_input_file,
+.boxPost .boxFile #txtFile_input {
+  background: none;
+  border: none;
+  box-shadow: none;
+  width: 570px;
+  padding: 0;
+  color: #666;
+  font-size: 12px;
+/*  font-size: 1.2rem;*/
+}
+
+.boxPost .boxFile #txtFile_input {
+  display: none;
+}
+/* 送信ボタン */
+.boxPost .btnSubmit {
+  text-align: center;
+  padding: 10px 0;
+}
+#mainContainer .boxPost .btnSubmit input{
+  display: block;
+  width: 240px;
+  height: 36px;
+  background-color: #195f8d;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid #12486b;
+  border-radius:3px;
+  color: #fff;
+  line-height: 36px;
+  font-size:14px;
+  font-size:1.4rem;
+  font-weight: bold;
+  text-align: center;
+  margin:auto;
+  padding: 0;
+  cursor: pointer;
+}
+  
+#mainContainer .boxPost .btnSubmit input:hover{
+  opacity:0.7;
+  filter: alpha(opacity=70);
+  text-decoration:none;
+}
+.boxPost .btnSubmit a{
+  display: block;
+  width: 240px;
+  height: 36px;
+  background-color: #195f8d;
+  border-bottom: 1px solid #12486b;
+  border-radius:3px;
+  color: #fff;
+  line-height: 36px;
+  font-size:14px;
+  font-size:1.4rem;
+  font-weight: bold;
+  text-align: center;
+  margin:auto;
+}
+  
+.boxPost .btnSubmit a:hover{
+  opacity:0.7;
+  filter: alpha(opacity=70);
+  text-decoration:none;
+}
+
+
+/* -------- フォームテンプレート -------- */
+
+.boxLabelInput{
+  position:relative;
+}
+
+.boxLabelInput label {
+    color: #969696;
+    cursor: text;
+    display: none;
+    font-size: 12px;
+    left: 6px;
+    line-height: normal;
+    position: absolute;
+    top: 5px;
+}

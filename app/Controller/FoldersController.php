@@ -28,21 +28,40 @@ class FoldersController extends AppController {
             ),
             'fields' => array("FolderShare.folder_id", "FolderShare.folder_id"),
         ));
-        $conditions = array(
-            "OR" => array(
-                array(
-                    'FolderUser.user_id' => $user_id,
-                    'FolderUser.type_folder' => array(FOLDER_NORMAL, FOLDER_SECRET),
-                ),
-                array(
-                    'FolderUser.id' => $listFolder,
-                    'FolderUser.type_folder' => array(FOLDER_NORMAL),
-                ),
-                array(
-                    'FolderUser.id' => $myShareFolder,
-                    'FolderUser.type_folder' => array(FOLDER_SECRET),
-                ),
-        ));
+        if ($user_id == $this->user_id) {
+            $conditions = array(
+                "OR" => array(
+                    array(
+                        'FolderUser.user_id' => $user_id,
+                        'FolderUser.type_folder' => array(FOLDER_NORMAL, FOLDER_SECRET),
+                    ),
+                    array(
+                        'FolderUser.id' => $listFolder,
+                        'FolderUser.type_folder' => array(FOLDER_NORMAL),
+                    ),
+                    array(
+                        'FolderUser.id' => $myShareFolder,
+                        'FolderUser.type_folder' => array(FOLDER_SECRET),
+                    ),
+            ));
+        } else {
+            $conditions = array(
+                "OR" => array(
+                    array(
+                        'FolderUser.user_id' => $user_id,
+                        'FolderUser.type_folder' => array(FOLDER_NORMAL),
+                    ),
+                    array(
+                        'FolderUser.id' => $listFolder,
+                        'FolderUser.type_folder' => array(FOLDER_NORMAL),
+                    ),
+                    array(
+                        'FolderUser.id' => $myShareFolder,
+                        'FolderUser.type_folder' => array(FOLDER_SECRET),
+                    ),
+            ));
+        }
+
         $my_folder = $public_folder = $secret_folder = array();
         $rank_folder = $this->FolderUser->rankFolder($conditions, $user_id);
         if (!empty($rank_folder)) {
@@ -174,6 +193,7 @@ class FoldersController extends AppController {
         $folderShare = new FolderShare();
         $dataRequest = @$this->request->data;
         $folder_id = @$dataRequest['folder_id'];
+        //  $this->log(@$this->request->data,"test-1");
         if (!$folder_id) {
             return $this->responseNg('invalid params.');
         }
@@ -188,15 +208,20 @@ class FoldersController extends AppController {
         $folderShareData = $folderShare->find("first", array(
             "conditions" => array("FolderShare.folder_id" => $folder_id, "FolderShare.user_id" => $this->user_id)
         ));
+
         if ($folderShareData) {
             return $this->responseok("この店舗は既に追加されています。 "); // validate
         }
+
         $dataSave = array(
             'user_id' => $this->user_id,
             "folder_id" => $folder_id
         );
         $folderShare->create();
         if ($folderShare->save($dataSave)) {
+            $list_id = array();
+            $list_id[] = $folder['FolderUser']['user_id'];
+            $this->User->push_notification($list_id, "フォルダをコピーされました");
             return $this->responseok();
         } else {
             return $this->responseng('faild to share.');
@@ -348,7 +373,7 @@ class FoldersController extends AppController {
         return $this->responseOk($result);
     }
 
-    function rename() {  
+    function rename() {
 //        $this->request->data['folder_id'] = 9;
 //        $this->request->data['name'] = "test";
         $folder_id = @$this->request->data['folder_id'];
@@ -1443,7 +1468,6 @@ class FoldersController extends AppController {
             "type_messages" => CREATED,
         );
         $this->Notification->saveNoti($dataNotfi);
-
         App::uses('Folder', 'Utility');
         $folder = new Folder();
         $folder_id_old = @$this->request->data["older_folder_id"];

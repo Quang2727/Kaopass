@@ -1,0 +1,269 @@
+@charset "utf-8";
+/*------------------------------------*\
+      $COMMON
+  \*------------------------------------*/
+  /**
+   * RESET...............デフォルトの設定
+   * COMMON...........全ページ共通の設定　いまここ
+   */
+
+/* ------------------------------------------------------------
+
+ * BASE
+
+------------------------------------------------------------ */
+
+#pageID_question .boxLabelInput .bootstrap-tagsinput{
+  width: 100%;
+  display: block;
+  min-height: 22px;
+  height: auto;
+  margin: 0;
+}
+#pageID_question .boxLabelInput .bootstrap-tagsinput .txtTag{
+  margin-bottom: 10px;
+}
+/* ------------------------------------------------------------
+
+
+ * 質問するエリア
+ 
+------------------------------------------------------------ */
+.question-editor-area dt {
+  font-size:14px;
+  font-size:1.4rem;
+  font-weight: bold;
+  margin: 23px 0 7px;
+}
+.question-editor-area dt span {
+  font-size:12px;
+  font-size:1.2rem;
+  font-weight: normal;
+  padding: 0 5px;
+}
+.question-editor-area dd {
+  margin: 0 0 30px;
+}
+
+/* ------------------------------------------------------------
+
+ * 質問するにあたってのご注意
+
+------------------------------------------------------------ */
+#sideContainer .boxPostRule{
+  margin-bottom: 20px;
+}
+#sideContainer .boxPostRule .ttlSub{
+  border: 0;
+}
+#sideContainer .boxPostRule ul{
+  padding-left: 25px;
+}
+#sideContainer .boxPostRule li{
+  list-style-type: disc;
+  margin: 0 0 10px -5px;
+}
+/* ------------------------------------------------------------
+
+ * マークダウン記法一覧
+
+------------------------------------------------------------ */
+#sideContainer .boxScalesList {
+    margin-bottom:20px;
+}
+#sideContainer .boxScalesList .ttlSub{
+  border: 0;
+}
+#sideContainer .boxScalesList .boxScalesListContents{
+  background: #f7f6ee;
+  border: 1px solid #ebe9d5;
+  margin-top: -5px;
+  padding: 20px 20px 10px;
+}
+#sideContainer .boxScalesList .boxScalesListContents p{
+  margin: 0 0 10px;
+}
+/* ------------------------------------------------------------
+
+ * 関連タグ
+ 
+ ------------------------------------------------------------ */
+.boxLabelInput .dropdown-menu{
+  z-index:999;
+  display:none;
+  width: 288px;
+  top: 50px;
+  left: 0px;
+  background-color: #F5F5F5;
+  border: 1px solid #ccc;
+  font-size:12px;
+  /* box-shadow */
+  box-shadow:rgba(113, 135, 164, 0.29) 0px 0px 2px 2px;
+  -webkit-box-shadow:rgba(113, 135, 164, 0.29) 0px 0px 2px 2px;
+  -moz-box-shadow:rgba(113, 135, 164, 0.29) 0px 0px 2px 2px;
+}
+
+.dropdown-menu li{
+  cursor:pointer;
+  border-bottom:1px solid #ccc;
+}
+.dropdown-menu li:hover,.dropdown-menu li.active{ background-color:#ddd;}
+.dropdown-menu li a{
+  font-size:11px;
+  font-size:1.1rem;
+  color: #195f8d;
+  padding: 10px 10px 10px 20px;
+  display: block;
+}
+
+#pageID_question .boxLabelInput .tagForm {
+  width:100%;
+  height:35px;
+  margin-bottom:10px;
+}
+
+.boxSNSPost {
+  margin-top:30px;
+}
+.boxSNSPost .txtSNSPost {
+  font-size:14px;
+  font-weight:bold;
+  margin-bottom:10px;
+  margin-right:40px;
+}
+.boxSNSPost .boxCheck {
+  margin-right:20px;
+  margin-top:4px;
+}
+.boxSNSPostPreview {
+  padding:20px;
+  margin-top:5px;
+  background:#f7f6ee;
+  font-size:16px;
+}
+.txtSNSPostPreview {
+  font-size:14px;
+  font-weight:bold;
+  margin-top:40px;
+}
+.boxSNSPostPreview dd {
+  margin-bottom:5px;
+  font-size:14px;
+}
+
+.txtLinkNewTag {
+  font-size:12px;
+  margin-left:10px;
+}
+
+pre[class*='language-'] {
+    position: relative;
+}
+pre[class*='language-'] > code[data-language] {
+}
+
+pre[class*='language-'] > code[data-language]::before {
+    background-color: #eee;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    color: black;
+    content: attr(data-language);
+    display: inline-block;
+    font-size: 1em;
+    left: 0px;
+    padding: 0 0.5em;
+    position: absolute;
+    text-shadow: none;
+    top: 0px;
+}
+
+
+/* ------------------------------------------------------------
+ 
+ * Layout
+ 
+------------------------------------------------------------ */
+.l-notationLists {
+    margin-top: 12px;
+    padding-left: 25px;
+}
+
+.l-notationLists > li {
+    margin-top: 14px;
+    list-style: disc;
+}
+
+.l-notationLists > li:first-child {
+    margin: 0;
+}
+
+
+/* ------------------------------------------------------------
+ 
+ * Module
+ 
+------------------------------------------------------------ */
+.mod-txtMarkDown {
+    display: inline-block;
+    margin-top: 3px;
+    padding: 6px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background: #fafafa;
+    line-height: 1.2;
+}
+
+.mod-checkboxGroup li {
+    float: left;
+    margin-right: 24px;
+}
+
+.mod-checkboxGroup [type="checkbox"] {
+    margin-right: 0;
+}
+
+.mod-icnSocial {
+  position: relative;
+}
+
+.mod-icnSocial:before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 16px;
+    height: 12px;
+    background: no-repeat left top;
+}
+
+.mod-icnSocial-facebook {
+    padding-left: 16px;
+}
+
+.mod-icnSocial-facebook:before {
+    background-image: url("/img/questions/icnSocialLogoFacebook.png");
+}
+
+.mod-icnSocial-twitter {
+    padding-left: 20px;
+} 
+
+.mod-icnSocial-twitter:before {
+    background-image: url("/img/questions/icnSocialLogoTwitter.png");
+}
+
+.mod-socialShareTxt {
+    margin-top: 14px;
+}
+
+.mod-socialShareTxt dt {
+    margin-bottom: 4px;
+    font-weight: bold;
+}
+
+.mod-socialShareTxt dd {
+    padding: 15px;
+    border-radius: 3px;
+    background: #f5f5f5;
+    font-size: 14px;
+}

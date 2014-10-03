@@ -1,0 +1,157 @@
+@charset "utf-8";
+
+
+
+.icnUserThumb{
+	/*	border-radius:50%;*/
+	border: 1px solid #ccc;
+}
+
+
+
+/*  USER LIST : ユーザー一覧
+---------------------------------------------*/
+
+#pageID_userlist #container {
+	width: 980px;
+	padding: 0 0 50px;
+}
+
+/* メインタイトル */
+#pageID_userlist #container .ttlMain {
+	background-image: url(/img/common/ttl/bgkTtlUser2.png);
+}
+
+
+/* -------- セレクトタブ -------- */
+
+#pageID_userlist #container .boxSelectTab li {
+	line-height: 20px;
+}
+#pageID_userlist #container .boxSelectTab .on span {
+	margin-top: -7px;
+}
+
+/* なるほど */
+#pageID_userlist #container .boxSelectTab .btnUnderstand p {
+	width: 58px;
+}
+
+/* 知りたい */
+#pageID_userlist #container .boxSelectTab .btnWant p {
+	width: 55px;
+}
+
+#pageID_userlist #container .boxSelectTab .btnWant p span img {
+	margin-left: -58px;
+}
+
+/* 新着 */
+#pageID_userlist #container .boxSelectTab .btnNew p {
+	width: 30px;
+}
+
+#pageID_userlist #container .boxSelectTab .btnNew p span img {
+	margin-left: -117px;
+}
+
+
+
+/* --- ベストユーザー --- */
+
+#container .boxBest3User .boxUserStatList li {
+	width: 286px;
+	margin: 0 20px 0 0;
+}
+
+#container .boxBest3User .boxUserStatList .boxStat .boxStatThumb .icnUserThumb {
+	width: 78px;
+	height: 78px;
+}
+
+#container .boxBest3User .boxUserStatList .boxStat .boxUser {
+	margin: 0 0 0 95px;
+	padding: 7px 0 0;
+}
+
+#container .boxBest3User .boxUserStatList .boxStat .boxUser .txtUserName {
+	width: 165px;
+	padding: 0 0 5px;
+	font-size: 16px;
+	font-size: 1.6rem;
+}
+#container .boxBest3User .boxUserStatList .boxStat .boxFollow {
+	position: absolute;
+	right: 0;
+	top: 56px;
+	width: 60px;
+	height: 20px;
+	overflow: hidden;
+	line-height: 20px;
+}
+#container .boxOtherUser .boxUserStatList .boxStat .boxFollow {
+	position: absolute;
+	right: 0;
+	top: 45px;
+	width: 60px;
+	height: 20px;
+	overflow: hidden;
+	line-height: 20px;
+}
+
+/* -------- boxContentWrapHead -------- */
+
+#container .boxFilterWrapHead {
+	margin: 0 0 22px;
+}
+
+/* -------- ページング -------- */
+
+#container .boxFilterWrapHead .boxPager {
+	float: left;
+}
+
+
+/* -------- 絞り込みタブ -------- */
+
+#container .boxFilterWrapHead nav {
+	float: right;
+}
+
+#container .boxSelectFilter li {
+	float: left;
+	display: inline-block;
+	background: #e0Dfdd;
+	width: 150px;
+	margin: 0 0 0 1px;
+	padding: 1px 0;
+	text-align: center;
+	text-shadow: 1px 1px 1px #fff;
+	font-size: 11px;
+	font-size: 1.1rem;
+	cursor: pointer;
+}
+
+#container .boxSelectFilter .on {
+	background: #666;
+	color: #fff;
+	text-shadow: none;
+}
+
+#container .boxSelectFilter .on:hover {
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+
+.boxStat .submit input {
+        background: url('/img/common/btnAddFollow.png') no-repeat 0 -20px;
+        width:60px;
+        height:20px;
+        display: block;
+        text-align:center;
+        color:#fff;
+}
+
+.boxStat .submit .active {
+        background-position:left top;
+}

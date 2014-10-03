@@ -1,0 +1,389 @@
+@charset "UTF-8";
+
+
+html,body {
+	height: 100%;
+	min-height:650px;
+}
+
+#wrap,#bkgMoveWrap01,#bkgMoveWrap02,#bkgMoveWrap03,#bkgMoveWrap04,#bkgMoveWrap05,#bkgMoveWrap06,#bkgMoveWrapColor {
+	height:100%;
+	min-height:650px;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	background-color: #c5d6e9;
+	}
+	
+a,
+a:link,
+a:visited {
+	color:#1787bb;
+	text-decoration:underline;
+}
+a:hover {
+	color:#f16f14;
+	text-decoration:underline;
+}
+	
+body.night {  
+/* IE10 Consumer Preview */ 
+background-image: -ms-linear-gradient(top, #120b1d 0%, #312644 50%, #494168 100%);
+/* Mozilla Firefox */ 
+background-image: -moz-linear-gradient(top, #120b1d 0%, #312644 50%, #494168 100%);
+/* Opera */ 
+background-image: -o-linear-gradient(top, #120b1d 0%, #312644 50%, #494168 100%);
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #214373), color-stop(0.5, #82add7), color-stop(1, #e9fffd));
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-linear-gradient(top, #120b1d 0%, #312644 50%, #494168 100%);
+/* W3C Markup, IE10 Release Preview */ 
+background-image: linear-gradient(to bottom, #120b1d 0%, #312644 50%, #494168 100%);
+}
+body.night #bkgMoveWrapColor{
+	background-color: rgba(0,0,0,0.5);
+	background-size:contain;}
+body.evening {  
+/* IE10 Consumer Preview */ 
+background-image: -ms-linear-gradient(top, #0855a7 0%, #febd7b 50%, #f17d42 60%, #a64938 100%);
+/* Mozilla Firefox */ 
+background-image: -moz-linear-gradient(top, #0855a7 0%, #febd7b 50%, #f17d42 60%, #a64938 100%);
+/* Opera */ 
+background-image: -o-linear-gradient(top, #0855a7 0%, #febd7b 50%, #f17d42 60%, #a64938 100%);
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #0855a7), color-stop(0.5, #febd7b), color-stop(0.6, #f17d42), color-stop(1, #a64938));
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-linear-gradient(top, #0855a7 0%, #febd7b 50%, #f17d42 60%, #a64938 100%);
+/* W3C Markup, IE10 Release Preview */ 
+background-image: linear-gradient(to bottom, #0855a7 0%, #febd7b 50%, #f17d42 60%, #a64938 100%);
+}
+body.evening #bkgMoveWrapColor{
+	background-color: rgba(252,136,72,0.5);
+	background-size:contain;}
+body.noon {  
+/* IE10 Consumer Preview */ 
+background-image: -ms-linear-gradient(top right, #214373 0%, #82add7 50%, #e9fffd 100%);
+/* Mozilla Firefox */ 
+background-image: -moz-linear-gradient(top right, #214373 0%, #82add7 50%, #e9fffd 100%);
+/* Opera */ 
+background-image: -o-linear-gradient(top right, #214373 0%, #82add7 50%, #e9fffd 100%);
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(linear, right top, left bottom, color-stop(0, #214373), color-stop(0.5, #82add7), color-stop(1, #e9fffd));
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-linear-gradient(top right, #214373 0%, #82add7 50%, #e9fffd 100%);
+/* W3C Markup, IE10 Release Preview */ 
+background-image: linear-gradient(to bottom left, #214373 0%, #82add7 50%, #e9fffd 100%);
+}
+
+	
+#bkgMoveWrap01 {
+	background: url(/img/login/bkgCloud01.png) no-repeat;
+	width: 100%;
+	animation: anime 15s linear -1s infinite;
+	-moz-animation: anime 15s linear -1s infinite;
+	-webkit-animation:anime 15s linear -1s infinite;
+	-o-animation: anime 15s linear -1s infinite;
+	-ms-animation: anime 15s linear -1s infinite;
+	}
+@keyframes anime {
+	0% {background-position: -100% 10%;}
+	100% {background-position: 200% 10%;}
+	}
+@-moz-keyframes anime {
+	0% {background-position: -100% 10%;}
+	100% {background-position: 200% 10%;}
+	}
+@-webkit-keyframes anime {
+	0% {background-position: -100% 10%;}
+	100% {background-position: 200% 10%;}
+	}
+@-o-keyframes anime {
+	0% {background-position: -100% 10%;}
+	100% {background-position: 200% 10%;}
+	}
+@-ms-keyframes anime {
+	0% {background-position: -100% 10%;}
+	100% {background-position: 200% 10%;}
+	}
+#bkgMoveWrap02 {
+	background: url(/img/login/bkgCloud02.png) no-repeat;
+	width: 100%;
+	animation: anime2 13s linear infinite;
+	-moz-animation:anime2 13s linear infinite;
+	-webkit-animation:anime2 13s linear infinite;
+	-o-animation: anime2 13s linear infinite;
+	-ms-animation: anime2 13s linear infinite;
+	}
+@keyframes anime2 {
+	0% {background-position: -100% 30%;}
+	100% {background-position: 350% 30%;}
+	}
+@-moz-keyframes anime2 {
+	0% {background-position: -100% 30%;}
+	100% {background-position: 350% 30%;}
+	}
+@-webkit-keyframes anime2 {
+	0% {background-position: -100% 30%;}
+	100% {background-position: 350% 30%;}
+	}
+@-o-keyframes anime2 {
+	0% {background-position: -100% 30%;}
+	100% {background-position: 350% 30%;}
+	}
+@-ms-keyframes anime2 {
+	0% {background-position: -100% 30%;}
+	100% {background-position: 350% 30%;}
+	}
+#bkgMoveWrap03 {
+	background: url(/img/login/bkgimgCloud03.png) no-repeat;
+	width: 100%;
+	animation: anime3 16s linear infinite;
+	-moz-animation: anime3 16s linear infinite;
+	-webkit-animation:anime3 16s linear infinite;
+	-o-animation: anime3 16s linear infinite;
+	-ms-animation: anime3 16s linear infinite;
+	}
+@keyframes anime3 {
+	0% {background-position: -100% top;}
+	100% {background-position: 400% top;}
+	}
+@-moz-keyframes anime3 {
+	0% {background-position: -100% top;}
+	100% {background-position: 400% top;}
+	}
+@-webkit-keyframes anime3 {
+	0% {background-position: -100% top;}
+	100% {background-position: 400% top;}
+	}
+@-o-keyframes anime3 {
+	0% {background-position: -100% top;}
+	100% {background-position: 400% top;}
+	}
+@-ms-keyframes anime3 {
+	0% {background-position: -100% top;}
+	100% {background-position: 400% top;}
+	}
+#bkgMoveWrap04 {
+	background: url(/img/login/bkgCloud04.png) no-repeat;
+	width: 100%;
+	animation: anime4 27s linear infinite;
+	-moz-animation: anime4 27s linear infinite;
+	-webkit-animation:anime4 27s linear infinite;
+	-o-animation: anime4 17s 2inear infinite;
+	-ms-animation:anime4 17s 2inear infinite;
+	}
+@keyframes anime4 {
+	0% {background-position: -200% 20%;}
+	100% {background-position: 250% 20%;}
+	}
+@-moz-keyframes anime4 {
+	0% {background-position: -200% 20%;}
+	100% {background-position: 250% 20%;}
+	}
+@-webkit-keyframes anime4 {
+	0% {background-position: -200% 20%;}
+	100% {background-position: 250% 20%;}
+	}
+@-o-keyframes anime4 {
+	0% {background-position: -200% 20%;}
+	100% {background-position: 250% 20%;}
+	}
+@-ms-keyframes anime4 {
+	0% {background-position: -200% 20%;}
+	100% {background-position: 250% 20%;}
+	}
+#bkgMoveWrap05 {
+	background: url(/img/login/bkgCloud05.png) no-repeat;
+	width: 100%;
+	animation: anime5 20s linear infinite;
+	-moz-animation: anime5 20s linear infinite;
+	-webkit-animation: anime5 20s linear infinite;
+	-o-animation: anime5 20s linear infinite;
+	-ms-animation: anime5 20s linear infinite;
+	}
+@keyframes anime5 {
+	0% {background-position: -160% top;}
+	100% {background-position: 200% 40%;}
+	}
+@-moz-keyframes anime5 {
+	0% {background-position: -160% top;}
+	100% {background-position: 200% 40%;}
+	}
+@-webkit-keyframes anime5 {
+	0% {background-position: -160% top;}
+	100% {background-position: 200% 40%;}
+	}
+@-o-keyframes anime5 {
+	0% {background-position: -160% top;}
+	100% {background-position: 200% 40%;}
+	}
+@-ms-keyframes anime5 {
+	0% {background-position: -160% top;}
+	100% {background-position: 200% 40%;}
+	}
+#bkgMoveWrap06 {
+	width: 100%;
+	}
+@keyframes anime6 {
+	0% {background-position: -1000px bottom;}
+	100% {background-position: 2200px bottom;}
+	}
+@-moz-keyframes anime6 {
+	0% {background-position: -1000px bottom;}
+	100% {background-position: 2200px bottom;}
+	}
+@-webkit-keyframes anime6 {
+	0% {background-position:-1000px bottom;}
+	100% {background-position: 2200px bottom;}
+	}
+@-o-keyframes anime6 {
+	0% {background-position:-1000px bottom;}
+	100% {background-position: 2200px bottom;}
+	}
+@-ms-keyframes anime6 {
+	0% {background-position: -1000px bottom;}
+	100% {background-position: 2200px bottom;}
+	}
+.cloud {
+	background: url(/img/login/bkgCloud06.png) repeat-x bottom;
+	animation: anime6 27s linear infinite;
+	-moz-animation: anime6 27s linear infinite;
+	-webkit-animation: anime6 27s linear infinite;
+	-o-animation: anime6 27s linear infinite;
+	-ms-animation: anime6 27s linear infinite;
+	}
+
+.star {
+	background: url(/img/login/bkgStar.png) repeat;
+	animation: anime6 500s linear infinite;
+	-moz-animation: anime 500s linear -1s infinite;
+	-webkit-animation:anime 500s linear -1s infinite;
+	-o-animation: anime 500s linear -1s infinite;
+	-ms-animation: anime 500s linear -1s infinite;
+	}
+	
+#container{
+	width: 980px;
+	margin: 0 auto;
+}
+
+
+#boxTitle{
+	width: 606px;
+	margin: 147px 0 0;
+	float: left;
+}
+#boxTitle p.txtTitle{
+	margin: 40px 0 20px;
+}
+
+#boxTitle .btnFacebook {
+	float: left;
+	width: 130px;
+	padding-left: 5px;
+
+}
+#boxTitle .btnTwitter {
+	float: left;
+	width: 130px;
+
+}
+
+#boxLogin{
+	width: 374px;
+	margin: 63px 0 0;
+	float: right;
+	background: rgb(255,255,255);
+	background-color: rgba(255,255,255,0.5);
+	padding: 30px 0;
+}
+.night #boxLogin{
+	background: rgb(255,255,255);
+	background-color: rgba(255,255,255,0.7);
+}
+#boxLogin .boxInner{
+	width: 314px;
+	margin: 0 auto;
+	font-size: 12px;
+}
+#boxLogin h1{
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+	padding-top: 25px;
+	text-shadow: 1px 1px 0 #fff;
+	margin: 0 0 20px 0;
+}
+#boxLogin h2{
+	font-size: 16px;
+	font-weight: bold;
+	text-shadow: 1px 1px 0 #fff;
+	margin: 0 0 20px 0;
+	background: url(/img/login/icoLogin.png) no-repeat left top;
+	padding: 2px 0 0 25px;
+}
+#boxLogin p.btnLogin{
+	margin: 0 0 10px;
+}
+#boxLogin p.btnLoginLast{ margin-bottom:20px;}
+
+
+#boxLogin #login_form{
+	margin-bottom: 20px;
+}
+#boxLogin .txtInput {
+	margin-bottom: 10px;
+}
+#boxLogin .txtInput input{
+	border: 1px solid #999999;
+	font-size: 100%;
+	height: 24px;
+	line-height: 1;
+	padding: 3px 0 3px 5px;
+	width: 307px;
+}
+.persistent{
+	width: 180px;
+	float: left;
+}
+.persistent input{
+
+}
+.persistent label{
+	padding-left: 5px;
+}
+.btnLoginTeratail {
+	float: right;
+	width: 125px;
+}
+.btnLoginTeratail input {
+	border: 1px solid #666;
+	border-radius: 3px 3px 3px 3px;
+	cursor: pointer;
+	display: block;
+	font-weight: bold;
+	height: 25px;
+	width: 123px;
+	color: #666;
+}
+.btnLoginTeratail input:hover {
+	background-color:#666666;
+	color: #fff;
+}
+
+.bkgNewAccount{
+	padding-left: 25px;
+	background:url(/img/login/icoLogin.png) no-repeat left top;
+	padding: 2px 0 0 25px;
+}
+/*2013/12/06　エラーデザイン追加*/
+.boxError{
+	margin-bottom: 10px;
+}
+.boxError .txtError {
+	color: #EB6233;
+	font-weight: bold;
+	margin-top: 2px;
+}

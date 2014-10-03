@@ -1,0 +1,425 @@
+@charset "utf-8";
+/* CSS Document */
+
+#pageID_mypage #container {
+	width:100%;
+	padding: 41px 0 0;
+}
+#pageID_mypage #mypageContentsWrap {
+	width:980px;
+	margin:0 auto;
+}
+
+/* -------- パンくずリスト -------- */
+#breadcrumb {
+	background-color: #f7f6ee;
+}
+
+/* -------- 上部 -------- */
+#mypageHeadWrap {
+	background-color:#f7f6ee;
+	padding:0 0 30px 0;
+}
+#mypageHead {
+	width:980px;
+	margin:0 auto;
+}
+
+/* -------- ユーザーアイコン -------- */
+#boxUserName.boxStat .boxStatThumb,#boxUserName.boxStat .boxStatThumb img {
+	width: 95px;
+}
+.boxRadius_95 {
+	border-radius: 8px;
+	height: 95px;
+	width: 95px;
+	overflow: hidden;
+}
+#sideContainer .boxConnection .boxStatThumb {
+	margin:10px;
+	width:40px;
+}
+#sideContainer .boxConnection .boxStatThumb img {
+	width: 40px;
+}
+.boxRadius_40 {
+	border-radius: 3px;
+	height: 40px;
+	width: 40px;
+	overflow: hidden;
+}
+
+/* -------- ユーザー情報 -------- */
+#mypageHeadWrap #boxUserName {
+	width:710px;
+}
+#mypageHeadWrap #boxUserName .boxUserData {
+	width:595px;
+	margin-bottom:10px;
+}
+#mypageHeadWrap #boxUserName .boxUser {
+	margin-left:20px;
+}
+#mypageHeadWrap #boxUserName .boxUser .ttlMain {
+	margin:0 20px 15px 0;
+	font-size:24px;
+	font-size:2.4rem;
+	font-weight:bold;
+	line-height:26px;
+}
+#mypageHeadWrap #boxUserName .boxTag {
+	margin-top:110px;
+}
+.btnMore {
+	border: none;
+	background: none;
+	font-weight: bold;
+	cursor: pointer;
+	margin: 0;
+	padding: 0;
+	color: #333;
+	line-height: 2;
+	text-decoration: underline;
+	outline:0;
+	display: none;
+}
+.btnMore:hover {
+	text-decoration: none;
+}
+.btnAboutScore {
+	text-align:right;
+	position:relative;
+}
+.btnAboutScore button {
+	color: #195f8d;
+	border:none;
+	background:none;
+	text-decoration:underline;
+	outline:none;
+	cursor:pointer;
+}
+.btnAboutScore button:hover {
+	text-decoration:none;
+}
+.boxAboutScore {
+	text-align:left;
+	width: 220px;
+	padding: 15px;
+	background: #f5f5f5;
+	position: absolute;
+	top: 28px;
+	left: 0;
+	z-index: 10000;
+	border-radius: 3px;
+	display: none;
+	/* box-shadow */
+	box-shadow:rgba(113, 135, 164, 0.29) 0px 0px 2px 2px;
+	-webkit-box-shadow:rgba(113, 135, 164, 0.29) 0px 0px 2px 2px;
+	-moz-box-shadow:rgba(113, 135, 164, 0.29) 0px 0px 2px 2px;
+}
+.ttlAboutScore {
+	font-size:18px;
+	font-size:1.8rem;
+	font-weight:bold;
+	padding-bottom:10px;
+	border-bottom:1px solid #ddd;
+	margin-bottom:10px;
+}
+
+/* -------- 丸め -------- */
+
+.txtHidden {
+	height:3em;
+	overflow:hidden;
+}
+.txtHidden .txt {
+  position: relative;
+  /*height: 3em;*/
+  z-index: 1;
+}
+.txtHidden .txt:after {
+  position: absolute;
+  /*display: block;*/
+  display: none;
+  content: '…';
+  width: 21px;
+  height: 15px;
+  right: 0px;
+  bottom: 0px;
+  background: #f7f6ee;
+  z-index: 2;
+}
+#mypageHeadWrap .txtUserData_none {
+	text-align:center;
+}
+#mypageHeadWrap .txtUserData_none a {
+	text-decoration: underline;
+}
+#mypageHeadWrap .txtUserData_none a:hover {
+	text-decoration: none;
+}
+#mypageHeadWrap .btnEditprofile a {
+	display: inline-block;
+	width: 100px;
+	border: 1px solid #aaa;
+	border-radius: 3px;
+	padding: 2px 5px;
+	color: #333;
+	font-size: 10px;
+	font-size: 1rem;
+	font-weight: bold;
+	text-align: center;
+	background: #eee;
+}
+#mypageHeadWrap .btnEditprofile a:hover {
+	text-decoration:none;
+	opacity:0.7;
+	filter: alpha(opacity=70)
+}
+
+/* -------- ユーザースコア -------- */
+#mypageHeadWrap .boxUserScore {
+	margin-left:20px;
+	width:250px;
+}
+#mypageHeadWrap .boxUserScore .boxScoreData {
+	text-align:right;
+	margin-left:10px;
+}
+#mypageHeadWrap .boxUserScore .boxTotalScore {
+	padding:10px;
+	background-color:#fff;
+	margin-bottom:10px;
+}
+#mypageHeadWrap .boxUserScore .boxWeeklyScore {
+	padding:10px;
+	background-color:#fff;
+}
+#mypageHeadWrap .boxUserScore .ttlUserScore{
+	font-size:16px;
+	font-size:1.6rem;
+	width:45px;
+	color:#999;
+}
+#mypageHeadWrap .boxUserScore .txtUserScore{
+	font-size:14px;
+	font-size:1.4rem;
+	font-weight:bold;
+}
+#mypageHeadWrap .boxUserScore .txtTotalScore{
+	margin-left:10px;
+}
+#mypageHeadWrap .boxUserScore .txtWeeklyScore{
+	margin-left:10px;
+}
+#mypageHeadWrap .boxUserScore .txtRanking{
+	font-size:28px;
+	font-size:2.8rem;
+	font-weight:bold;
+}
+#mypageHeadWrap .boxUserScore .txtRanking_past{
+	/*margin-right:-12px;*/
+}
+
+/* -------- セレクトタブ -------- */
+
+#container .boxSelectTab_myPage {
+	position: relative;
+	clear: both;
+	padding: 0;
+	margin:20px 0 0;
+	line-height: 22px;
+}
+
+#container .boxSelectTab_myPage li {
+	position:relative;
+	display: inline-block;
+	width: 236px;
+	height:24px;
+	border-bottom:1px solid #ccc;
+	border-radius:3px 3px 0 0;
+	float: left;
+	margin: 0;
+	padding: 5px 0;
+	text-align: center;
+	cursor: pointer;
+}
+
+#container .boxSelectTab_myPage li:hover {
+	text-decoration:underline;
+}
+#container .boxSelectTab_myPage li span{
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+}
+
+#container .boxSelectTab_myPage .on span {
+}
+#container .boxSelectTab_myPage li.on:hover {
+	text-decoration:none;
+}
+
+/* ONの時 */
+
+#container .boxSelectTab_myPage .on {
+	border:1px solid #ccc;
+	border-bottom:1px solid #fff;
+	font-weight:bold;
+}
+#container .tabNotItem {
+	text-align:center;
+}
+#container .tabNotItem p {
+	text-align:center;
+	margin:20px 0;
+	font-size:16px;
+	font-size:1.6rem;
+}
+#container .tabNotLogin {
+	text-align:center;
+}
+#container .tabNotLogin p {
+	text-align:center;
+	margin:20px 0;
+	font-size:12px;
+	font-size:1.2rem;
+}
+#container .tabNotMytag {
+	text-align:center;
+}
+#container .tabNotMytag p {
+	text-align:center;
+	margin:20px 0;
+	font-size:12px;
+	font-size:1.2rem;
+}
+
+/* -------- バッジ -------- */
+#sideContainer .boxBadge_side {
+	margin-bottom:10px;
+}
+#sideContainer .boxBadge_side .imgBadgeSmall {
+	margin:10px;
+}
+#sideContainer .badgeNum {
+	font-weight:normal;
+}
+#sideContainer .badgeNum_have {
+	font-weight:bold;
+}
+#sideContainer .badgeNum_total {
+	font-size:10px;
+	font-size:1rem;
+}
+#sideContainer .txtMoreBadge a {
+	color:#333;
+	text-decoration:underline;
+	font-weight:bold;
+}
+#sideContainer .txtMoreBadge a:hover {
+	text-decoration:none;
+}
+.txtMoreBadge {
+}
+
+/* -------- つながり -------- */
+#sideContainer  .boxConnection {
+	margin-top:30px;
+}
+#sideContainer  .boxConnection .boxFollow {
+	border-bottom:1px solid #ddd;
+	padding:10px 0;
+}
+#sideContainer  .boxConnection .ttlFollow {
+	font-weight:bold;
+	padding:10px 20px 0 10px;
+}
+#sideContainer  .boxConnection .boxFollower {
+	padding:10px 0;
+}
+#sideContainer  .boxConnection .ttlFollower {
+	font-weight:bold;
+	margin-top:20px;
+	padding:0 20px 0 10px;
+}
+#sideContainer .boxConnection .txtMoreConnection a {
+	color:#333;
+	text-decoration:underline;
+	font-weight:bold;
+}
+#sideContainer .boxConnection .txtMoreConnection a:hover {
+	text-decoration:none;
+}
+#sideContainer  .boxConnection .txtNotFollow {
+	padding:0 10px 10px 10px;
+}
+
+
+/* 入力フィールド
+-------------------------- */
+.boxSectionLogin .mod-inputField {
+    padding: 10px;
+}
+
+.entry-stateLavel {
+    margin-bottom: 6px;
+    font-size: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 20px;
+}
+
+.entry-stateLavel.is-accepting {
+    background: #f5f5f5;
+}
+
+.entry-stateLavel.is-resolved {
+    background: #e9606d;
+    color: #fff;
+}
+
+.entry-res {
+    text-align: center;
+}
+
+.entry-res.is-resolved {
+    color: #e9606d;
+}
+
+.entry-res dt {
+    font-size: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.entry-res dd {
+    font-size: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.entry-dataList {
+    /*float: left;*/
+    position: absolute;
+    margin-left: -14px;
+}
+
+.entry-dataList li {
+    float: left;
+    margin-left: 14px;
+    font-weight: bold;
+}
+
+.entry-dataList li span {
+    margin-left: 3px;
+    font-size: 10px;
+    font-size: 1rem;
+}
+
+.entry-tags {
+    float: left;
+    margin-left: 150px;
+    margin-bottom: 0;
+}

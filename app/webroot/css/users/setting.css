@@ -1,0 +1,424 @@
+@charset "utf-8";
+
+
+/*  SETTING : パスワード・プロフィール設定
+---------------------------------------------*/
+
+/* -------- 設定ページ共通 -------- */
+
+/* タイトル */
+.ttlMain {
+	background-image: url(/img/common/ttl/bgkTtlUser.png);
+	margin-bottom: 35px;
+	padding-left:35px;
+}
+
+.boxPost {
+	margin-top: 20px;
+}
+.boxPost dl dt {
+	width: 170px;
+	padding-top:7px;
+}
+
+.boxPost dl dd {
+	margin-left: 170px;
+	margin-bottom: 20px;
+}
+.boxPost dl dd span{
+	display: block;
+	margin-top: 5px;
+	font-size: 11px;
+	color: #656565;
+}
+#mainContainer .boxPost .btnSubmit{
+	margin-top: 40px;
+}
+#mainContainer .boxPost .btnSubmit button {
+	display:block;
+	width:240px;
+	height:36px;
+	color:#fff;
+	background-color: #195f8d;
+	border-radius: 3px;
+	border:none;
+	border-bottom: 1px solid #12486b;
+	font-weight:bold;
+	margin:0 auto;
+	cursor:pointer;
+}
+#mainContainer  .boxPost .btnSubmit button:hover {
+	opacity:0.7;
+}
+
+
+.boxPost input{
+	width: 480px;
+}
+
+.boxPost select {
+	width: 170px;
+}
+
+.boxPost .txtBody textarea {
+	width: 480px;
+	margin-bottom: -5px;
+}
+
+boxPost .txtBody span {
+	padding: 0;
+}
+
+
+.boxPost .boxFile #txtFake_input_file,
+.boxPost .boxFile #txtFile_input {
+	border:none;
+	background:none;
+	padding:0;
+	font-size: 11px;
+	color: #656565;
+	display: inline-block;
+	width: auto;
+}
+
+.boxPost .boxFile {
+	overflow: hidden;
+}
+
+.boxPost .boxFile #icnThumbFile {
+	float: left;
+	width: 50px;
+	margin: 0 15px 0 0;
+}
+
+.boxPost .boxFile #icnThumbFile .icnUserThumb {
+	width: 45px;
+	height: 45px;
+}
+
+.boxPost .boxFile #boxFileSelect {
+	float: left;
+	padding-top: 7px;
+}
+
+.boxPost .boxFile #btnFile {
+	display: inline-block;
+	margin: 0 15px 0 0;
+}
+
+/*.boxPost .boxFile #btnFile {
+	margin: 0 15px 0 0;
+	background-color: #195f8d;
+	border-radius: 3px;
+	border:none;
+	border-bottom: 1px solid #12486b;
+	color: #FFFFFF;
+	display: block;
+	font-size: 14px;
+	font-size: 1.4rem;
+	font-weight: bold;
+	padding: 5px 30px;
+	cursor:pointer;
+	display: inline-block;
+	width: auto;
+}*/
+/*.boxPost .boxFile #btnFile:hover {
+	opacity:0.7;
+}*/
+
+
+#pageID_social .boxPost dl dt,
+#pageID_pw .boxPost dl dt,
+#pageID_profile .boxPost dl dt,
+#pageID_mail .boxPost dl dt,
+#pageID_contact .boxPost dl dt{
+	clear: both;
+	float: left;
+}
+
+#pageID_pw .boxPost .btnSubmit,
+#pageID_profile .boxPost .btnSubmit {
+	text-align: left;
+
+}
+
+#pageID_pw .boxPost .bkgNewAccount{
+	margin: -30px 28px 15px 0;
+}
+#pageID_pw .boxPost .bkgNewAccount a,
+#pageID_pw .boxPost .bkgNewAccount a:link,
+#pageID_pw .boxPost .bkgNewAccount a:visited{
+	float: right;
+}
+
+
+
+/* -------- パスワードを忘れた方へ -------- */
+
+#container #mainContainer .ttlForget {
+	margin:30px 0;
+}
+#container #mainContainer .boxPost .txtForget {
+	margin:20px 0;
+}
+#container #mainContainer .boxPost .txtRequired {
+	color:#EB6233;
+	font-weight:bold;
+	margin:0 10px;
+}
+#container #mainContainer .boxPost .btnSubmitForget {
+	margin: 0 0 0 190px;
+}
+
+#mainContainer .boxPost .btnSubmitForget a{
+	display:block;
+	width:240px;
+	/*padding:10px 0;*/
+	color:#fff;
+	background-color: #195f8d;
+	border-radius: 3px;
+	border:none;
+	border-bottom: 1px solid #12486b;
+	font-weight:bold;
+	margin:0 auto;
+	cursor:pointer;
+	text-align:center;
+}
+
+#mainContainer .boxPost .btnSubmitForget a:hover{
+	opacity:0.7;
+	filter: alpha(opacity=70)
+}
+#mainContainer .boxPost .a_submit{
+	display:block;
+	width:240px;
+	line-height:36px;
+	color:#fff;
+	background-color: #195f8d;
+	border-radius: 3px;
+	border:none;
+	border-bottom: 1px solid #12486b;
+	font-weight:bold;
+	margin:0 auto;
+	cursor:pointer;
+	text-align:center;
+}
+#pageID_contact #mainContainer .boxPost .a_submit {
+	line-height:36px;
+}
+
+#mainContainer .boxPost .a_submit:hover{
+	opacity:0.7;
+	filter: alpha(opacity=70)
+}
+
+#container #mainContainer .boxPost .btnSubmitForget .btnBackLogin {
+	margin:18px 20px 0 0;
+	color: #1787BB;
+    text-decoration: underline;
+}
+#container #mainContainer .boxPost .btnSubmitForget .btnBackLogin:hover {
+    color: #F16F14;
+    text-decoration: underline;
+}
+#container #mainContainer .boxPost .dtForget {
+	position: absolute;
+	width: auto;
+	padding-top: 0;
+	line-height: 36px;
+}
+
+#container #mainContainer .boxPost .ddForget {
+	margin-left: 218px;
+	margin-bottom: 25px;
+}
+#container #mainContainer .boxPost .txtPasswordDetail {
+	margin-left:1em;
+	font-size:12px;
+}
+#container #mainContainer .boxPost .txtListForget {
+	list-style-type: disc;
+	margin-left: 1.2em;
+}
+#container #mainContainer .boxPost .txtListForget li {
+	list-style: outside;
+	margin: 1em 0;
+}
+#container #mainContainer .boxPost .txtListForget li .txtRed {
+	color:#EB6233;
+	font-weight:bold;
+}
+#container #mainContainer .boxPost .txtListForget li a {
+    color: #1787BB;
+    text-decoration: underline;
+}
+#container #mainContainer .boxPost .txtListForget li a:hover {
+    color: #F16F14;
+    text-decoration: underline;
+}
+
+.boxPostRule {
+	color:#656565;
+	margin-top: 30px;
+}
+.boxPostRule p {
+	font-size:11px;
+}
+.boxPostRule .ttlRule {
+	font-weight:bold;
+	color:#656565;
+	margin-bottom:0.5em;
+}
+.boxPostRule .txtBold {
+	font-weight:bold;
+}
+
+#pageID_social .ttlMain {
+	margin-bottom: 35px;
+}
+
+#pageID_social .boxPost dl dt {
+    font-weight: bold;
+	width: 160px;
+}
+
+#pageID_social .boxPost dl dd {
+	margin-left: 160px;
+	margin-bottom: 20px;
+}
+
+.boxSettingSelect li.sidebar_active {
+	padding:10px 0;
+	margin: 0 0 10px;
+	background-color:#333;
+	display: block;
+    font-size: 10pt;
+    font-weight: bold;
+	text-align:center;
+	color:#fff;
+}
+.sidebar {
+    display: block;
+    font-size: 10pt;
+    font-weight: bold;
+	padding:10px 0;
+	margin-bottom:10px;
+	text-align:center;
+}
+strong.sidebar {
+    background: #707070;
+    color: #fff;
+}
+
+a.sidebar {
+    background: #ddd;
+    color: #666;
+}
+
+a.sidebar:hover {
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+}
+.txtAttention{
+	margin: 0 0 0 170px;
+}
+.txtAttention .left{
+	float: left;
+	display: block;
+	padding-top: 23px;
+    width: 410px;
+}
+.txtAttention .right{
+	float: left;
+	margin-left: 18px;
+	display: block;
+}
+
+
+
+
+
+/* -------- メール配信停止 -------- */
+#pageID_mail {
+}
+#pageID_mail .ttlMain {
+	background-image: url(/img/common/ttl/bgkTtlComp.png);
+	margin-bottom: 20px;
+}
+#pageID_mail .txt {
+}
+#pageID_mail .txtSuccess {
+	background: url(/img/common/icnMailStopCmp.png) 0 2px no-repeat;
+	font-weight: bold;
+	padding-left: 20px;
+}
+#pageID_mail .boxPost {
+	background-color: #f5f5f5;
+	border:1px solid #ddd;
+	padding: 30px 30px 10px;
+}
+#pageID_mail .boxPost dl {
+	float: left;
+	font-size: 14px;
+	font-size: 1.4rem;
+}
+#pageID_mail .boxPost dl dt {
+	clear: both;
+    font-weight: bold;
+	width: 100px;
+	padding-top: 0;
+}
+#pageID_mail .boxPost dl dd {
+	margin-left: 100px;
+}
+
+#pageID_mail .btnStop input {
+	display:block;
+	float: right;
+	width:240px;
+	height:36px;
+	color:#fff;
+	background-color: #195f8d;
+	border-radius: 3px;
+	border:none;
+	border-bottom: 1px solid #12486b;
+	font-weight:bold;
+	margin:15px auto 0;
+	cursor:pointer;
+}
+#pageID_mail .btnStop input:hover {
+	opacity:0.7;
+}
+#pageID_mail .btnStopCmp input {
+	display:block;
+	float: right;
+	width:240px;
+	height:36px;
+	color:#fff;
+	background-color: #aaa;
+	border-radius: 3px;
+	border:none;
+	border-bottom: 1px solid #999;
+	font-weight:bold;
+	margin:15px auto 0;
+	cursor:pointer;
+}
+#pageID_mail .btnStopCmp input:hover {
+	opacity:0.7;
+}
+
+
+/* ------------------------------------------------------------
+
+ * Module
+
+------------------------------------------------------------ */
+.mod-formGroup {
+	position: relative;
+}
+
+.mod-formGroup .mod-formGroup-label {
+	position: absolute;
+	bottom: 0;
+	line-height: 36px;
+}

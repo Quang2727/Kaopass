@@ -1,0 +1,70 @@
+.clearfix {
+    *zoom: 1;
+}
+.clearfix:before, .clearfix:after {
+    display: table;
+    content: "";
+    line-height: 0
+}
+.clearfix:after {
+    clear: both
+}
+.hide-text {
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0
+}
+.input-block-level {
+    display: block;
+    width: 100%;
+    min-height: 30px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+.md-editor {
+    display: block;
+}
+.md-editor > .md-header, .md-editor .md-footer {
+    display: block;
+    padding: 6px 4px;
+/*    background: #fff; */
+}
+/*
+.md-editor > .md-header {
+    border: 1px solid #D8D9DA;
+    border-bottom: 0;
+}
+*/
+.md-editor > .md-preview {
+    background: #fff;
+    border-top: 1px dashed #D8D9DA;
+    border-bottom: 1px dashed #D8D9DA;
+    min-height: 10px
+}
+.md-editor > textarea {
+    font-family: Consolas, Monaco, Menlo, "Courier New", monospace;
+    font-size: 14px;
+    outline: 0;
+    outline: thin dotted \9;
+    margin: 0;
+    display: block;
+    padding: 0;
+    width: 100%;
+    border-top-style: dashed;
+    border-radius: 0;
+    box-shadow: none;
+    background: #fafafa
+}
+.md-editor > textarea:focus,
+.md-editor > textarea.form-error {
+    box-shadow: none;
+    background: #fff;
+    border-top-style: solid;
+}
+.md-editor.active {
+    outline: 0;
+    outline: thin dotted \9;
+}

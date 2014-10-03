@@ -1,0 +1,2445 @@
+@charset "utf-8";
+/*------------------------------------*\
+        $COMMON
+    \*------------------------------------*/
+    /**
+     * RESET...............デフォルトの設定
+     * COMMON...........全ページ共通の設定　いまここ
+     */
+
+/* ------------------------------------------------------------
+
+ * BASE
+
+------------------------------------------------------------ */
+
+html {
+    font-size: 62.5%;
+}
+body {
+    width: 100%;
+    min-width: 980px;
+    /*overflow:hidden;*/
+    line-height: 1.6;
+    background-color: #fff;
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS P Gothic", Verdana, sans-serif;
+    font-size: 12px;
+    font-size: 1.2rem;
+    color: #333;
+    text-align: left;
+    letter-spacing: 0.5px;
+    word-break: break-all;
+}
+/* 画像 共通設定
+-------------------------- */
+img {
+    vertical-align: bottom;
+    border: none;
+}
+/* リンク 共通設定
+-------------------------- */
+a {
+    outline: none;
+}
+a:link {
+    color: #195f8d;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+a img:hover {
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+}
+/* フォーム　設定
+-------------------------- */
+form input {
+    padding: 2px;
+}
+form .submit {
+    cursor: pointer;
+}
+/* ラジオボタン */
+form input[type="checkbox"], form input[type="radio"] {
+    margin: 0 7px 0 0;
+    position: relative;
+    top: 2px;
+}
+#mainContainer input, #mainContainer textarea, #mainContainer select {
+    padding: 7px 10px;
+    background-color: #fcfcfc;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+#mainContainer input {
+    font-size: 13px;
+}
+#mainContainer textarea {
+    font-size: 14px;
+}
+/* ------------------------------------------------------------
+
+ * COMMON STYLE
+
+------------------------------------------------------------ */
+.hide {
+    display: none !important;
+}
+.floatL {
+    float: left;
+}
+.floatR {
+    float: right;
+}
+.bkgSprite {
+    overflow: hidden;
+    height: 0;
+    display: block;
+}
+/* ---- テキスト系 ---- */
+.txtBold {
+    font-weight: bold;
+}
+/* ------------------------------------------------------------
+
+ * HEADER
+
+------------------------------------------------------------ */
+#header {
+    width: 100%;
+    background-color: #333;
+    border-bottom: 1px solid #333;
+    min-width: 1020px;
+    min-height: 46px;
+}
+#header .boxInner {
+    position: relative;
+    width: 980px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+/* ---- サイトタイトル ---- */
+#header #ttlHeader {
+    float: left;
+    margin: 0;
+    padding: 12px 0 0 0;
+    width: 138px;
+}
+#header #ttlHeader a img:hover {
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+/* ---- キーワード検索 ---- */
+#header #boxSearch {
+    position: relative;
+    margin: 10px 0 0 0;
+    padding-right: 150px;
+    float: left;
+    width: 290px;
+    border-right: 1px solid #222;
+    font-size: 13px;
+    font-size: 1.3rem;
+}
+#header #boxSearch .boxLabelInput {
+    position: relative;
+}
+#header #boxSearch .txtSearch {
+    background: #fcfcfc;
+    border: 1px solid #ddd;
+    width: 250px;
+    padding: 3px 25px 3px 13px;
+    color: #333;
+    border-radius: 5px;
+}
+#boxSearch .boxLabelInput label {
+    position: absolute;
+    top: 3px;
+    left: 8px;
+    color: #ccc;
+    line-height: 2;
+}
+#header #boxSearch .btnSearch {
+    position: absolute;
+    right: 160px;
+    top: 0px;
+    border: none;
+}
+/* ---- リアルタイム検索 ---- */
+.boxSearchForecast {
+    z-index: 999;
+    display: none;
+    width: 288px;
+    position: absolute;
+    top: 35px;
+    left: 0px;
+    background-color: #F5F5F5;
+    border: 1px solid #ccc;
+    font-size: 12px;
+    /* box-shadow */
+    box-shadow: rgba(113, 135, 164, 0.29) 0px 0px 2px 2px;
+    -webkit-box-shadow: rgba(113, 135, 164, 0.29) 0px 0px 2px 2px;
+    -moz-box-shadow: rgba(113, 135, 164, 0.29) 0px 0px 2px 2px;
+}
+.boxSearchForecast:before {
+    content: ' ';
+    height: 0;
+    position: absolute;
+    width: 0;
+    border: 5px solid transparent;
+    border-bottom-color: #e5e5e5;
+    top: -10px;
+    left: 30px;
+}
+.boxSearchForecast li {
+    padding: 5px 10px 5px 5px;
+    cursor: pointer;
+    border-bottom: 1px solid #ccc;
+}
+.boxSearchForecast li p {
+    float: left;
+    width: 45px;
+    text-align: center;
+    color: #333;
+    font-weight: bold;
+    margin: 5px 0 0;
+}
+.boxSearchForecast li.searchMore {
+    padding: 0;
+    text-align: center;
+}
+.boxSearchForecast li.searchMore a {
+    display: block;
+    background-color: #e5e5e5;
+    padding: 8px;
+    color: #333;
+    font-size: 11px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.boxSearchForecast li.searchMore a:hover {
+}
+.boxSearchForecast li p span {
+    display: block;
+    font-size: 9px;
+}
+.boxSearchForecast li .searchTitle {
+    float: right;
+    width: 220px;
+    margin-top: 4px;
+    font-size: 11px;
+    font-size: 1.1rem;
+    text-align: left;
+}
+.boxSearchForecast li dl dt {
+}
+.boxSearchForecast li dl dt a {
+}
+.boxSearchForecast li dl dd {
+    width: 220px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    height: 20px\9; /* IE8 */
+}
+:root .boxSearchForecast li dl dd {
+    height: 20px \0/; /* IE9 */
+}
+.boxSearchForecast li:hover {
+    background-color: #ddd;
+}
+/* ---- ボタン・質問する ---- */
+#header .btnAsk {
+    float: left;
+    width: 146px;
+    height: 46px;
+    border-left: 1px solid #444;
+    border-right: 1px solid #222;
+}
+#header .btnAsk a {
+    display: block;
+    text-align: center;
+}
+#header .btnAsk a img:hover {
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+/* ---- ユーザーナビ ---- */
+#header #boxUsernav {
+    float: left;
+    padding: 0;
+    width: 252px;
+    border-right: 1px solid #444;
+}
+/* ---- お知らせ ---- */
+/* icon */
+#header #boxUsernav .icnNotice {
+    width: 48px;
+    height: 46px;
+    margin: 0;
+    float: left;
+    border-left: 1px solid #444;
+    border-right: 1px solid #222;
+}
+#header #boxUsernav .icnNotice:hover {
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+#header #boxUsernav .icnNotice:hover a {
+    text-decoration: none;
+}
+#header #boxUsernav .icnNotice:hover img {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+#header #boxUsernav .popboxOpen .icnNotice:hover {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+#header #boxUsernav .icnNotice a {
+    display: block;
+    width: 48px;
+    height: 46px;
+}
+#header #boxUsernav .icnNotice span {
+    display: block;
+}
+#header #boxUsernav .icnNotice .icnNoticeEx {
+    position: relative;
+    z-index: 1;
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+}
+#header #boxUsernav .popboxOpen .icnNotice .icnNoticeEx {
+    background: #f5f5f5;
+}
+#header #boxUsernav .icnNotice .icnNoticeEx img {
+    vertical-align: middle;
+}
+#header #boxUsernav .icnNotice .bkgNoticeRed {
+    position: relative;
+    z-index: 2;
+    width: 13px;
+    height: 12px;
+    background-color: #ff6666;
+    /*border:1px solid #333;*/
+    border-radius: 50%;
+    margin: -36px 0 0 23px;
+    padding: 1px 0 0;
+    color: #fff;
+    font-size: 8px;
+    font-size: 0.8rem;
+    text-align: center;
+    line-height: 12px;
+}
+/* pop up */
+#header #boxUsernav .popbox {
+    position: relative;
+}
+#header #boxUsernav .collapse {
+    position: relative;
+}
+#header #boxUsernav .open {
+}
+#header #boxUsernav .box {
+    display: block;
+    z-index: 1000;
+    background: #f5f5f5;
+    border: solid 1px #DDD;
+    border-top: none;
+    position: absolute;
+    right: 0;
+    top: 46px;
+    width: 250px;
+}
+#header #boxUsernav .box a.close {
+    color: red;
+    font-size: 12px;
+    font-family: arial;
+    text-decoration: underline;
+}
+#header #boxUsernav .box .inBox {
+    padding: 0;
+    font-size: 11px;
+    font-size: 1.1rem;
+    /* box-shadow */
+    box-shadow: rgba(113, 135, 164, 0.29) 0px 4px 2px 2px;
+    -webkit-box-shadow: rgba(113, 135, 164, 0.29) 0px 4px 2px 2px;
+    -moz-box-shadow: rgba(113, 135, 164, 0.29) 0px 4px 2px 2px;
+}
+#header #boxUsernav .box .inBox .notificationAll {
+    text-align: center;
+    font-weight: bold;
+}
+#header #boxUsernav .box .inBox .notificationAll a {
+    display: block;
+    padding: 8px 0;
+    background-color: #e5e5e5;
+    color: #333;
+    font-weight: bold;
+}
+#header #boxUsernav .box .inBox .notificationAll a:hover {
+}
+#header #boxUsernav .box .inBox #jscroll2 {
+    position: relative;
+    overflow: auto;
+}
+#header #boxUsernav .box .inBox li {
+    clear: both;
+}
+#header #boxUsernav .box .inBox li a {
+    border-bottom: 1px solid #ccc;
+    display: block;
+    padding: 15px;
+    color: #333;
+}
+#header #boxUsernav .box .inBox li a .notificationDate {
+    display: block;
+    margin-top: 1rem;
+    color: #ccc;
+}
+#header #boxUsernav .box .inBox li a .notificationDate {
+    display:block;
+    margin-top:1rem;
+    color:#ccc;
+}
+#header #boxUsernav .box .inBox li a:hover {
+    background-color: #e5e5e5;
+    text-decoration: none;
+}
+#header #boxUsernav .box .inBox li a.bkgNew {
+    background-color: #eee;
+}
+#header #boxUsernav .box .inBox li a img {
+    margin-right: 10px;
+    width: 22px;
+    float: left;
+    border-radius: 50%;
+}
+#header #boxUsernav .box .inBox li a span {
+    font-weight: bold;
+}
+#header #boxUsernav .box .inBox li a span.userName, #header #boxUsernav .box .inBox li a span.userAction {
+}
+#header #boxUsernav .box .inBox li a span.questionTtl {
+    color: #195f8d;
+}
+#header #boxUsernav .box .inBox li a span.bestAnswer {
+    color: #b14a5c;
+}
+/* ユーザー画像・ユーザー名 */
+#header #boxUsernav #icnUser {
+    position: relative;
+    width: 200px;
+    height: 46px;
+    border-left: 1px solid #444;
+    border-right: 1px solid #222;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    float: left;
+}
+#header #boxUsernav #icnUser a {
+    display: block;
+    height: 33px;
+    padding: 13px 0 0 18px;
+    color: #fff;
+    font-weight: bold;
+}
+#header #boxUsernav #icnUser a:hover {
+    text-decoration: none;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+#header #boxUsernav #icnUser a img:hover {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+#header #boxUsernav #icnUser img {
+    vertical-align: -7px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 0 8px 0 0;
+}
+/* ユーザーメニュー */
+#header #boxUsernav #boxUserMenu {
+    display: none;
+    position: absolute;
+    right: 0px;
+    top: 34px;
+    z-index: 1001;
+    font-size: 12px;
+    font-size: 1.2rem;
+}
+#header #boxUsernav #boxUserMenu a {
+    display: block;
+    height: auto;
+    color: #333;
+}
+#header #boxUsernav #boxUserMenu .txtUserName {
+    font-size: 13px;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+#header #boxUsernav #boxUserMenu ul {
+    width: 250px;
+    margin: 10px 0 0;
+    padding: 0;
+    /* box-shadow */
+    box-shadow: rgba(113, 135, 164, 0.29) 0px 0px 2px 2px;
+    -webkit-box-shadow: rgba(113, 135, 164, 0.29) 0px 0px 2px 2px;
+    -moz-box-shadow: rgba(113, 135, 164, 0.29) 0px 0px 2px 2px;
+}
+#header #boxUsernav #boxUserMenu ul:before {
+    content: ' ';
+    height: 0;
+    position: absolute;
+    width: 0;
+    border: 5px solid transparent;
+    border-bottom-color: #f5f5f5;
+    top: 0;
+    left: 72px;
+}
+#header #boxUsernav #boxUserMenu ul li {
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #ddd;
+}
+#header #boxUsernav #boxUserMenu ul li:hover {
+    background-color: #e5e5e5;
+}
+#header #boxUsernav #boxUserMenu ul li a {
+    display: block;
+    background-image: url(/img/common/bkgUserMenuList.png);
+    background-repeat: no-repeat;
+    padding: 18px 10px 18px 40px;
+    margin: 0;
+}
+#header #boxUsernav #boxUserMenu ul .bkgMypage a {
+    background-position: 10px 9px;
+}
+#header #boxUsernav #boxUserMenu ul .bkgKininaru a {
+    background-position: 10px -34px;
+}
+#header #boxUsernav #boxUserMenu ul .bkgQuestion a {
+    background-position: 10px -123px;
+}
+#header #boxUsernav #boxUserMenu ul .bkgAnswer a {
+    background-position: 10px -168px;
+}
+#header #boxUsernav #boxUserMenu ul .bkgProfile a {
+    background-position: 10px -78px;
+}
+#header #boxUsernav #boxUserMenu ul .bkgLogout a {
+    background-position: 10px -209px;
+}
+#header #boxUsernav #boxUserMenu ul li a span {
+    display: block;
+    float: right;
+}
+#header .btnLogin {
+    padding: 7px 35px 7px 0px;
+    border-right: 1px solid #222;
+    float: left;
+}
+#header .btnLogin a {
+    padding: 0 0 0 35px;
+}
+/*  ログインモーダル  */
+
+#bkgModalLogin {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    background: #000;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    width: 100%;
+    padding: 70px 0 30px;
+    text-align: center;
+    height: 100%;
+    display: none;
+}
+#boxModalLogin {
+    width: 650x;
+    background-color: #fff;
+    padding: 10px 50px 50px 50px;
+    position: fixed;
+    top: 100px;
+    left: 200px;
+    z-index: 100;
+    display: none;
+}
+#boxModalLogin .boxInner .btnClose {
+    width: auto;
+    padding: 0;
+    margin: 0;
+    background: none;
+    border: 0;
+    font-size: 0;
+    line-height: 0;
+    overflow: visible;
+    cursor: pointer;
+    position: absolute;
+    top: -23px;
+    right: -23px;
+}
+#boxModalLogin .boxInner {
+    width: 650px;
+    margin: 0 auto;
+    font-size: 12px;
+}
+#boxLoginRequest .boxInner .ttlModalLogin, #boxModalLogin .boxInner .ttlModalLogin {
+    font-weight: bold;
+    margin: 20px 0 10px 0;
+    padding: 0 0 10px 0;
+    /* border-bottom: 1px solid #ccc; */
+    /* box-shadow: 0px 1px 0px #eee; */
+    font-size: 22px;
+}
+#boxModalLogin .boxInner .ttlModalLogin .boxLeft {
+}
+#boxModalLogin .boxInner .ttlModalLogin .boxRight {
+}
+#boxLoginRequest h2, #boxModalLogin h2 {
+    font-size: 16px;
+    /* text-shadow: 1px 1px 0 #fff; */
+    margin: 0 0 20px 0;
+    background: url(/img/login/icoLogin.png) no-repeat left top;
+    padding: 6px 0 10px 75px;
+    text-align: left;
+    border-bottom: 2px solid #aaa;
+}
+#boxLoginRequest p.btnLogin, #boxModalLogin p.btnLogin {
+    margin: 0 0 10px;
+}
+#boxLoginRequest p.btnLoginLast, #boxModalLogin p.btnLoginLast {
+    margin-bottom: 20px;
+}
+#boxLoginRequest #login_form, #boxModalLogin #login_form {
+    text-align: left;
+}
+#boxLoginRequest .txtInput, #boxModalLogin .txtInput {
+    margin: 20px 0 10px;
+}
+#boxLoginRequest .txtInput input, #boxModalLogin .txtInput input {
+    width: 289px;
+    padding: 7px 10px;
+    background-color: #fcfcfc;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+.btnLoginTeratail {
+}
+.btnLoginTeratail input {
+    background: url(/img/common/login/bkgLogin.png) no-repeat 60px center;
+    cursor: pointer;
+    display: block;
+    font-weight: bold;
+    font-size: 14px;
+    font-size: 1.4rem;
+    text-align: right;
+    width: 250px;
+    padding: 10px 78px 10px 0;
+    border-radius: 3px;
+    color: #FFF;
+    background-color: #195f8d;
+    margin: 10px 0 10px 35px;
+    border: 0;
+}
+.btnLoginTeratail input:hover {
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+}
+.bkgNewAccount {
+    text-align: left;
+}
+.bkgNewAccount a, .bkgNewAccount a:link, .bkgNewAccount a:visited {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    float: left;
+    padding-left: 25px;
+    background: url(/img/common/bkgSitenavArrow.png) no-repeat left center;
+    padding: 2px 10px 0 10px;
+    text-align: left;
+}
+.bkgNewAccount a:hover {
+    text-decoration: underline;
+}
+.txtAboutLink {
+    margin: 20px 0;
+}
+#boxLogin .txtAboutLink a, #boxLogin .txtAboutLink a:link, #boxLogin .txtAboutLink a:visited {
+    margin: 60px 0 0 0;
+    font-size: 18px;
+    font-size: 1.8rem;
+    color: #333;
+    text-decoration: none;
+    display: block;
+    float: left;
+    padding-left: 25px;
+    background: url(/img/common/bkgSitenavArrow.png) no-repeat left center;
+    padding: 2px 10px 0 10px;
+    text-align: left;
+}
+#boxLogin .txtAboutLink a:hover {
+    text-decoration: underline;
+}
+#boxLoginRequest {
+    padding: 10px 90px 0;
+}
+.txtRequest {
+    margin-bottom: 20px;
+}
+.boxInfo {
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
+}
+.boxInfo--hide {
+    display: none;
+}
+.boxInfo--show {
+    display: block;
+}
+.boxInfo--unfinished,
+.boxInfo--error {
+    background: #f4dede;
+}
+.boxInfo--sent {
+    background: #f7f6ee;
+}
+.boxInfo__inner {
+    width: 980px;
+    margin: 0 auto;
+}
+.boxInfo__sendBtn {
+    float: right;
+    width: 158px;
+    height: 27px;
+    margin: 0 20px 0 92px;
+    padding: 0;
+    color: #fff;
+    background: #195f8d;
+    border: none;
+    border-radius: 3px;
+    line-height: 27px;
+    cursor: pointer;
+}
+.boxInfo__preloadImg {
+    padding-bottom: 3px;
+}
+.boxInfo__message {
+    padding-left: 12px;
+}
+.boxInfo__message--unfinished,
+.boxInfo__message--error {
+    color: #8f3243;
+}
+.boxInfo__message--bold {
+    font-weight: bold;
+}
+.btnWrap-center {
+    text-align: center;
+}
+.unconfirmed-sendBtn {
+    width: 360px;
+    height: 43px;
+    margin-bottom: 20px;
+    padding: 0;
+    color: #fff;
+    background: #195f8d;
+    border: none;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 27px;
+    cursor: pointer;
+}
+.unconfirmed-txtCenter {
+    margin: 30px 0 30px;
+    text-align: center;
+}
+.unconfirmed-boxPost {
+    background: #f4dede !important;
+}
+/* ------------------------------------------------------------
+
+ * MAIN COL
+
+------------------------------------------------------------ */
+/*  コンテンツ・メイン　設定
+---------------------------------------------*/
+#container {
+    clear: both;
+    width: 980px;
+    margin: 0 auto 80px;
+    padding: 0 20px;
+}
+#mainContainer {
+    float: left;
+    width: 710px;
+}
+/* -------- タイトル -------- */
+#container .ttlMain {
+    background-repeat: no-repeat;
+    margin: 0;
+    font-size: 24px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 36px;
+}
+#container .ttlMain.ico-user {
+    background-image: url(/img/common/ttl/bgkTtlUser.png);
+}
+.ttlSub {
+    font-size: 16px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    border-bottom: 2px solid #aaa;
+    margin: 1em 0;
+}
+.txtTtlBtm {
+    font-size: 14px;
+    margin: 10px 0 30px;
+}
+/* ------------------------------------------------------------
+
+ * SIDE COL
+
+------------------------------------------------------------ */
+/*  サイド　設定
+---------------------------------------------*/
+#sideContainer {
+    float: right;
+    width: 250px;
+    margin-top: 30px;
+    font-size: 12px;
+    font-size: 1.2rem;
+}
+/* -------- タイトル -------- */
+#sideContainer .ttlSub {
+    background-repeat: no-repeat;
+    margin: 0 0 10px 0;
+    padding: 0;
+    font-size: 14px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    border-bottom: 2px solid #ccc;
+}
+/* -------- Myタグ -------- */
+#sideContainer .ttlMyTag {
+    cursor: pointer;
+}
+#sideContainer .ttlMyTag .myTagControl {
+    float: right;
+}
+#sideContainer .ttlMyTag .myTagControl .myTagEdit {
+    padding-right: 10px;
+    background: url(/img/common/icnMyTagEdit.png) 98% 50% no-repeat;
+}
+#sideContainer .ttlMyTag .myTagControl .myTagEditEnd {
+    display: none;
+    padding-right: 10px;
+    background: url(/img/common/icnMyTagEditEnd.png) 98% 50% no-repeat;
+}
+#sideContainer .boxMyTag {
+    position: relative;
+    z-index: 2;
+    margin: 0 0 15px;
+}
+#sideContainer .boxMyTag .boxEditMyTag {
+}
+#sideContainer .boxMyTag .txtMyTag {
+    font-size: 14px;
+    font-weight: bold;
+    height: 40px;
+}
+#sideContainer .boxMyTag .txtMyTag a:hover {
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+}
+#sideContainer .boxMyTag .boxMyTagList {
+    padding-bottom: 10px;
+}
+#sideContainer .boxMyTag .boxMyTagList li {
+    position: relative;
+    float: left;
+    height: 22px;
+    line-height: 22px;
+    color: #fff;
+    font-size: 12px;
+    font-size: 1.2rem;
+    margin: 0 5px 5px 0;
+}
+#sideContainer .boxMyTag .boxMyTagList li a {
+    display: block;
+    padding: 1px 10px 0px 10px;
+    color: #aca665;
+    line-height: 1.55;
+    background: #f9f6d6;
+    border-radius: 3px;
+    border: 1px solid #aca665;
+}
+#sideContainer .boxMyTag .boxMyTagList li a.disabled:hover {
+    cursor:default;
+    text-decoration: none;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+#sideContainer .boxMyTag .boxMyTagList li a:hover {
+    text-decoration:none;
+    opacity:0.7;
+    filter: alpha(opacity=70)
+}
+#sideContainer .boxMyTag .boxMyTagList li a span{
+    position:absolute;
+    top:0;
+    right:10px;
+    overflow:hidden;
+    cursor:pointer;
+    line-height:1.92;
+}
+#sideContainer .boxMyTag .boxMyTagList li a span img{
+    vertical-align:middle;
+    }
+#sideContainer .boxMyTag .tagDelete li a{
+    padding: 1px 28px 1px 12px;
+}
+#sideContainer .formMyTag{
+    top:0;
+    padding: 17px;
+    display: none;
+    background: #fff;
+    border: 3px solid #ddd;
+    width: 210px;
+}
+#sideContainer .inputMyTag{
+    background: #fff;
+    border: 1px solid #ddd;
+    width: 170px;
+    padding: 2px;
+    color: #333;
+}
+#sideContainer .btnMyTag{
+    width: 68px;
+    height: 26px;
+    margin:10px auto 0;
+}
+.boxMyTagFormList {
+    width: 195px;
+    background-color: #FFF;
+    border: 1px solid #ddd;
+    display: none;
+}
+.boxMyTagFormList li a {
+    display: block;
+    padding: 2px 10px;
+}
+.boxMyTagFormList li a:hover {
+    background-color: #CCC
+}
+/* -------- 近況 -------- */
+#sideContainer .boxLatest {
+    margin-bottom:20px;
+}
+.boxLatest .boxUserStatList {
+    width: auto !important;
+    margin: 0;
+}
+.boxLatest .boxUserStatList li {
+    margin: 10px 0;
+    padding: 0 10px 10px;
+    background-color: #FFF;
+    border-bottom: 1px solid #ddd;
+}
+.boxLatest .boxUserStatList .boxStat {
+    display: table;
+}
+.boxLatest .boxUserStatList .boxStat .boxStatThumb {
+    display: table-cell;
+    vertical-align: middle;
+    width: 40px;
+}
+.boxLatest .boxUserStatList .boxStat .boxStatThumb img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.boxLatest .boxUserStatList .boxStat .boxUser {
+    display: table-cell;
+    width: 100%;
+    padding-left: 15px;
+}
+.boxLatest .boxUserStatList .boxStat .boxUser .txtUserName {
+    width: 105px;
+    padding: 0;
+    line-height: 18px;
+}
+.boxLatest .boxUserStatList .boxStat .boxUser .txtUserName a {
+    color: #333;
+    font-weight: bold;
+}
+.boxLatest .boxUserStatList .boxStat .boxUser .boxUserPoint {
+    display: inline-block;
+}
+.boxLatest .boxUserStatList .boxStat .boxUser .boxUserPoint .point {
+    display: block;
+}
+.boxUserStatList .boxUserPoint .batch {
+    margin-right: 8px;
+}
+.boxUserStatList .boxUserPoint img {
+    vertical-align: middle;
+    margin-right: 4px;
+    margin-bottom: 3px;
+}
+.btnAddFollow, .btnAddFollowNotLogin {
+    float: right;
+    width: 60px;
+    height: 0;
+    background: url(/img/common/btnFollow.png);
+    padding: 22px 0 0 0;
+    background-position: 0 -44px;
+    border-style: none;
+    cursor: pointer;
+    outline: none;
+}
+.btnAddFollow:hover, .btnAddFollowNotLogin:hover {
+    opacity: 0.7;
+    filter: alpha(opacity=70)
+}
+
+/* -------- 知り合いを探す -------- */
+#sideContainer .boxAcquaintance .boxButtonAcquaintance {
+    width:200px;
+    margin:0 auto;
+}
+#sideContainer .boxAcquaintance .btnAcquaintance {
+    border:none;
+    background:none;
+    float:left;
+    width:100px;
+    outline:none;
+    cursor:pointer;
+    text-decoration:underline;
+}
+#sideContainer .boxAcquaintance .txtTwitterId {
+    background: url(/img/common/icnTwitter.png) 0 50% no-repeat;
+    padding-left: 14px;
+}
+#sideContainer .boxAcquaintance .txtTwitterId a {
+    color: #333;
+    font-weight: bold;
+}
+#sideContainer .boxAcquaintance .txtUserName a {
+    color: #aaa;
+    font-weight: normal;
+}
+#sideContainer .boxAcquaintance .txtTwitterId,
+#sideContainer .boxAcquaintance .txtUserName {
+    float: left;
+}
+#sideContainer .boxAcquaintance .boxUser {
+    display: table;
+    width: auto;
+}
+#sideContainer .boxAcquaintance .boxAddFollow {
+    display: table-cell;
+    vertical-align: middle;
+}
+#sideContainer .boxAcquaintance .btnAcquaintance.active {
+    cursor:default;
+    text-decoration:none;
+}
+#sideContainer .boxAcquaintance .btnAcquaintance:hover {
+    text-decoration:none;
+}
+#sideContainer .boxButtonAcquaintance button:last-child {
+    border-left:1px solid #ccc;
+}
+#sideContainer .txtNotAcquaintance {
+    margin:10px 0;
+}
+.txtLinkSocialList a {
+    color:#333;
+    float:right;
+    font-weight:bold;
+    text-decoration:underline;
+}
+.txtLinkSocialList a:hover {
+    text-decoration:none;
+}
+
+/* -------- SNS -------- */
+#sideContainer .boxSnsArea {
+    margin-bottom: 30px;
+}
+#sideContainer .boxSnsArea .btnWrap {
+    display: block;
+    width: 120px;
+    height: 24px;
+}
+/* -------- 関連記事 -------- */
+#sideContainer .boxRelated {
+    margin-bottom: 30px;
+}
+#sideContainer .boxRelated .txtResolution, #sideContainer .boxRelated .txtAccepting {
+    width: 60px;
+    float: left;
+    margin-right: 5px;
+}
+#sideContainer .boxRelated .boxViews {
+}
+#sideContainer .boxRelated .boxViews p {
+    display: inline-block;
+}
+#sideContainer .boxRelated .boxViews p span {
+    font-size: 12px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+#sideContainer .boxRelated .boxViews p.txtViwesAnswer {
+    font-size: 11px;
+    font-size: 1.1rem;
+    color: #b14a5c;
+}
+#sideContainer .boxRelated .boxViews p.txtViwesClip {
+    font-size: 11px;
+    font-size: 1.1rem;
+}
+#sideContainer .boxRelated .boxViews p.txt0Number {
+    color: #ccc;
+}
+#sideContainer .boxRelated .txtContent {
+    clear: both;
+    margin-bottom: 25px;
+}
+#sideContainer .boxRelated .txtContent a:link {
+    color: #333;
+}
+/* ------------------------------------------------------------
+ *
+ *  * FOOTER
+ *
+ *  ------------------------------------------------------------ */
+/*  フッター 設定
+ *  ---------------------------------------------*/
+#footer .boxFooterNav {
+    background-color: #333;
+    border-bottom: 1px solid #1f1f1f;
+}
+#footer .boxSiteNav {
+    width: 980px;
+    padding: 18px 0 0;
+    margin:auto;
+}
+#footer .boxSiteNav li {
+    display: inline-block;
+    float: left;
+    margin: 0 25px 13px 0;
+    padding: 0 0 0 10px;
+    background: url(/img/common/bkgSitenavArrow_white.png) no-repeat left 1px;
+    line-height: 14px;
+    font-size: 11px;
+    font-size: 1.1rem;
+}
+#footer .boxSiteNav li a {
+    color: #fff;
+}
+#footer .boxSiteNav li a:hover {
+    text-decoration: underline;
+}
+
+/* -------- フッター上部 -------- */
+#footerTop {
+    background-color: #333;
+    border-top: 1px solid #525252;
+    color: #fff;
+}
+#footerTop .boxInner {
+    width: 980px;
+    overflow: hidden;
+    padding: 27px 0 16px;
+    margin: auto;
+    padding: 0 20px;
+}
+.fb-like-box.fb_iframe_widget {
+    height: 190px;
+    margin-top: 20px;
+    float: left;
+    width: 600px !important;
+}
+.fb-like-box.fb_iframe_widget iframe {
+    width: 650px !important;
+    height: 190px;
+}
+#footerTop .imgFooterLogo {
+    float: left;
+    margin: 0 25px 0 0;
+}
+#footerTop .imgFooterLogo a {
+    display: block;
+    padding: 10px 10px 10px 0;
+}
+#footerTop .boxContact {
+    float: right;
+    margin-top: 30px;
+}
+#footerTop .boxContact .mailform textarea {
+    min-width: 285px;
+    max-width: 285px;
+    min-height: 90px;
+    max-height: 90px;
+    margin: 0 0 6px;
+    padding: 10px;
+    line-height: 18px;
+    background: #fcfcfc;
+    border: 1px solid #ddd;
+    color: #333;
+    overflow: hidden;
+}
+#footerTop .boxContact .mailform textarea:focus {
+    background: #fff;
+}
+#footerTop .boxContact .mailform .btnSubmit a {
+    text-align: center;
+    background-color: #aaa;
+    color: #000;
+    display: block;
+    line-height: 24px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 3px;
+}
+#footerTop .boxContact .mailform .btnSubmit a:hover {
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    text-decoration: none;
+}
+#footerTop .boxContact .boxContactInner {
+    font-size: 11px;
+    text-align: right;
+    margin-top: 12px;
+    line-height: 1.6;
+}
+#footerTop .boxContact .boxContactInner a {
+    color: #fff;
+    font-size: 12px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
+#footerTop .boxContact .boxContactInner a:hover {
+    text-decoration: none;
+}
+/* -------- フッター下部 -------- */
+#footerBtm {
+    color: #888;
+    margin-top: 10px;
+}
+#footerBtm .boxInner {
+    width: 980px;
+    padding: 0 20px 20px;
+    margin: auto;
+}
+#footerBtm small {
+    font-size: 12px;
+    font-size: 1.2rem;
+}
+/* ------------------------------------------------------------
+
+ * パンくずリスト
+
+------------------------------------------------------------ */
+#breadcrumb {
+    overflow: hidden;
+    font-size: 10px;
+    font-size: 1rem;
+    letter-spacing: 0;
+}
+#breadcrumb ul {
+    width: 980px;
+    margin: auto;
+}
+#breadcrumb ul li {
+    background: url(/img/common/breadcrumb_arrow.gif) no-repeat 0 5px;
+    float: left;
+    padding: 0 5px 0 10px;
+    margin: 20px 0;
+    text-shadow: 1px 1px 1px #fff;
+}
+#breadcrumb ul li:first-child {
+    background: none;
+    padding-left: 0;
+}
+#breadcrumb ul li:last-child {
+    padding-right: 0;
+}
+#breadcrumb ul li a:link {
+    color: #333;
+    text-decoration: underline;
+}
+#breadcrumb ul li a:hover {
+    text-decoration: none;
+}
+/* ------------------------------------------------------------
+
+ * タグ共通
+
+------------------------------------------------------------ */
+.boxTag {
+    margin: 0 0 15px;
+}
+.boxTag li {
+    float: left;
+    height: 22px;
+    line-height: 22px;
+    margin: 0 5px 5px 0;
+    padding: 0 8px 0;
+    font-size: 12px;
+    font-size: 1.2rem;
+    line-height: 1.55;
+}
+.boxTag li a {
+    display: inline-block;
+    color: #aca665;
+    padding: 1px 8px 0;
+    margin: 0 -8px 0;
+    border-radius: 3px;
+    border: 1px solid #8b8653;
+}
+.boxTag li a.disabled:hover {
+    cursor:default;
+    text-decoration: none;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+.boxTag li a:hover {
+    text-decoration: none;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+}
+.boxTag .bkgCate_b {
+    position: relative;
+}
+.boxTag .bkgCate_b a {
+    background: #e1dfc4;
+}
+.boxTag .bkgCate_s {
+    position: relative;
+}
+.boxTag .bkgCate_s a {
+    background: #f9f6d6;
+}
+.boxTag li .btnClose {
+    margin: 0 -5px 0 20px;
+    padding: 0;
+}
+.boxTag li .btnClose img {
+    vertical-align: -4px;
+    margin: 0;
+}
+/*ホバー表示用*/
+
+.boxCate {
+    width: 300px;
+    padding: 15px;
+    background: #f5f5f5;
+    position: absolute;
+    top: 28px;
+    left: 0;
+    z-index: 10000;
+    border-radius: 3px;
+    display: none;
+    /* box-shadow */
+    box-shadow: rgba(113, 135, 164, 0.29) 0px 0px 2px 2px;
+    -webkit-box-shadow: rgba(113, 135, 164, 0.29) 0px 0px 2px 2px;
+    -moz-box-shadow: rgba(113, 135, 164, 0.29) 0px 0px 2px 2px;
+}
+.boxCateR {
+    width: 300px;
+    padding: 15px;
+    background: #f5f5f5;
+    position: absolute;
+    top: 28px;
+    left: -200px;
+    z-index: 10000;
+    border-radius: 3px;
+    display: none;
+    /* box-shadow */
+    box-shadow: rgba(113, 135, 164, 0.29) 0px 0px 2px 2px;
+    -webkit-box-shadow: rgba(113, 135, 164, 0.29) 0px 0px 2px 2px;
+    -moz-box-shadow: rgba(113, 135, 164, 0.29) 0px 0px 2px 2px;
+}
+.boxCate:after, .boxCate:before, .boxCateR:after, .boxCateR:before {
+    bottom: 100%;
+    left: 20px;
+    content: " ";
+    border: solid transparent;
+    border-color: rgba(85, 85, 85, 0);
+    border-bottom-color: #f5f5f5;
+    border-width: 5px;
+    margin-left: -5px;
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+.boxCateR:after, .boxCateR:before {
+    left: auto;
+    right: 20px;
+    border-bottom-color: #f5f5f5;
+}
+.boxCate:before, .boxCateR:before {
+    border-width: 6px;
+    margin-left: -6px;
+    border-bottom-color: #ccc;
+}
+.boxCate .ttlCate, .boxCateR .ttlCate {
+    margin-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+    font-size: 11px;
+    padding-bottom: 10px;
+}
+.boxCate .ttlCate .txtQuestion, .boxCateR .ttlCate .txtQuestion {
+    font-size: 15px;
+    font-weight: bold;
+}
+/* ------------------------------------------------------------
+
+ * 質問共通アイテム
+
+------------------------------------------------------------ */
+#container #mainContainer .boxItem {
+    width: 700px;
+    margin-top: 25px;
+    padding: 0 10px 15px 0;
+    border-bottom: 1px solid #ccc;
+}
+#container #mainContainer .boxItem:first-child {
+    margin-top: 10px;
+}
+/* ---- リボン・PV・解答などの左側 ---- */
+.boxItemData {
+    width: 70px;
+    float: left;
+    margin-left: 10px;
+    padding-right: 5px;
+}
+/* -------- 質問STS -------- */
+.txtResolution {
+    display: inline-block;
+    background-color: #b14a5c;
+    border: 1px solid #b14a5c;
+    padding: 1px 3px 0;
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 11px;
+    font-size: 1.1rem;
+    line-height: 1.4;
+    text-align: center;
+}
+.txtAccepting {
+    display: inline-block;
+    border: 1px solid #333;
+    padding: 1px 3px 0;
+    margin-bottom: 10px;
+    font-size: 11px;
+    font-size: 1.1rem;
+    line-height: 1.4;
+    text-align: center;
+    background: #fff;
+}
+/* --------　　　 -------- */
+
+.boxItemData .txtAnswer {
+    color: #b14a5c;
+    font-size: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0 0 6px;
+    line-height: 1.4;
+}
+.boxItemData .txtAnswer span {
+    margin-right: 5px;
+    width: 20px;
+    font-size: 11px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.boxItemData .txtClip {
+    color: #444;
+    font-size: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0 0 6px;
+    line-height: 1.4;
+}
+.boxItemData .txtClip span {
+    margin-right: 5px;
+    font-size: 11px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.boxItemData .txtView {
+    color: #444;
+    font-size: 10px;
+    font-size: 1.0rem;
+    margin: 0 0 6px;
+    line-height: 1.4;
+}
+.boxItemData .txtView span {
+    margin-right: 5px;
+    font-size: 11px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.boxItemData .txt0Number {
+    color: #ccc;
+    font-weight: normal;
+}
+/* ---- タイトル・内容（右側） ---- */
+#container .boxItemContent {
+    float: left;
+    width: 600px;
+    margin-left: 15px;
+}
+/* タイトル */
+#container .boxItemContent .ttlItem {
+    margin: 0 0 5px;
+    line-height: 25px;
+    font-size: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+/* 内容 */
+#container .boxItemContent p {
+    margin: 0 0 10px 0;
+    line-height: 1.5;
+    font-size: 11px;
+    font-size: 1.1rem;
+}
+#container .boxItemContent .boxTag {
+    float: left;
+    width: 315px;
+    margin: 0 10px 0 0;
+}
+#container .boxItemContent .boxItemThumb{
+    float: left;
+    width: 275px;
+}
+#container .boxItemContent .boxItemThumb a:link {
+    color: #333;
+}
+#container .boxItemContent .boxItemThumb a:hover img, #container .boxItemContent .boxItemThumb a:hover span {
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+}
+#container .boxItemContent .boxItemThumb img {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+#container .boxItemContent .txtUserName {
+    width: 170px;
+    display: block;
+    float: left;
+    margin-right: 10px;
+    line-height: 22px;
+    text-align: left;
+}
+#container .boxItemContent .boxItemThumb .txtUpdate {
+    line-height: 22px;
+    text-align: right;
+    float: right;
+}
+/* -------- 最下部ページング -------- */
+
+.boxPager {
+    overflow: hidden;
+    margin-top: 30px;
+    padding: 0 0 20px;
+}
+.boxPager p {
+    float: left;
+}
+.boxPager ul {
+    overflow: hidden;
+    float: right;
+}
+.boxPager ul li {
+    float: left;
+    background: #666;
+    width: 18px;
+    line-height: 19px;
+    margin: 0 0 0 10px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 0;
+    border: 0;
+    font-size: 10px;
+}
+.boxPager ul li a {
+    display: block;
+    width: 18px;
+    background: #e0dfdd;
+    color: #333;
+    font-weight: normal;
+}
+#container .boxPager li a:hover {
+    background: #ededed;
+}
+/* -------- 最下部もっとみる -------- */
+
+.boxShowMore {
+    background-color: #EEE;
+    padding: 20px 0 15px;
+    margin: 0 0 15px;
+    cursor: pointer;
+}
+.boxShowMore:hover {
+    background-color: #ddd;
+}
+.circleG_1 {
+    background-color: #d1d1d1;
+}
+.circleG_2 {
+    background-color: #a0a0a0;
+}
+.circleG_3 {
+    background-color: #707070;
+}
+.boxShowMore p {
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #707070;
+    padding-top: 5px;
+}
+.circleG {
+    height: 8px;
+    margin: 0 auto 4px;
+    width: 8px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+}
+/* ローディングアニメーション */
+.boxShowMore.loading .circleG {
+    background-color: #f5f5f5;
+    -moz-animation-name: bounce_circleG;
+    -moz-animation-duration: 1.2s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: linear;
+    -webkit-animation-name: bounce_circleG;
+    -webkit-animation-duration: 1.2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: linear;
+    -ms-animation-name: bounce_circleG;
+    -ms-animation-duration: 1.2s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-direction: linear;
+    -o-animation-name: bounce_circleG;
+    -o-animation-duration: 1.2s;
+    -o-animation-iteration-count: infinite;
+    -o-animation-direction: linear;
+    animation-name: bounce_circleG;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    animation-direction: linear;
+}
+.loading .circleG_1 {
+    -moz-animation-delay: 0.3;
+    -webkit-animation-delay: 0.3;
+    -ms-animation-delay: 0.3;
+    -o-animation-delay: 0.3s;
+    animation-delay: 0.3;
+}
+.loading .circleG_2 {
+    -moz-animation-delay: 0.5s;
+    -webkit-animation-delay: 0.5s;
+    -ms-animation-delay: 0.5s;
+    -o-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
+.loading .circleG_3 {
+    -moz-animation-delay: 0.7s;
+    -webkit-animation-delay: 0.7s;
+    -ms-animation-delay: 0.7s;
+    -o-animation-delay: 0.7s;
+    animation-delay: 0.7s;
+}
+ @-moz-keyframes bounce_circleG {
+0% {
+}
+50% {
+background-color:#707070
+}
+100% {
+}
+}
+ @-webkit-keyframes bounce_circleG {
+0% {
+}
+50% {
+background-color:#707070
+}
+100% {
+}
+}
+/* -------- 最下部質問する -------- */
+
+.boxBottomAsk {
+    margin: 30px 0 20px;
+    padding: 20px 0 0;
+    position: relative;
+}
+.boxBottomAsk p {
+    text-align: center;
+    margin: 0 auto 15px;
+}
+.btnBottomAsk {
+    width: 360px;
+    margin: 0 auto;
+}
+.btnBottomAsk a {
+    background-color: #195f8d;
+    border-radius: 3px;
+    border-bottom: 1px solid #12486b;
+    color: #FFFFFF;
+    display: block;
+    font-size: 14px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 10px 0;
+}
+.btnBottomAsk a:hover {
+    text-decoration: none;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+}
+/* -------- 丸め -------- */
+.txtHiddenQuestion {
+    height: 30px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.txtHiddenQuestion .txt {
+    position: relative;
+    height: 30px;
+    z-index: 1;
+}
+.txtHiddenQuestion .txt:after {
+    position: absolute;
+    display: block;
+    content: '…';
+    width: 20px;
+    height: 12px;
+    right: 0px;
+    bottom: 0px;
+    background: #fff;
+    z-index: 2;
+}
+.txtLinkTop {
+    margin: 20px 0;
+}
+.txtLinkTop a {
+    padding: 0 0 0 10px;
+    background: url(/img/common/bkgSitenavArrow.png) no-repeat left 5px;
+    line-height: 14px;
+    font-size: 14px;
+    font-size: 1.4rem;
+    color: #666;
+}
+.txtLinkTop a :hover {
+    text-decoration: underline;
+}
+/* -------- エラー -------- */
+.boxError {
+    margin: 10px 0;
+}
+.boxError .txtError {
+    color: #EB6233;
+    font-weight: bold;
+    margin-top: 2px;
+    text-align: left;
+}
+/* -------- 404ページ -------- */
+.box404Error {
+    margin-top: 100px;
+    height: 350px;
+    text-align: center;
+}
+.box404Error p {
+    margin: 35px auto 0;
+}
+.imgUnsupport {
+    margin-top: 35px;
+    text-align: center;
+}
+.txtUnsupport {
+    width:400px;
+    margin: 35px auto 0;
+}
+.txtUnsupport p {
+    margin:20px 0;
+    text-align:center;
+}
+.txtUnsupport .boxListUnsupport {
+    padding:20px 30px;
+    border:1px solid #ddd;   
+}
+.txtUnsupport .boxListUnsupport .listUnsupport {
+    list-style:disc;
+    list-style-position:inside;
+    font-weight:bold;
+}
+.txtUnsupport .boxListUnsupport ul {
+    margin:5px 0 0 30px;
+}
+.txtUnsupport .boxListUnsupport ul li {
+    list-style:decimal;
+    list-style-position:inside;
+    font-weight:normal;
+}
+/* -------- ページトップモーダル -------- */
+
+.boxComp {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    background: #000;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    width: 100%;
+    padding: 70px 0 30px;
+    text-align: center;
+    display: none;
+    min-width: 980px;
+}
+.boxComp .txtComp {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: normal;
+}
+/* -------- バッジ用モーダル -------- */
+
+.boxBadgeGet {
+    width: 100%;
+    height: 160px;
+    position: fixed;
+    bottom: -200px;
+    background-color: #333;
+    z-index: 1000;
+}
+.boxBadgeGet .boxBadgeInner {
+    width: 980px;
+    height: 120px;
+    margin: 10px auto;
+}
+.boxBadgeGet .boxBadgeInner .boxTitleBadge .txtBadge {
+    color: #fff;
+    font-size: 20px;
+    margin: 55px 0 10px 0;
+    text-align: center;
+}
+.boxBadgeGet .boxBadgeInner .txtBadgeDescription .txtBadge {
+    font-size: 20px;
+    margin-bottom: 9px;
+}
+.boxBadgeGet .boxBadgeInner .txtBadgeDescription .boxTtlBadge {
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+}
+.ttlBadge {
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+}
+.boxBadgeGet .boxBadgeInner .boxBadgeImage {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 10px;
+    position: relative;
+    background: #fff;
+    margin: 10px 0 0 20px;
+}
+.boxBadgeGet .boxBadgeInner .boxBadgeImage img {
+    position: absolute;
+    left: 10px;
+}
+.boxBadgeGet .boxBadgeInner .txtBadgeDescription {
+    width: 810px;
+    font-size: 13px;
+    color: #fff;
+    border-radius: 3px;
+    margin: 10px 0 10px 30px;
+    text-align: left;
+    position: relative;
+}
+.boxBadgeGet .boxBadgeInner .txtBadgeDescription a {
+    color: #fff;
+    font-size: 11px;
+    display: block;
+    margin-top: 10px;
+    text-decoration: underline;
+}
+.boxBadgeGet .boxBadgeInner .txtBadgeDescription a:hover {
+    text-decoration: none;
+}
+.boxBadgeGet .btnClose {
+    padding: 0;
+    background: none;
+    border: 0;
+    font-size: 0;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    z-index: 101;
+    outline: none;
+}
+.disnon {
+    display: none;
+}
+
+
+/* ------------------------------------------------------------
+ 
+ * Base
+ 
+------------------------------------------------------------ */
+
+/* ------------------------------------------------------------
+ 
+ * Layout
+ 
+------------------------------------------------------------ */
+
+
+/* コンテンツ梱包
+-------------------------- */
+.l-container {
+    width: 980px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+/* ヘッダーコンテンツ
+-------------------------- */
+.l-header {
+    border-bottom: 1px solid #333;
+    background: #333;
+}
+
+
+/* メインコンテンツ
+-------------------------- */
+.l-mainContent {
+    float: left;
+    width: 710px;
+}
+
+
+/* サイドコンテンツ
+-------------------------- */
+.l-sideContent {
+    float: right;
+    width: 250px;
+}
+
+.l-sideBox {
+    margin-bottom: 15px;
+}
+
+
+/* 関連タグ
+-------------------------- */
+.l-tagList > li {
+    float: left;
+    margin: 0 5px 5px 0;
+}
+
+
+/* ボタン
+-------------------------- */
+.l-btnSignup-center {
+    margin: 20px auto 0;
+}
+
+.l-btnLogin-center {
+    margin: 10px auto;
+}
+
+
+/* フォームまわり
+-------------------------- */
+.l-formLists-login {
+    margin-bottom: 10px;
+}
+
+.l-formLists-login > li {
+    margin-top: 10px;
+}
+
+.l-boxLogin {
+    width: 310px;
+}
+
+
+/* ------------------------------------------------------------
+ 
+ * Module
+ 
+------------------------------------------------------------ */
+
+
+/* 見出し＆タイトル
+-------------------------- */
+.mod-ttlSideBox {
+    margin: 0 0 10px;
+    border-bottom: 2px solid #ccc;
+    font-size: 14px;
+}
+
+
+/* ボタン
+-------------------------- */
+.submitBtn {
+    display: block;
+    border-bottom: 1px solid #12486b;
+    border-radius: 3px;
+    background: #195f8d;
+    color: #fff;
+    font-size: 14px;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.submitBtn:hover {
+    text-decoration: none;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+}
+
+.btnSize-mini {
+    width: 68px;
+    line-height: 26px;
+}
+
+.btnSize-small {
+    width: 118px;
+    line-height: 33px;
+}
+
+.btnSize-medium {
+    width: 158px;
+    line-height: 32px;
+}
+
+.btnSize-xmedium {
+    width: 200px;
+    line-height: 38px;
+}
+
+.btnSize-xxmedium {
+    width: 200px;
+    line-height: 41px;
+}
+
+.btnSize-large {
+    width: 215px;
+    line-height: 41px;
+}
+
+.btnSize-xlarge {
+    width: 240px;
+    line-height: 36px;
+}
+
+.btnSize-xxlarge {
+    width: 250px;
+    line-height: 41px;
+}
+
+.btnSize-xxxlarge {
+    width: 360px;
+    line-height: 43px;
+}
+
+.btnAlign-center {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*.mod-btn {
+    position: relative;
+    display: block;
+    padding: 0;
+    border-radius: 3px;
+    background-color: #195f8d;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.mod-btn:hover {
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+}
+
+.mod-btn[disabled] {
+    background-color: #ccc !important;
+}
+
+.mod-btn[disabled]:hover {
+    opacity: 1 !important;
+    filter: alpha(opacity=100) !important;
+    cursor: default !important;
+}
+
+.mod-btnLogin {
+    width: 200px;
+    height: 41px;
+    border: 0;
+}
+
+.mod-btnSignup {
+    width: 215px;
+    height: 41px;
+    padding-left: 65px;
+    border: 0;
+    text-align: left;
+}
+
+.mod-btnTag {
+    display: block;
+    padding: 0 8px;
+    border: 1px solid #8b8653;
+    line-height: 22px;
+}*/
+
+.mod-btn {
+    position: relative;
+    display: block;
+    padding: 0;
+    border: 1px solid;
+    border-radius: 3px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none !important;
+    box-sizing: border-box;
+}
+
+/*.mod-btn:hover {
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+}*/
+
+/*.mod-btn {
+    height:32px;
+    position: relative;
+    display: block;
+    padding: 0;
+    border-radius: 3px;
+    border:1px solid #5591ca;
+    color: #fff;
+    text-shadow:0 -1px 0 rgba(0,0,0,0.2);
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    box-sizing: border-box;
+    background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0, #55A1D7),
+    color-stop(1, #5591CA)
+    );
+    background-image: -o-linear-gradient(bottom, #55A1D7 0%, #5591CA 100%);
+    background-image: -moz-linear-gradient(bottom, #55A1D7 0%, #5591CA 100%);
+    background-image: -webkit-linear-gradient(bottom, #55A1D7 0%, #5591CA 100%);
+    background-image: -ms-linear-gradient(bottom, #55A1D7 0%, #5591CA 100%);
+    background-image: linear-gradient(to bottom, #55A1D7 0%, #5591CA 100%);
+}
+
+.mod-btn--white {
+    height:32px;
+    position: relative;
+    display: block;
+    padding: 0;
+    border-radius: 3px;
+    border:1px solid #d5d5d5;
+    color: #333;
+    text-shadow:0 1px 0 rgba(255,255,255,0.9);
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    box-sizing: border-box;
+    background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0, #FCFCFC),
+    color-stop(1, #EEEEEE)
+    );
+    background-image: -o-linear-gradient(bottom, #FCFCFC 0%, #EEEEEE 100%);
+    background-image: -moz-linear-gradient(bottom, #FCFCFC 0%, #EEEEEE 100%);
+    background-image: -webkit-linear-gradient(bottom, #FCFCFC 0%, #EEEEEE 100%);
+    background-image: -ms-linear-gradient(bottom, #FCFCFC 0%, #EEEEEE 100%);
+    background-image: linear-gradient(to bottom, #FCFCFC 0%, #EEEEEE 100%);
+}
+
+.mod-btn:hover {
+    background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0, #27A6E5),
+    color-stop(1, #2797DD)
+    );
+    background-image: -o-linear-gradient(bottom, #27A6E5 0%, #2797DD 100%);
+    background-image: -moz-linear-gradient(bottom, #27A6E5 0%, #2797DD 100%);
+    background-image: -webkit-linear-gradient(bottom, #27A6E5 0%, #2797DD 100%);
+    background-image: -ms-linear-gradient(bottom, #27A6E5 0%, #2797DD 100%);
+    background-image: linear-gradient(to bottom, #27A6E5 0%, #2797DD 100%);
+}*/
+
+.mod-btn[disabled] {
+    background-color: #ccc !important;
+}
+
+.mod-btn[disabled]:hover {
+    opacity: 1 !important;
+    filter: alpha(opacity=100) !important;
+    cursor: default !important;
+}
+
+.mod-btnSubmit {
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.2);
+    border-color: #5591ca;
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #55A1D7),
+        color-stop(1, #5591CA));
+    background-image: -o-linear-gradient(bottom, #55A1D7 0%, #5591CA 100%);
+    background-image: -moz-linear-gradient(bottom, #55A1D7 0%, #5591CA 100%);
+    background-image: -webkit-linear-gradient(bottom, #55A1D7 0%, #5591CA 100%);
+    background-image: -ms-linear-gradient(bottom, #55A1D7 0%, #5591CA 100%);
+    background-image: linear-gradient(to bottom, #55A1D7 0%, #5591CA 100%);
+}
+
+.mod-btnSubmit:hover {
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #27A6E5),
+        color-stop(1, #2797DD));
+    background-image: -o-linear-gradient(bottom, #27A6E5 0%, #2797DD 100%);
+    background-image: -moz-linear-gradient(bottom, #27A6E5 0%, #2797DD 100%);
+    background-image: -webkit-linear-gradient(bottom, #27A6E5 0%, #2797DD 100%);
+    background-image: -ms-linear-gradient(bottom, #27A6E5 0%, #2797DD 100%);
+    background-image: linear-gradient(to bottom, #27A6E5 0%, #2797DD 100%);
+}
+
+.mod-btnLogin {
+    width: 200px;
+    font-size: 14px;
+    line-height: 38px;
+}
+
+.mod-btnSeeMore {
+    width: 236px;
+    font-size: 14px;
+    line-height: 38px;   
+}
+
+.mod-btnSignup {
+    width: 215px;
+    padding-left: 20px;
+    font-size: 14px;
+    line-height: 38px;
+}
+
+.mod-btnTag {
+    display: block;
+    padding: 0 8px;
+    border: 1px solid #8b8653;
+    line-height: 22px;
+}
+
+
+/* フォームバリデーションメッセージ
+-------------------------- */
+.msgValidation {
+    margin-bottom: 4px;
+    padding-left: 18px;
+    background: no-repeat 0 2px;
+    font-weight: bold;
+}
+
+.msgValidation[data-validated="false"] {
+    background-image: url(/img/login/check_ng.png);
+    color: #e9606d;
+}
+
+.msgValidation[data-validated="true"] {
+    background-image: url(/img/login/check_ok.png);
+    color: #5cb85c;
+}
+
+
+/* 入力フィールド
+-------------------------- */
+.mod-inputField {
+    position: relative;
+    padding: 7px 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.mod-inputField-wrap {
+    position: relative;
+}
+
+.mod-inputField-search {
+    width: 288px;
+    padding: 0 8px 0 24px;
+    border-color: #ccc;
+    background: #ccc;
+}
+
+.mod-inputField-mini {
+    width: 170px;
+    height: 36px;
+}
+
+.mod-inputField-small {
+    width: 210px;
+    height: 28px;
+}
+
+.mod-inputField-medium {
+    width: 350px;
+}
+
+.mod-inputField-large {
+    width: 311px;
+    height: 34px;
+}
+
+.mod-inputField-xlarge {
+    width: 502px;
+    height: 36px;
+}
+
+.mod-inputField-xxlarge {
+    width: 710px;
+    height: 36px;
+}
+
+.mod-inputField-max {
+    width: 100%;
+}
+
+
+/* サムネイル
+-------------------------- */
+.mod-userThumb {
+    vertical-align: middle;
+    border-radius: 50%;
+}
+
+.mod-userThumb-wrap {
+    position: absolute;
+    left: 8px;
+}
+
+.mod-userThumb-small {
+    width: 16px;
+    height: 16px;
+}
+
+.mod-userThumb-medium {
+    width: 18px;
+    height: 18px;
+}
+
+.mod-userThumb-large {
+    width: 32px;
+    height: 32px;
+}
+
+
+
+/* アイコン
+-------------------------- */
+.mod-icnCheckMark-signup:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 14px;
+    left: 55px;
+    width: 16px;
+    height: 13px;
+    margin: auto;
+    background: url("/img/common/login/bkgLogin.png") no-repeat left top;
+}
+
+.mod-icnCheckMark-login:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 14px;
+    left: 60px;
+    width: 16px;
+    height: 13px;
+    margin: auto;
+    background: url("/img/common/login/bkgLogin.png") no-repeat left top;
+}
+
+
+
+/* ウィジェット
+-------------------------- */
+.mod-pickupUsers > li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+}
+
+
+
+
+/* ------------------------------------------------------------
+ 
+ * State
+ 
+------------------------------------------------------------ 
+
+/* ------------------------------------------------------------
+ 
+ * Theme
+ 
+------------------------------------------------------------ */
+

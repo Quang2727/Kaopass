@@ -1,0 +1,151 @@
+@charset "utf-8";
+/*------------------------------------*\
+	    $COMMON
+	\*------------------------------------*/
+	/**
+	 * RESET...............デフォルトの設定
+	 * COMMON...........全ページ共通の設定　いまここ
+	 */
+
+/* ------------------------------------------------------------
+
+ * MAIN COL
+
+------------------------------------------------------------ */
+/*  コンテンツ・メイン　設定
+---------------------------------------------*/
+#content{
+	width: 740px;
+	margin: 15px auto;
+	background-color: #FFF;
+	padding: 15px 100px 0;
+}
+#content .mod-ttl{
+	margin:0;
+}
+#content .boxLogo{
+	float: left;
+	width: 350px;
+}
+#content h2{
+	font-size: 26px;
+	margin-top: 45px;
+}
+#content #boxForm{
+	width: 365px;
+	float: right;
+}
+#content #boxForm.boxForm--social {
+    width:690px;
+	border:1px solid #aaa;
+	border-top:none;
+	border-radius:0 0 3px 3px;
+	padding:24px;
+}
+#content #boxForm input[type="submit"]{
+	margin:8px auto 0;
+}
+#content .boxLabelInput{
+	margin: 10px 0 20px;
+}
+#content .boxLabelInput.boxLabelInput--social {
+  position: relative;
+	margin: 8px 0 10px;
+}
+#content .boxLabelInput .boxError.boxError--social {
+    margin:0;
+}
+.txtInput a{
+	color: #333;
+	text-decoration: underline;
+}
+.txtInput a:hover{
+	text-decoration: none;
+}
+.ttlSub{
+	font-size: 14px;
+	font-size: 1.4rem;
+	margin: 0 0 1em;
+}
+.btnRegistration input {
+	background:url(/img/common/login/bkgLogin.png) no-repeat 35px center;
+	cursor: pointer;
+	display: block;
+	font-weight: bold;
+	font-size:14px;
+	font-size:1.4rem;
+	text-align:right;
+	width:215px;
+	padding:10px 35px 10px 0;
+	border-radius:3px;
+	color: #FFF;
+	background-color:#195f8d;
+	margin:20px auto 0;
+	border:0;
+}
+.btnRegistration input:hover {
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+}
+.btnRegistration input[disabled] {
+  background-color: #ccc !important;
+}
+.btnRegistration input[disabled]:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  cursor: default;
+}
+.boxPrivacy{
+	margin-left: 140px;
+}
+.boxPrivacy .txtInput{
+	padding: 20px 0 0 95px;
+}
+
+.ttlInput {
+	font-weight:bold;
+	margin:5px 0;
+}
+.ttlInput-wrap {
+  position: relative;
+}
+.ttlInput--social {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    line-height: 36px;
+}
+.boxList--social {
+    display:table;
+    margin-bottom:20px;
+}
+.boxInput--social {
+    margin-left:170px;
+}
+.boxError--message {
+    margin: 0 130px 3px;
+}
+.txtInput--social {
+    text-align:center;
+    margin-top:20px;
+	font-size:10px;
+	font-size:1.0rem;
+}
+.txtInputAttention {
+    font-size:11px;
+}
+.txtInputAttention-social {
+    margin-top: 4px;
+    margin-left: 100px;
+}
+.txtInputAttention-socialUsername {
+	margin-left:170px;
+}
+.txtInputAttention {
+    font-size:11px;
+}
+.txtAttention {
+	font-weight:bold;
+	margin-bottom:14px;
+	text-align:center;
+}

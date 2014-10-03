@@ -41,6 +41,7 @@ class UsersController extends AppController {
         $twitter_id = @$this->request->data['twitter_id'];
         $avatar = @$this->request->data['avatar'];
         $email = @$this->request->data['email'];
+        $device_token = @$this->request->data['deviceToken'];
         if (!$user_name) {
             return $this->responseNg('Invalid parameters.');
         }
@@ -49,11 +50,15 @@ class UsersController extends AppController {
             $ret = $this->User->findByFacebookId($facebook_id);
         else
             $ret = $this->User->findByTwitterId($twitter_id);
+
         if (is_array($ret) && count($ret) == 1) {
             $userLogin = $ret['User'];
             $api_token = $ret['User']['api_token'];
+            $ret['User']['device_token'] = $device_token;
+            $this->log($ret['User'], "notification");
+            $this->User->save($ret['User']);
         } else {
-            $user = $this->User->login($user_name, $facebook_id, $twitter_id, $facebook_token, $avatar, $email);
+            $user = $this->User->login($user_name, $facebook_id, $twitter_id, $facebook_token, $avatar, $email, $device_token);
             $this->user_id = $user['User']['id'];
             $api_token = $user['User']['api_token'];
             $userLogin = $user['User'];
@@ -83,6 +88,15 @@ class UsersController extends AppController {
         } else {
             return $this->responseNg('Cannot create or find user.');
         }
+    }
+
+    public function logout() {
+        $data = $this->User->findById($this->user_id);
+        if (!empty($data)) {
+            $data["User"]["device_token"] = "";
+            $this->User->save($data);
+        }
+        return $this->responseOk();
     }
 
     /**
